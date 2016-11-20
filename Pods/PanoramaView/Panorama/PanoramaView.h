@@ -32,6 +32,12 @@
 /// forward vertical altitude (-.5π to .5π)
 @property (nonatomic, readonly) float lookAltitude;
 
+@property (nonatomic) BOOL VRModeHa;
+
+-(void) setVRModeHa:(BOOL)VRMode;
+
+-(void) setVRModeExt:(BOOL)VRModeHa;
+
 
 // At this point, it's still recommended to activate either OrientToDevice or TouchToPan, not both
 //   it's possible to have them simultaneously, but the effect is confusing and disorienting

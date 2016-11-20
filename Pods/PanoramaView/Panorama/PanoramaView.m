@@ -125,6 +125,26 @@ GLKQuaternion GLKQuaternionFromTwoVectors(GLKVector3 u, GLKVector3 v){
             [motionManager stopDeviceMotionUpdates];
     }
 }
+-(void) setVRModeHa:(BOOL)VRMode{
+    _VRModeHa = VRMode;
+    if(_VRModeHa){
+        _aspectRatio = self.frame.size.width/(self.frame.size.height*0.5);
+        [self rebuildProjectionMatrix];
+    } else{
+        _aspectRatio = self.frame.size.width/self.frame.size.height;
+        [self rebuildProjectionMatrix];
+    }
+}
+-(void) setVRModeExt:(BOOL)VRModeHa{
+    _VRModeHa = VRModeHa;
+    if(_VRModeHa){
+        _aspectRatio = self.frame.size.width/(self.frame.size.height*0.5);
+        [self rebuildProjectionMatrix];
+    } else{
+        _aspectRatio = self.frame.size.width/self.frame.size.height;
+        [self rebuildProjectionMatrix];
+    }
+}
 #pragma mark- OPENGL
 -(void)initOpenGL:(EAGLContext*)context{
     [(CAEAGLLayer*)self.layer setOpaque:NO];
@@ -142,7 +162,9 @@ GLKQuaternion GLKQuaternionFromTwoVectors(GLKVector3 u, GLKVector3 v){
     GLfloat frustum = Z_NEAR * tanf(_fieldOfView*0.00872664625997);  // pi/180/2
     _projectionMatrix = GLKMatrix4MakeFrustum(-frustum, frustum, -frustum/_aspectRatio, frustum/_aspectRatio, Z_NEAR, Z_FAR);
     glMultMatrixf(_projectionMatrix.m);
-    glViewport(0, 0, self.frame.size.width, self.frame.size.height);
+    if(!_VRModeHa){
+        glViewport(0, 0, self.frame.size.width, self.frame.size.height);
+    }
     glMatrixMode(GL_MODELVIEW);
 }
 -(void) customGL{
@@ -154,40 +176,55 @@ GLKQuaternion GLKQuaternionFromTwoVectors(GLKVector3 u, GLKVector3 v){
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 }
 -(void)draw{
-    static GLfloat whiteColor[] = {1.0f, 1.0f, 1.0f, 1.0f};
-    static GLfloat clearColor[] = {0.0f, 0.0f, 0.0f, 0.0f};
     glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
     glClear(GL_COLOR_BUFFER_BIT);
+    if(_VRModeHa) {
+        float scale = [UIScreen mainScreen].scale;
+        // one eye
+        glMatrixMode(GL_PROJECTION);
+        glViewport(0, 0, self.frame.size.width * scale, self.frame.size.height * scale * 0.5);
+        glMatrixMode(GL_MODELVIEW);
+        [self renderScene];
+        // other eye
+        glMatrixMode(GL_PROJECTION);
+        glViewport(0, self.frame.size.height * scale * 0.5, self.frame.size.width * scale, self.frame.size.height * scale* 0.5);
+        glMatrixMode(GL_MODELVIEW);
+        [self renderScene];
+    }else{
+        [self renderScene];
+    }
+}
+-(void) renderScene{
+    static GLfloat whiteColor[] = {1.0f, 1.0f, 1.0f, 1.0f};
+    static GLfloat clearColor[] = {0.0f, 0.0f, 0.0f, 0.0f};
     glPushMatrix(); // begin device orientation
-
-        _attitudeMatrix = GLKMatrix4Multiply([self getDeviceOrientationMatrix], _offsetMatrix);
-        [self updateLook];
+    _attitudeMatrix = GLKMatrix4Multiply([self getDeviceOrientationMatrix], _offsetMatrix);
+    [self updateLook];
+    glMultMatrixf(_attitudeMatrix.m);
+    glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, whiteColor);  // panorama at full color
+    [sphere execute];
+    glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, clearColor);
+    //		[meridians execute];  // semi-transparent texture overlay (15° meridian lines)
     
-        glMultMatrixf(_attitudeMatrix.m);
+    //TODO: add any objects here to make them a part of the virtual reality
+    //		glPushMatrix();
+    //			// object code
+    //		glPopMatrix();
     
-        glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, whiteColor);  // panorama at full color
-        [sphere execute];
-        glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, clearColor);
-//        [meridians execute];  // semi-transparent texture overlay (15° meridian lines)
-
-//TODO: add any objects here to make them a part of the virtual reality
-//        glPushMatrix();
-//        // object code
-//        glPopMatrix();
-    
-        // touch lines
-        if(_showTouches && _numberOfTouches){
-            glColor4f(1.0f, 1.0f, 1.0f, 0.5f);
-            for(int i = 0; i < [[_touches allObjects] count]; i++){
-                glPushMatrix();
-                    CGPoint touchPoint = CGPointMake([(UITouch*)[[_touches allObjects] objectAtIndex:i] locationInView:self].x,
-                                                     [(UITouch*)[[_touches allObjects] objectAtIndex:i] locationInView:self].y);
-                    [self drawHotspotLines:[self vectorFromScreenLocation:touchPoint inAttitude:_attitudeMatrix]];
-                glPopMatrix();
+    // touch lines
+    if(_showTouches && _numberOfTouches){
+        glColor4f(1.0f, 1.0f, 1.0f, 0.5f);
+        for(int i = 0; i < [[_touches allObjects] count]; i++){
+            glPushMatrix();
+            CGPoint touchPoint = CGPointMake([(UITouch*)[[_touches allObjects] objectAtIndex:i] locationInView:self].x, [(UITouch*)[[_touches allObjects] objectAtIndex:i] locationInView:self].y);
+            if(_VRModeHa){
+                touchPoint.y = ( (int)touchPoint.y % (int)(self.frame.size.height * 0.5) ) * 2.0;
             }
-            glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+            [self drawHotspotLines:[self vectorFromScreenLocation:touchPoint inAttitude:_attitudeMatrix]];
+            glPopMatrix();
         }
-    
+        glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+    }
     glPopMatrix(); // end device orientation
 }
 #pragma mark- ORIENTATION
@@ -326,15 +363,23 @@ GLKQuaternion GLKQuaternionFromTwoVectors(GLKVector3 u, GLKVector3 v){
 -(void) panHandler:(UIPanGestureRecognizer*)sender{
     static GLKVector3 touchVector;
     if([sender state] == 1){
-        touchVector = [self vectorFromScreenLocation:[sender locationInView:sender.view] inAttitude:_offsetMatrix];
+        CGPoint location = [sender locationInView:sender.view];
+        if(_VRModeHa){
+            location.y = ( (int)location.y % (int)(self.frame.size.height * 0.5) ) * 2.0;
+        }
+        touchVector = [self vectorFromScreenLocation:location inAttitude:_offsetMatrix];
     }
     else if([sender state] == 2){
-        GLKVector3 nowVector = [self vectorFromScreenLocation:[sender locationInView:sender.view] inAttitude:_offsetMatrix];
+        CGPoint location = [sender locationInView:sender.view];
+        if(_VRModeHa){
+            location.y = ( (int)location.y % (int)(self.frame.size.height * 0.5) ) * 2.0;
+        }
+        GLKVector3 nowVector = [self vectorFromScreenLocation:location inAttitude:_offsetMatrix];
         GLKQuaternion q = GLKQuaternionFromTwoVectors(touchVector, nowVector);
         _offsetMatrix = GLKMatrix4Multiply(_offsetMatrix, GLKMatrix4MakeWithQuaternion(q));
         // in progress for preventHeadTilt
-//        GLKMatrix4 mat = GLKMatrix4Multiply(_offsetMatrix, GLKMatrix4MakeWithQuaternion(q));
-//        _offsetMatrix = GLKMatrix4MakeLookAt(0, 0, 0, -mat.m02, -mat.m12, -mat.m22,  0, 1, 0);
+        //		GLKMatrix4 mat = GLKMatrix4Multiply(_offsetMatrix, GLKMatrix4MakeWithQuaternion(q));
+        //		_offsetMatrix = GLKMatrix4MakeLookAt(0, 0, 0, -mat.m02, -mat.m12, -mat.m22,  0, 1, 0);
     }
     else{
         _numberOfTouches = 0;
