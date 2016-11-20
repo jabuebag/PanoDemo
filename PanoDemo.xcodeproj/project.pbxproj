@@ -15,12 +15,18 @@
 		017791691DE10A0500FAD266 /* PanoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791681DE10A0500FAD266 /* PanoDemoTests.swift */; };
 		017791741DE10A0500FAD266 /* PanoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791731DE10A0500FAD266 /* PanoDemoUITests.swift */; };
 		017791821DE1132A00FAD266 /* PanoramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791811DE1132A00FAD266 /* PanoramaViewController.swift */; };
-		017791851DE114AB00FAD266 /* PanoramaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791831DE114AB00FAD266 /* PanoramaView.swift */; };
+		017791851DE114AB00FAD266 /* PanoramaViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791831DE114AB00FAD266 /* PanoramaViewer.swift */; };
 		017791861DE114AB00FAD266 /* PanoramaIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791841DE114AB00FAD266 /* PanoramaIndicator.swift */; };
 		0177918E1DE11AF200FAD266 /* London_Tower_Bridge_Sunset_Cityscape_Panorama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0177918D1DE11AF200FAD266 /* London_Tower_Bridge_Sunset_Cityscape_Panorama.jpg */; };
 		017791911DE1267E00FAD266 /* office.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017791901DE1267E00FAD266 /* office.jpg */; };
-		017791931DE126A100FAD266 /* F16pano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017791921DE126A100FAD266 /* F16pano.jpg */; };
 		017791951DE126BC00FAD266 /* office21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017791941DE126BC00FAD266 /* office21.jpg */; };
+		017791971DE12B8C00FAD266 /* SphereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791961DE12B8C00FAD266 /* SphereViewController.swift */; };
+		017791D51DE1410700FAD266 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017791D41DE1410700FAD266 /* OpenGLES.framework */; };
+		017791D91DE1414200FAD266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017791D81DE1414200FAD266 /* Foundation.framework */; };
+		017791DB1DE1414F00FAD266 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017791DA1DE1414F00FAD266 /* CoreGraphics.framework */; };
+		017791DD1DE1415E00FAD266 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017791DC1DE1415E00FAD266 /* UIKit.framework */; };
+		017791EE1DE186D200FAD266 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017791D61DE1412E00FAD266 /* GLKit.framework */; };
+		01C51B811DE233160072F22D /* PanoramaView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C51B801DE233160072F22D /* PanoramaView.framework */; };
 		61EA289FED5052ECFAA07736 /* Pods_PanoDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A9534054409D7AC44FC3F0 /* Pods_PanoDemoUITests.framework */; };
 		741D0D323E3F43D786009183 /* Pods_PanoDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791183105981AE023F4577A8 /* Pods_PanoDemoTests.framework */; };
 		E924D7F0378113A7C8F77D1A /* Pods_PanoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF6B1934C85162D06915A7F /* Pods_PanoDemo.framework */; };
@@ -58,12 +64,18 @@
 		017791731DE10A0500FAD266 /* PanoDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoDemoUITests.swift; sourceTree = "<group>"; };
 		017791751DE10A0500FAD266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		017791811DE1132A00FAD266 /* PanoramaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaViewController.swift; sourceTree = "<group>"; };
-		017791831DE114AB00FAD266 /* PanoramaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaView.swift; sourceTree = "<group>"; };
+		017791831DE114AB00FAD266 /* PanoramaViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaViewer.swift; sourceTree = "<group>"; };
 		017791841DE114AB00FAD266 /* PanoramaIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaIndicator.swift; sourceTree = "<group>"; };
 		0177918D1DE11AF200FAD266 /* London_Tower_Bridge_Sunset_Cityscape_Panorama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = London_Tower_Bridge_Sunset_Cityscape_Panorama.jpg; sourceTree = "<group>"; };
 		017791901DE1267E00FAD266 /* office.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = office.jpg; sourceTree = "<group>"; };
-		017791921DE126A100FAD266 /* F16pano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = F16pano.jpg; sourceTree = "<group>"; };
 		017791941DE126BC00FAD266 /* office21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = office21.jpg; sourceTree = "<group>"; };
+		017791961DE12B8C00FAD266 /* SphereViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphereViewController.swift; sourceTree = "<group>"; };
+		017791D41DE1410700FAD266 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		017791D61DE1412E00FAD266 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		017791D81DE1414200FAD266 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		017791DA1DE1414F00FAD266 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		017791DC1DE1415E00FAD266 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01C51B801DE233160072F22D /* PanoramaView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PanoramaView.framework; path = "Pods/../build/Debug-iphoneos/PanoramaView/PanoramaView.framework"; sourceTree = "<group>"; };
 		29E70A87FAC1102447C4B32D /* Pods-PanoDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanoDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanoDemoTests/Pods-PanoDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E513445051476EB452696CD /* Pods-PanoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanoDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanoDemo/Pods-PanoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4134975AE6323E35D2EF6567 /* Pods-PanoDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanoDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PanoDemoTests/Pods-PanoDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +92,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C51B811DE233160072F22D /* PanoramaView.framework in Frameworks */,
+				017791EE1DE186D200FAD266 /* GLKit.framework in Frameworks */,
+				017791DD1DE1415E00FAD266 /* UIKit.framework in Frameworks */,
+				017791DB1DE1414F00FAD266 /* CoreGraphics.framework in Frameworks */,
+				017791D91DE1414200FAD266 /* Foundation.framework in Frameworks */,
+				017791D51DE1410700FAD266 /* OpenGLES.framework in Frameworks */,
 				E924D7F0378113A7C8F77D1A /* Pods_PanoDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +153,9 @@
 				017791571DE10A0500FAD266 /* Main.storyboard */,
 				0177915A1DE10A0500FAD266 /* Assets.xcassets */,
 				0177915C1DE10A0500FAD266 /* LaunchScreen.storyboard */,
-				0177915F1DE10A0500FAD266 /* Info.plist */,
 				017791811DE1132A00FAD266 /* PanoramaViewController.swift */,
+				017791961DE12B8C00FAD266 /* SphereViewController.swift */,
+				0177915F1DE10A0500FAD266 /* Info.plist */,
 			);
 			path = PanoDemo;
 			sourceTree = "<group>";
@@ -162,7 +181,7 @@
 		017791871DE114DA00FAD266 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				017791831DE114AB00FAD266 /* PanoramaView.swift */,
+				017791831DE114AB00FAD266 /* PanoramaViewer.swift */,
 				017791841DE114AB00FAD266 /* PanoramaIndicator.swift */,
 			);
 			name = Utility;
@@ -172,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				017791941DE126BC00FAD266 /* office21.jpg */,
-				017791921DE126A100FAD266 /* F16pano.jpg */,
 				017791901DE1267E00FAD266 /* office.jpg */,
 				0177918D1DE11AF200FAD266 /* London_Tower_Bridge_Sunset_Cityscape_Panorama.jpg */,
 			);
@@ -195,6 +213,12 @@
 		CBCA60F41BB83C7A3F81F869 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01C51B801DE233160072F22D /* PanoramaView.framework */,
+				017791DC1DE1415E00FAD266 /* UIKit.framework */,
+				017791DA1DE1414F00FAD266 /* CoreGraphics.framework */,
+				017791D81DE1414200FAD266 /* Foundation.framework */,
+				017791D61DE1412E00FAD266 /* GLKit.framework */,
+				017791D41DE1410700FAD266 /* OpenGLES.framework */,
 				6FF6B1934C85162D06915A7F /* Pods_PanoDemo.framework */,
 				791183105981AE023F4577A8 /* Pods_PanoDemoTests.framework */,
 				64A9534054409D7AC44FC3F0 /* Pods_PanoDemoUITests.framework */,
@@ -280,6 +304,7 @@
 					0177914F1DE10A0500FAD266 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 9A38T68U32;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					017791631DE10A0500FAD266 = {
@@ -327,7 +352,6 @@
 				017791911DE1267E00FAD266 /* office.jpg in Resources */,
 				017791951DE126BC00FAD266 /* office21.jpg in Resources */,
 				017791591DE10A0500FAD266 /* Main.storyboard in Resources */,
-				017791931DE126A100FAD266 /* F16pano.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,10 +515,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				017791561DE10A0500FAD266 /* ViewController.swift in Sources */,
+				017791971DE12B8C00FAD266 /* SphereViewController.swift in Sources */,
 				017791541DE10A0500FAD266 /* AppDelegate.swift in Sources */,
 				017791821DE1132A00FAD266 /* PanoramaViewController.swift in Sources */,
 				017791861DE114AB00FAD266 /* PanoramaIndicator.swift in Sources */,
-				017791851DE114AB00FAD266 /* PanoramaView.swift in Sources */,
+				017791851DE114AB00FAD266 /* PanoramaViewer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,12 +670,19 @@
 			baseConfigurationReference = 3E513445051476EB452696CD /* Pods-PanoDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9A38T68U32;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/PanoramaView",
+				);
 				INFOPLIST_FILE = PanoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jabue.PanoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -660,12 +692,18 @@
 			baseConfigurationReference = 73BA244F03DD6BFED44376EF /* Pods-PanoDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9A38T68U32;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/PanoramaView",
+				);
 				INFOPLIST_FILE = PanoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jabue.PanoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

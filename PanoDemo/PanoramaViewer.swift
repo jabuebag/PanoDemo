@@ -34,7 +34,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 
 
-class PanoramaView: UIView {
+class PanoramaViewer: UIView {
 
 
     //Constatnts
