@@ -39,7 +39,7 @@ class PanoramaView: UIView {
 
     //Constatnts
     let CRMotionViewRotationMinimumThreshold:CGFloat = 0.1
-    let CRMotionGyroUpdateInterval:TimeInterval = 1 / 100
+    let CRMotionGyroUpdateInterval:TimeInterval = 1 / 20
     let CRMotionViewRotationFactor:CGFloat = 4.0
 
     // Managing Motion Sensing
