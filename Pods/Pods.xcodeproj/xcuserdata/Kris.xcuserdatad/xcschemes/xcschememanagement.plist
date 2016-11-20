@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PanoramaView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PanoDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BCD2A766E79E9664E3D5F2E14B7D48CC</key>
+		<key>41E840C2984994732EAAB8652BE7177F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF5E709B2B8D9B2906B2D9AA0D256139</key>
+		<key>9CE5D1AD5A3C4AFC8E46A162424181AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BCD2A766E79E9664E3D5F2E14B7D48CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,0 +1,6 @@
+framework module PanoramaView {
+  umbrella header "PanoramaView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,50 +8,82 @@
 
 /* Begin PBXBuildFile section */
 		1FD1767314AEAE6678E3518B909AAC1E /* Pods-PanoDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F4DAEAABAFFB9C46177A2ACB1C42A0 /* Pods-PanoDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		334661196D4812861D6BBF024F4AFE3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		247FA8D61870919147F1919AA0341A1C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AFD58AEE975DFC0D60121F977AB9BD /* CoreMotion.framework */; };
+		334661196D4812861D6BBF024F4AFE3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */; };
+		51A77EF097BF1127D38D6F7F01D85086 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F696BCE5CD44D8CC965F90CD869F1F9 /* OpenGLES.framework */; };
+		5621DD658B458909F9851D0DD7A3C089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */; };
+		62D7BB1CCF6AB2E9275DDB61D485A81A /* Pods-PanoDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9783AAD009D63A69E507EA5A94F1E40E /* Pods-PanoDemo-dummy.m */; };
 		801A766280BC4736D3B28C8E8CE45F25 /* Pods-PanoDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 227B119D7734D05D60A0667D15A8F567 /* Pods-PanoDemoTests-dummy.m */; };
-		8978525F9D8DC223A619ADE690B4F834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		B003E534B3D2F84D5AD5E04B391AA746 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		B6A2858607379DD7AE7C6A0283E381DF /* Pods-PanoDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9783AAD009D63A69E507EA5A94F1E40E /* Pods-PanoDemo-dummy.m */; };
+		827CA2C22849D69DD90FD8CB53C38177 /* Pods-PanoDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2830755715F462D31C4A67806E5E7F4 /* Pods-PanoDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8978525F9D8DC223A619ADE690B4F834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */; };
+		AD24DE37CF8D2FFBCCB028C44C8A3BE4 /* PanoramaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C743B4B60DDCA977CF854BBAFD7EE5 /* PanoramaView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B98581AD256177492F526F1DB923F56E /* PanoramaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 485C79B66301675B0CD6ABFDE82B2EF1 /* PanoramaView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF4BDBFF33E809A9D4B8E2ECF6BB2093 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */; };
+		CAD1FCD6217CA94E16A11D7ED2239102 /* PanoramaView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA959C3B74FBE942909F6449E64DC48E /* PanoramaView-dummy.m */; };
+		D1125660EBD5F56279C9702BD63EA7D7 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2BF6C5D7DC60A1EA1E8F79E7FE0F0E5 /* GLKit.framework */; };
 		D3C831A509275282D25EF90BFD61DFDB /* Pods-PanoDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 846309070D899139F81E381925DCADE1 /* Pods-PanoDemoUITests-dummy.m */; };
+		D5774A5B66AF4B1BF2783D8D5DC22142 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D429F539F8DA8036989F364883E926 /* UIKit.framework */; };
 		FB2DE5A232D6615566A443C59943DCC2 /* Pods-PanoDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F46C34B40E875D835C4615EC15ABC4 /* Pods-PanoDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBD05D36B23693C602F50960B20F59B5 /* Pods-PanoDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2830755715F462D31C4A67806E5E7F4 /* Pods-PanoDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC904F836D0EFDDADC1863E959BCA278 /* PanoramaView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A019CB2D0DA4965A52516A8EB2C880C /* PanoramaView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		911C49D0D0E1B09179895C563315525C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41E840C2984994732EAAB8652BE7177F;
+			remoteInfo = PanoramaView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0057F2C70ED7853E33F6885A19659DE6 /* Pods-PanoDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		07091E16853097031E50EBEDA0585959 /* Pods_PanoDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemoUITests.framework; path = "Pods-PanoDemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD558B151287210E40BDFBE5B886FF7 /* Pods-PanoDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F696BCE5CD44D8CC965F90CD869F1F9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
 		1006D6B0CE1AB1117B3C50BB057A1C8D /* Pods-PanoDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PanoDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		12AFD58AEE975DFC0D60121F977AB9BD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		12B7837DA5106119024D3D0AF1FDC2B9 /* Pods-PanoDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		15C0EFD91A0A36DF0CB1075B524496E6 /* Pods-PanoDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PanoDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		164E27439050D01B9C7BEC8931F15CF5 /* Pods_PanoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemo.framework; path = "Pods-PanoDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4CC61879BE58177DEE5D5F3C615AFB /* Pods-PanoDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PanoDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		20C743B4B60DDCA977CF854BBAFD7EE5 /* PanoramaView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PanoramaView.m; path = Panorama/PanoramaView.m; sourceTree = "<group>"; };
 		21426B30ABF547D455C213383C7E5F4D /* Pods-PanoDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemo-resources.sh"; sourceTree = "<group>"; };
 		227B119D7734D05D60A0667D15A8F567 /* Pods-PanoDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PanoDemoTests-dummy.m"; sourceTree = "<group>"; };
 		32F4DAEAABAFFB9C46177A2ACB1C42A0 /* Pods-PanoDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PanoDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		3A019CB2D0DA4965A52516A8EB2C880C /* PanoramaView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PanoramaView-umbrella.h"; sourceTree = "<group>"; };
 		3C757739C4479954FF1B46F509D61A22 /* Pods-PanoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		402C16CA1C713064F0EF05F8277703E3 /* Pods-PanoDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PanoDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		428C546138249B60EC83DC5B7CE4A3A1 /* Pods-PanoDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PanoDemo.modulemap"; sourceTree = "<group>"; };
+		485C79B66301675B0CD6ABFDE82B2EF1 /* PanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PanoramaView.h; path = Panorama/PanoramaView.h; sourceTree = "<group>"; };
 		4AF3AD8ED0F2B9E9C97B1771940880A9 /* Pods-PanoDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		65BB16F70AF9C2F0AFDFAE4B1E35EFA6 /* Pods-PanoDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		7214A0E90EF3CFE9B1AB39B3EBEB4849 /* PanoramaView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PanoramaView.modulemap; sourceTree = "<group>"; };
 		72671DBEDA9D7DA27E96FF01A9E7AF45 /* Pods-PanoDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PanoDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		76C7597E79D7BAC8534D2ACE2E97AB56 /* Pods-PanoDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PanoDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		846309070D899139F81E381925DCADE1 /* Pods-PanoDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PanoDemoUITests-dummy.m"; sourceTree = "<group>"; };
 		84E35EFE22D6201696853116A7596F67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89B2339645467705750D5FB368D11557 /* PanoramaView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PanoramaView-prefix.pch"; sourceTree = "<group>"; };
 		8DC2BAD9D09A1742611E59D05287E7FD /* Pods-PanoDemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemoUITests-resources.sh"; sourceTree = "<group>"; };
 		9163598F2F2A33EEFA080E4898800F3C /* Pods-PanoDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemoTests-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		940CDF74491CE5A78AF4BB871FE160F5 /* Pods-PanoDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemo-frameworks.sh"; sourceTree = "<group>"; };
 		97530EE83658EDE669C98B3318B00F19 /* Pods-PanoDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PanoDemoUITests.modulemap"; sourceTree = "<group>"; };
 		9783AAD009D63A69E507EA5A94F1E40E /* Pods-PanoDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PanoDemo-dummy.m"; sourceTree = "<group>"; };
+		9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A356BD2C1E77B573BBAB201ECFFA2D91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B28D1C08FEE96DCB421CC8D9549C73 /* Pods_PanoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemo.framework; path = "Pods-PanoDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0E039A731D984FCD9B14F4038CD4A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD9AB99B50F6212C0A6FC1FECC8924D5 /* Pods-PanoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B2D8E08675565A262B8F33422DE87C61 /* Pods_PanoDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemoTests.framework; path = "Pods-PanoDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40BA6D62FD6AF7E0B679F02712265E5 /* Pods-PanoDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		BA959C3B74FBE942909F6449E64DC48E /* PanoramaView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PanoramaView-dummy.m"; sourceTree = "<group>"; };
 		C2830755715F462D31C4A67806E5E7F4 /* Pods-PanoDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PanoDemo-umbrella.h"; sourceTree = "<group>"; };
-		C71E634B6C0E793AD63B1E35D4823CC9 /* Pods_PanoDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemoTests.framework; path = "Pods-PanoDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E892212C0A7362B63F04D0615B69903E /* Pods_PanoDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemoUITests.framework; path = "Pods-PanoDemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D572D88777377A488993F8090A34F202 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7D429F539F8DA8036989F364883E926 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E2BF6C5D7DC60A1EA1E8F79E7FE0F0E5 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		EAF6F23486B01F387C66F1D4579A2E0C /* PanoramaView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PanoramaView.xcconfig; sourceTree = "<group>"; };
+		EF3C0F505403000B9A05F7DCEB88E515 /* PanoramaView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PanoramaView.framework; path = PanoramaView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4706D70573E1C95E12EA814346F668C /* Pods-PanoDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PanoDemoTests.modulemap"; sourceTree = "<group>"; };
 		F6F46C34B40E875D835C4615EC15ABC4 /* Pods-PanoDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PanoDemoUITests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +97,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D6CC7A33E71050E6214282AD5A31CF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5621DD658B458909F9851D0DD7A3C089 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DC451D936F6C22EC569D990458A146C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,17 +113,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D11B8FEE1540F4F4E0144A7D9484FD30 /* Frameworks */ = {
+		AAC3B57F648270F7A21F24091429A46D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B003E534B3D2F84D5AD5E04B391AA746 /* Foundation.framework in Frameworks */,
+				247FA8D61870919147F1919AA0341A1C /* CoreMotion.framework in Frameworks */,
+				BF4BDBFF33E809A9D4B8E2ECF6BB2093 /* Foundation.framework in Frameworks */,
+				D1125660EBD5F56279C9702BD63EA7D7 /* GLKit.framework in Frameworks */,
+				51A77EF097BF1127D38D6F7F01D85086 /* OpenGLES.framework in Frameworks */,
+				D5774A5B66AF4B1BF2783D8D5DC22142 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBAEAC0BD549384D439E9CD1E3E349DD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A98281D2B7997A98101D126411A92BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF3C0F505403000B9A05F7DCEB88E515 /* PanoramaView.framework */,
+				A7B28D1C08FEE96DCB421CC8D9549C73 /* Pods_PanoDemo.framework */,
+				B2D8E08675565A262B8F33422DE87C61 /* Pods_PanoDemoTests.framework */,
+				07091E16853097031E50EBEDA0585959 /* Pods_PanoDemoUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6DB115CE93DB3ABFC622C96F4F255086 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,40 +157,26 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				82F3232A4DC0EE32047C02316DC49E5A /* Products */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				F5C5FF034F12D1B92B96A3A71CA53C80 /* Pods */,
+				3A98281D2B7997A98101D126411A92BA /* Products */,
 				6DB115CE93DB3ABFC622C96F4F255086 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		82F3232A4DC0EE32047C02316DC49E5A /* Products */ = {
+		895AEF16B9F2E0B2C7491FA767F624EB /* PanoramaView */ = {
 			isa = PBXGroup;
 			children = (
-				164E27439050D01B9C7BEC8931F15CF5 /* Pods_PanoDemo.framework */,
-				C71E634B6C0E793AD63B1E35D4823CC9 /* Pods_PanoDemoTests.framework */,
-				E892212C0A7362B63F04D0615B69903E /* Pods_PanoDemoUITests.framework */,
+				485C79B66301675B0CD6ABFDE82B2EF1 /* PanoramaView.h */,
+				20C743B4B60DDCA977CF854BBAFD7EE5 /* PanoramaView.m */,
+				CD278D267F21ABAF39087A2E2BDA61F3 /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
+			name = PanoramaView;
+			path = PanoramaView;
 			sourceTree = "<group>";
 		};
 		C2957DAEB38AE28027868297063BE9F6 /* Pods-PanoDemo */ = {
@@ -146,6 +195,32 @@
 			);
 			name = "Pods-PanoDemo";
 			path = "Target Support Files/Pods-PanoDemo";
+			sourceTree = "<group>";
+		};
+		CD278D267F21ABAF39087A2E2BDA61F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D572D88777377A488993F8090A34F202 /* Info.plist */,
+				7214A0E90EF3CFE9B1AB39B3EBEB4849 /* PanoramaView.modulemap */,
+				EAF6F23486B01F387C66F1D4579A2E0C /* PanoramaView.xcconfig */,
+				BA959C3B74FBE942909F6449E64DC48E /* PanoramaView-dummy.m */,
+				89B2339645467705750D5FB368D11557 /* PanoramaView-prefix.pch */,
+				3A019CB2D0DA4965A52516A8EB2C880C /* PanoramaView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PanoramaView";
+			sourceTree = "<group>";
+		};
+		DBAEAC0BD549384D439E9CD1E3E349DD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				12AFD58AEE975DFC0D60121F977AB9BD /* CoreMotion.framework */,
+				9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */,
+				E2BF6C5D7DC60A1EA1E8F79E7FE0F0E5 /* GLKit.framework */,
+				0F696BCE5CD44D8CC965F90CD869F1F9 /* OpenGLES.framework */,
+				D7D429F539F8DA8036989F364883E926 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		E11E1A5C1FC7AB3B1B446D24944169EF /* Pods-PanoDemoTests */ = {
@@ -184,14 +259,23 @@
 			path = "Target Support Files/Pods-PanoDemoUITests";
 			sourceTree = "<group>";
 		};
+		F5C5FF034F12D1B92B96A3A71CA53C80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				895AEF16B9F2E0B2C7491FA767F624EB /* PanoramaView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3681DE786B7016589F6BE417CB1B9250 /* Headers */ = {
+		046BCDA441C234241EDFD208AC345A32 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD05D36B23693C602F50960B20F59B5 /* Pods-PanoDemo-umbrella.h in Headers */,
+				FC904F836D0EFDDADC1863E959BCA278 /* PanoramaView-umbrella.h in Headers */,
+				B98581AD256177492F526F1DB923F56E /* PanoramaView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +284,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FD1767314AEAE6678E3518B909AAC1E /* Pods-PanoDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57C1367320397A1754C830664E21D46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				827CA2C22849D69DD90FD8CB53C38177 /* Pods-PanoDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +320,42 @@
 			);
 			name = "Pods-PanoDemoUITests";
 			productName = "Pods-PanoDemoUITests";
-			productReference = E892212C0A7362B63F04D0615B69903E /* Pods_PanoDemoUITests.framework */;
+			productReference = 07091E16853097031E50EBEDA0585959 /* Pods_PanoDemoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41E840C2984994732EAAB8652BE7177F /* PanoramaView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D8BF8F092EA15BB5AC9D043A1FADF7 /* Build configuration list for PBXNativeTarget "PanoramaView" */;
+			buildPhases = (
+				B6D83A49EC0CC95015107B270B046304 /* Sources */,
+				AAC3B57F648270F7A21F24091429A46D /* Frameworks */,
+				046BCDA441C234241EDFD208AC345A32 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PanoramaView;
+			productName = PanoramaView;
+			productReference = EF3C0F505403000B9A05F7DCEB88E515 /* PanoramaView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9CE5D1AD5A3C4AFC8E46A162424181AB /* Pods-PanoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6BDBF39C2AEB44876D15B28E23DFA15 /* Build configuration list for PBXNativeTarget "Pods-PanoDemo" */;
+			buildPhases = (
+				9FB9135179D905DEC3449E141C0BEE4E /* Sources */,
+				8D6CC7A33E71050E6214282AD5A31CF3 /* Frameworks */,
+				E57C1367320397A1754C830664E21D46 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC0336D1892EAEEACA48BBB1F53B254F /* PBXTargetDependency */,
+			);
+			name = "Pods-PanoDemo";
+			productName = "Pods-PanoDemo";
+			productReference = A7B28D1C08FEE96DCB421CC8D9549C73 /* Pods_PanoDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BCD2A766E79E9664E3D5F2E14B7D48CC /* Pods-PanoDemoTests */ = {
@@ -245,24 +372,7 @@
 			);
 			name = "Pods-PanoDemoTests";
 			productName = "Pods-PanoDemoTests";
-			productReference = C71E634B6C0E793AD63B1E35D4823CC9 /* Pods_PanoDemoTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EF5E709B2B8D9B2906B2D9AA0D256139 /* Pods-PanoDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6F20DEA46BB5ADBAE217ED7FAF2D2CE8 /* Build configuration list for PBXNativeTarget "Pods-PanoDemo" */;
-			buildPhases = (
-				D8F93F5EEB9DE4D67A745E104C4E9144 /* Sources */,
-				D11B8FEE1540F4F4E0144A7D9484FD30 /* Frameworks */,
-				3681DE786B7016589F6BE417CB1B9250 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-PanoDemo";
-			productName = "Pods-PanoDemo";
-			productReference = 164E27439050D01B9C7BEC8931F15CF5 /* Pods_PanoDemo.framework */;
+			productReference = B2D8E08675565A262B8F33422DE87C61 /* Pods_PanoDemoTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -282,11 +392,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 82F3232A4DC0EE32047C02316DC49E5A /* Products */;
+			productRefGroup = 3A98281D2B7997A98101D126411A92BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF5E709B2B8D9B2906B2D9AA0D256139 /* Pods-PanoDemo */,
+				41E840C2984994732EAAB8652BE7177F /* PanoramaView */,
+				9CE5D1AD5A3C4AFC8E46A162424181AB /* Pods-PanoDemo */,
 				BCD2A766E79E9664E3D5F2E14B7D48CC /* Pods-PanoDemoTests */,
 				3D65D26C5EB6638251BE516F9444E198 /* Pods-PanoDemoUITests */,
 			);
@@ -310,15 +421,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8F93F5EEB9DE4D67A745E104C4E9144 /* Sources */ = {
+		9FB9135179D905DEC3449E141C0BEE4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A2858607379DD7AE7C6A0283E381DF /* Pods-PanoDemo-dummy.m in Sources */,
+				62D7BB1CCF6AB2E9275DDB61D485A81A /* Pods-PanoDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D83A49EC0CC95015107B270B046304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD1FCD6217CA94E16A11D7ED2239102 /* PanoramaView-dummy.m in Sources */,
+				AD24DE37CF8D2FFBCCB028C44C8A3BE4 /* PanoramaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC0336D1892EAEEACA48BBB1F53B254F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PanoramaView;
+			target = 41E840C2984994732EAAB8652BE7177F /* PanoramaView */;
+			targetProxy = 911C49D0D0E1B09179895C563315525C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
@@ -400,6 +529,38 @@
 			};
 			name = Release;
 		};
+		2C7F9FD03AC1D2246B007928C712E6F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF6F23486B01F387C66F1D4579A2E0C /* PanoramaView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PanoramaView/PanoramaView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PanoramaView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PanoramaView/PanoramaView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PanoramaView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		40BF9976D780AE42F9C65FF6E97F5479 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 12B7837DA5106119024D3D0AF1FDC2B9 /* Pods-PanoDemoUITests.release.xcconfig */;
@@ -434,41 +595,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		4109AAED31B0423F4C3F294B9541B7AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD9AB99B50F6212C0A6FC1FECC8924D5 /* Pods-PanoDemo.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PanoDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PanoDemo/Pods-PanoDemo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PanoDemo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -510,7 +636,42 @@
 			};
 			name = Release;
 		};
-		A5E4F45DA616FA0FA92D9082C9E6D279 /* Release */ = {
+		C2356A02A41C1937DE450B47EDE34C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD9AB99B50F6212C0A6FC1FECC8924D5 /* Pods-PanoDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PanoDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PanoDemo/Pods-PanoDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PanoDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC24DEE52C13B055377686E853FB7E57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C757739C4479954FF1B46F509D61A22 /* Pods-PanoDemo.release.xcconfig */;
 			buildSettings = {
@@ -615,6 +776,38 @@
 			};
 			name = Debug;
 		};
+		F0B9E46DAC703E2C76AB4388C2E28B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF6F23486B01F387C66F1D4579A2E0C /* PanoramaView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PanoramaView/PanoramaView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PanoramaView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PanoramaView/PanoramaView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PanoramaView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -645,11 +838,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F20DEA46BB5ADBAE217ED7FAF2D2CE8 /* Build configuration list for PBXNativeTarget "Pods-PanoDemo" */ = {
+		E6BDBF39C2AEB44876D15B28E23DFA15 /* Build configuration list for PBXNativeTarget "Pods-PanoDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4109AAED31B0423F4C3F294B9541B7AA /* Debug */,
-				A5E4F45DA616FA0FA92D9082C9E6D279 /* Release */,
+				C2356A02A41C1937DE450B47EDE34C78 /* Debug */,
+				CC24DEE52C13B055377686E853FB7E57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8D8BF8F092EA15BB5AC9D043A1FADF7 /* Build configuration list for PBXNativeTarget "PanoramaView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C7F9FD03AC1D2246B007928C712E6F5 /* Debug */,
+				F0B9E46DAC703E2C76AB4388C2E28B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
