@@ -19,6 +19,7 @@ class SphereViewController: GLKViewController {
         panoramaView?.orientToDevice = true     // Use motion sensors to pan
         panoramaView?.pinchToZoom = true         // Use pinch gesture to zoom
         panoramaView?.showTouches = true         // Show touches
+        panoramaView?.setVRModeExt(false)
         self.view = panoramaView
     }
     
