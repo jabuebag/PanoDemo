@@ -14,13 +14,27 @@ class SphereViewController: GLKViewController {
     var panoramaView = PanoramaView()
     
     override func viewDidLoad() {
-        panoramaView?.setImage("office21.jpg")
+        panoramaView?.setImage("test13.jpg")
         panoramaView?.touchToPan = false          // Use touch input to pan
         panoramaView?.orientToDevice = true     // Use motion sensors to pan
-        panoramaView?.pinchToZoom = true         // Use pinch gesture to zoom
-        panoramaView?.showTouches = true         // Show touches
-        panoramaView?.setVRModeExt(false)
+        panoramaView?.pinchToZoom = false         // Use pinch gesture to zoom
+        panoramaView?.showTouches = false         // Show touches
+        panoramaView?.setVRModeExt(true)
         self.view = panoramaView
+        
+//        let btn: UIButton = UIButton(frame: CGRect(x: 100, y: 400, width: 100, height: 50))
+//        btn.backgroundColor = UIColor.green
+//        btn.setTitle("Click Me", for: .normal)
+//        btn.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+//        btn.tag = 1
+//        self.view.addSubview(btn)
+    }
+    
+    func buttonAction(sender: UIButton!) {
+        let btnsendtag: UIButton = sender
+        if btnsendtag.tag == 1 {
+            //do anything here
+        }
     }
     
     override func glkView(_ view: GLKView, drawIn rect: CGRect) {
