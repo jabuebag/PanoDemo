@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010ED1321DE3CC8B009D414B /* test12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 010ED1311DE3CC8B009D414B /* test12.jpg */; };
+		010ED13A1DE3D419009D414B /* test13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 010ED1391DE3D419009D414B /* test13.jpg */; };
 		017791541DE10A0500FAD266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791531DE10A0500FAD266 /* AppDelegate.swift */; };
 		017791561DE10A0500FAD266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791551DE10A0500FAD266 /* ViewController.swift */; };
 		017791591DE10A0500FAD266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017791571DE10A0500FAD266 /* Main.storyboard */; };
@@ -17,7 +19,6 @@
 		017791821DE1132A00FAD266 /* PanoramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791811DE1132A00FAD266 /* PanoramaViewController.swift */; };
 		017791851DE114AB00FAD266 /* PanoramaViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791831DE114AB00FAD266 /* PanoramaViewer.swift */; };
 		017791861DE114AB00FAD266 /* PanoramaIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791841DE114AB00FAD266 /* PanoramaIndicator.swift */; };
-		0177918E1DE11AF200FAD266 /* London_Tower_Bridge_Sunset_Cityscape_Panorama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0177918D1DE11AF200FAD266 /* London_Tower_Bridge_Sunset_Cityscape_Panorama.jpg */; };
 		017791911DE1267E00FAD266 /* office.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017791901DE1267E00FAD266 /* office.jpg */; };
 		017791951DE126BC00FAD266 /* office21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017791941DE126BC00FAD266 /* office21.jpg */; };
 		017791971DE12B8C00FAD266 /* SphereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791961DE12B8C00FAD266 /* SphereViewController.swift */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010ED1311DE3CC8B009D414B /* test12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test12.jpg; sourceTree = "<group>"; };
+		010ED1391DE3D419009D414B /* test13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test13.jpg; sourceTree = "<group>"; };
 		017791501DE10A0500FAD266 /* PanoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		017791531DE10A0500FAD266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		017791551DE10A0500FAD266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +69,6 @@
 		017791811DE1132A00FAD266 /* PanoramaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaViewController.swift; sourceTree = "<group>"; };
 		017791831DE114AB00FAD266 /* PanoramaViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaViewer.swift; sourceTree = "<group>"; };
 		017791841DE114AB00FAD266 /* PanoramaIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaIndicator.swift; sourceTree = "<group>"; };
-		0177918D1DE11AF200FAD266 /* London_Tower_Bridge_Sunset_Cityscape_Panorama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = London_Tower_Bridge_Sunset_Cityscape_Panorama.jpg; sourceTree = "<group>"; };
 		017791901DE1267E00FAD266 /* office.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = office.jpg; sourceTree = "<group>"; };
 		017791941DE126BC00FAD266 /* office21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = office21.jpg; sourceTree = "<group>"; };
 		017791961DE12B8C00FAD266 /* SphereViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphereViewController.swift; sourceTree = "<group>"; };
@@ -190,9 +192,10 @@
 		0177918F1DE11B1E00FAD266 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				010ED1391DE3D419009D414B /* test13.jpg */,
+				010ED1311DE3CC8B009D414B /* test12.jpg */,
 				017791941DE126BC00FAD266 /* office21.jpg */,
 				017791901DE1267E00FAD266 /* office.jpg */,
-				0177918D1DE11AF200FAD266 /* London_Tower_Bridge_Sunset_Cityscape_Panorama.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -347,10 +350,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0177915E1DE10A0500FAD266 /* LaunchScreen.storyboard in Resources */,
-				0177918E1DE11AF200FAD266 /* London_Tower_Bridge_Sunset_Cityscape_Panorama.jpg in Resources */,
 				0177915B1DE10A0500FAD266 /* Assets.xcassets in Resources */,
 				017791911DE1267E00FAD266 /* office.jpg in Resources */,
+				010ED1321DE3CC8B009D414B /* test12.jpg in Resources */,
 				017791951DE126BC00FAD266 /* office21.jpg in Resources */,
+				010ED13A1DE3D419009D414B /* test13.jpg in Resources */,
 				017791591DE10A0500FAD266 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
