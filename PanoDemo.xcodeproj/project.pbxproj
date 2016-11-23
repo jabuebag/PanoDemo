@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		010ED1321DE3CC8B009D414B /* test12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 010ED1311DE3CC8B009D414B /* test12.jpg */; };
 		010ED13A1DE3D419009D414B /* test13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 010ED1391DE3D419009D414B /* test13.jpg */; };
+		01309B9C1DE6417A00E4B1BE /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01309B9B1DE6417A00E4B1BE /* ImageUtil.swift */; };
 		01595A441DE5151600CB82B5 /* ImageProcessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01595A431DE5151600CB82B5 /* ImageProcessController.swift */; };
 		01595A461DE5180A00CB82B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01595A451DE5180A00CB82B5 /* Main.storyboard */; };
 		017791541DE10A0500FAD266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791531DE10A0500FAD266 /* AppDelegate.swift */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		010ED1311DE3CC8B009D414B /* test12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test12.jpg; sourceTree = "<group>"; };
 		010ED1391DE3D419009D414B /* test13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test13.jpg; sourceTree = "<group>"; };
+		01309B9B1DE6417A00E4B1BE /* ImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
 		01595A431DE5151600CB82B5 /* ImageProcessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessController.swift; sourceTree = "<group>"; };
 		01595A451DE5180A00CB82B5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		017791501DE10A0500FAD266 /* PanoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +198,7 @@
 			children = (
 				017791831DE114AB00FAD266 /* PanoramaViewer.swift */,
 				017791841DE114AB00FAD266 /* PanoramaIndicator.swift */,
+				01309B9B1DE6417A00E4B1BE /* ImageUtil.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				017791561DE10A0500FAD266 /* ViewController.swift in Sources */,
 				017791971DE12B8C00FAD266 /* SphereViewController.swift in Sources */,
 				017791541DE10A0500FAD266 /* AppDelegate.swift in Sources */,
+				01309B9C1DE6417A00E4B1BE /* ImageUtil.swift in Sources */,
 				017791821DE1132A00FAD266 /* PanoramaViewController.swift in Sources */,
 				01595A441DE5151600CB82B5 /* ImageProcessController.swift in Sources */,
 				017791861DE114AB00FAD266 /* PanoramaIndicator.swift in Sources */,
