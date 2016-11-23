@@ -15,6 +15,9 @@ class ImageProcessController: UIViewController {
     @IBOutlet weak var bottomReflectionImg: UIImageView!
     @IBOutlet weak var bottomBtn: UIButton!
     @IBOutlet weak var topBtn: UIButton!
+    @IBOutlet weak var resizeBtn: UIButton!
+    @IBOutlet weak var sitichBtn: UIButton!
+    @IBOutlet weak var stitchedImg: UIImageView!
     
     fileprivate let reflectionHeight: CGFloat = 1.00
     fileprivate var upsideDown: Bool = true
@@ -28,6 +31,7 @@ class ImageProcessController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func bottomReflectionAction(_ sender: Any) {
         upsideDown = true
         let reflectionHeight = Int((self.originImg.image?.size.height)! * self.reflectionHeight)
@@ -38,6 +42,18 @@ class ImageProcessController: UIViewController {
         upsideDown = false
         let reflectionHeight = Int((self.originImg.image?.size.height)! * self.reflectionHeight)
         self.topReflectionImg.image = self.reflectedImage(originImg, withHeight: reflectionHeight)
+    }
+    
+    @IBAction func resizeAction(_ sender: Any) {
+        originImg.image = resizeImage(image: originImg.image!, newWidth: 4096.0)
+    }
+    
+    @IBAction func stitchAction(_ sender: Any) {
+        var stitichPhotos: [UIImage] = []
+        stitichPhotos.append(topReflectionImg.image!)
+        stitichPhotos.append(originImg.image!)
+        stitichPhotos.append(bottomReflectionImg.image!)
+        stitchedImg.image = stitchImages(images: stitichPhotos, isVertical: true)
     }
     
     fileprivate func CreateGradientImage(_ pixelsWide: Int, _ pixelsHigh: Int) -> CGImage? {
@@ -121,6 +137,52 @@ class ImageProcessController: UIViewController {
         // image is retained by the property setting above, so we can release the original
         
         return theImage
+    }
+    
+    fileprivate func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
+        
+        let scale = newWidth / image.size.width
+        let newHeight = image.size.height * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        image.draw(in: CGRect(x: 0, y:0, width: newWidth, height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage!
+    }
+    
+    fileprivate func stitchImages(images: [UIImage], isVertical: Bool) -> UIImage {
+        var stitchedImages : UIImage!
+        if images.count > 0 {
+            var maxWidth = CGFloat(0), maxHeight = CGFloat(0)
+            for image in images {
+                if image.size.width > maxWidth {
+                    maxWidth = image.size.width
+                }
+                if image.size.height > maxHeight {
+                    maxHeight = image.size.height
+                }
+            }
+            var totalSize : CGSize, maxSize = CGSize(width: maxWidth, height: maxHeight)
+            if isVertical {
+                totalSize = CGSize(width: maxSize.width, height: maxSize.height * (CGFloat)(images.count))
+            } else {
+                totalSize = CGSize(width: maxSize.width  * (CGFloat)(images.count), height: maxSize.height)
+            }
+            UIGraphicsBeginImageContext(totalSize)
+            for image in images {
+                var rect : CGRect, offset = (CGFloat)((images as NSArray).index(of: image))
+                if isVertical {
+                    rect = CGRect(x: 0, y: maxSize.height * offset, width: maxSize.width, height: maxSize.height)
+                } else {
+                    rect = CGRect(x: maxSize.width * offset, y: 0 , width: maxSize.width, height: maxSize.height)
+                }
+                image.draw(in: rect)
+            }
+            stitchedImages = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+        }
+        return stitchedImages
     }
     
     
