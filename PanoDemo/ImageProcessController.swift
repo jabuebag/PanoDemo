@@ -18,6 +18,8 @@ class ImageProcessController: UIViewController {
     @IBOutlet weak var resizeBtn: UIButton!
     @IBOutlet weak var sitichBtn: UIButton!
     @IBOutlet weak var stitchedImg: UIImageView!
+    @IBOutlet weak var loadImgBtn: UIButton!
+    @IBOutlet weak var localLoadImg: UIImageView!
     
     var imageUtil = ImageUtil()
     fileprivate let reflectionHeight: CGFloat = 1.00
@@ -55,5 +57,10 @@ class ImageProcessController: UIViewController {
         stitichPhotos.append(originImg.image!)
         stitichPhotos.append(bottomReflectionImg.image!)
         stitchedImg.image = imageUtil.stitchImages(images: stitichPhotos, isVertical: true)
+        imageUtil.saveToFile(image: stitchedImg.image!)
+    }
+    
+    @IBAction func loadAction(_ sender: Any) {
+        localLoadImg.image = imageUtil.readFromFile(fileName: "testsave1.jpg")
     }
 }

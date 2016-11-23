@@ -135,4 +135,34 @@ class ImageUtil {
         }
         return stitchedImages
     }
+    
+    func saveToFile(image: UIImage) {
+        let documentsDirectoryURL = try! FileManager().url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        // create a name for your image
+        let fileURL = documentsDirectoryURL.appendingPathComponent("testsave1.jpg")
+        print(fileURL.path)
+        if !FileManager.default.fileExists(atPath: fileURL.path) {
+            do {
+                try UIImageJPEGRepresentation(image, 1.0)!.write(to: fileURL)
+                print("Image Added Successfully!")
+            } catch {
+                print(error)
+            }
+        } else {
+            print("Image already exist!")
+        }
+    }
+    
+    func readFromFile(fileName: String) -> UIImage {
+        var returnImg: UIImage?
+        let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let filePath = documentsDirectoryURL.appendingPathComponent(fileName).path
+        if FileManager.default.fileExists(atPath: filePath) {
+            print("Read file successfully!")
+            return UIImage(contentsOfFile: filePath)!
+        } else {
+            print("No such file in directory!")
+            return returnImg!
+        }
+    }
 }
