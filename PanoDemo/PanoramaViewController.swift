@@ -13,7 +13,7 @@ class PanoramaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let motionView:PanoramaViewer = PanoramaViewer(frame: self.view.bounds)
-        motionView.setImage(UIImage(named:"office")!)
+        motionView.setImage(UIImage(named:"office.jpg")!)
         self.view.addSubview(motionView)
     }
     
