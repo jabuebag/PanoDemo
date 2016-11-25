@@ -102,6 +102,14 @@ class ImageUtil {
         return newImage!
     }
     
+    func resizeImageWithRatio(image: UIImage, newWidth: CGFloat, newHeight: CGFloat) -> UIImage {
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        image.draw(in: CGRect(x: 0, y:0, width: newWidth, height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!
+    }
+    
     func stitchImages(images: [UIImage], isVertical: Bool) -> UIImage {
         var stitchedImages : UIImage!
         if images.count > 0 {

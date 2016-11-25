@@ -61,6 +61,8 @@ class ImageProcessController: UIViewController {
     }
     
     @IBAction func loadAction(_ sender: Any) {
-        localLoadImg.image = imageUtil.readFromFile(fileName: "testsave1.jpg")
+        // localLoadImg.image = imageUtil.readFromFile(fileName: "testsave1.jpg")
+        localLoadImg.image = imageUtil.resizeImageWithRatio(image: imageUtil.readFromFile(fileName: "testsave1.jpg"), newWidth: 4096, newHeight: 2048)
+        print(localLoadImg.image?.size)
     }
 }
