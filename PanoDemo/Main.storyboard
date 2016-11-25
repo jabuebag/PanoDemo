@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9ui-s0-Xlz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -211,7 +211,39 @@
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3EN-eL-5b1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="223" y="775"/>
+            <point key="canvasLocation" x="137" y="775"/>
+        </scene>
+        <!--Video Shooter Controller-->
+        <scene sceneID="aVN-au-31W">
+            <objects>
+                <viewController id="9ui-s0-Xlz" customClass="VideoShooterController" customModule="PanoDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LVT-Q4-oU4"/>
+                        <viewControllerLayoutGuide type="bottom" id="xmZ-pW-tEu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bFc-Eh-nxL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Ks-BY-ceM">
+                                <rect key="frame" x="0.0" y="123" width="375" height="206"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Ks-BY-ceM" firstAttribute="top" secondItem="LVT-Q4-oU4" secondAttribute="bottom" constant="103" id="2yy-Rh-1SX"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ks-BY-ceM" secondAttribute="trailing" id="YGY-9k-RMd"/>
+                            <constraint firstItem="1Ks-BY-ceM" firstAttribute="leading" secondItem="bFc-Eh-nxL" secondAttribute="leading" id="e3F-Pt-Qhl"/>
+                            <constraint firstItem="xmZ-pW-tEu" firstAttribute="top" secondItem="1Ks-BY-ceM" secondAttribute="bottom" constant="338" id="oSp-zU-LNS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="projectImg" destination="1Ks-BY-ceM" id="lo4-OW-chV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xTN-7Y-h87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1159.2" y="756.97151424287858"/>
         </scene>
     </scenes>
     <resources>
