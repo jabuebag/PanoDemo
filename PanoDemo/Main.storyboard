@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9ui-s0-Xlz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EWd-Ia-8BF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -192,6 +192,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNx-Yl-UqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-807.20000000000005" y="774.96251874062978"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="bm9-sZ-QvN">
+            <objects>
+                <viewController id="EWd-Ia-8BF" customClass="MainViewController" customModule="PanoDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nFB-5J-31T"/>
+                        <viewControllerLayoutGuide type="bottom" id="naO-eQ-W29"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gwG-RT-k2v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BY2-6c-OcR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pbz-Yg-qJF"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="PanoDemo" id="x0B-P1-G86"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="saX-20-M5Z">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PanoCell" rowHeight="150" id="naL-sL-2I7" customClass="MainTableViewCell" customModule="PanoDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="naL-sL-2I7" id="XxX-Un-xAQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UtD-cM-bN6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="UtD-cM-bN6" secondAttribute="trailing" id="0qj-Qg-gVq"/>
+                                                <constraint firstItem="UtD-cM-bN6" firstAttribute="top" secondItem="XxX-Un-xAQ" secondAttribute="top" id="NC0-Gl-IrG"/>
+                                                <constraint firstItem="UtD-cM-bN6" firstAttribute="leading" secondItem="XxX-Un-xAQ" secondAttribute="leading" id="VMF-hT-gqU"/>
+                                                <constraint firstAttribute="bottom" secondItem="UtD-cM-bN6" secondAttribute="bottom" constant="4" id="rIg-wG-lpK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="panoImg" destination="UtD-cM-bN6" id="Yev-h2-5pt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="EWd-Ia-8BF" id="efd-77-tJD"/>
+                                    <outlet property="delegate" destination="EWd-Ia-8BF" id="E0P-w0-CpU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="saX-20-M5Z" firstAttribute="trailing" secondItem="BY2-6c-OcR" secondAttribute="trailing" id="Nn5-NB-spr"/>
+                            <constraint firstItem="saX-20-M5Z" firstAttribute="top" secondItem="BY2-6c-OcR" secondAttribute="bottom" id="POr-DY-bxI"/>
+                            <constraint firstAttribute="trailing" secondItem="BY2-6c-OcR" secondAttribute="trailing" id="WYn-vB-KrH"/>
+                            <constraint firstItem="saX-20-M5Z" firstAttribute="bottom" secondItem="naO-eQ-W29" secondAttribute="top" id="Ybc-16-v99"/>
+                            <constraint firstItem="BY2-6c-OcR" firstAttribute="leading" secondItem="gwG-RT-k2v" secondAttribute="leading" id="oCB-pd-VIz"/>
+                            <constraint firstItem="BY2-6c-OcR" firstAttribute="top" secondItem="nFB-5J-31T" secondAttribute="bottom" id="wBL-nc-Shm"/>
+                            <constraint firstItem="saX-20-M5Z" firstAttribute="leading" secondItem="BY2-6c-OcR" secondAttribute="leading" id="x2H-U8-0QG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYY-4S-raW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-706.39999999999998" y="1477.5112443778112"/>
         </scene>
         <!--GLKit View Controller-->
         <scene sceneID="UD0-Ev-wdX">
