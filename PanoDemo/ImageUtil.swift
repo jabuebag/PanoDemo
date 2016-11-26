@@ -165,6 +165,7 @@ class ImageUtil {
         var returnImg: UIImage?
         let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let filePath = documentsDirectoryURL.appendingPathComponent(fileName).path
+        print(filePath)
         if FileManager.default.fileExists(atPath: filePath) {
             print("Read file successfully!")
             return UIImage(contentsOfFile: filePath)!

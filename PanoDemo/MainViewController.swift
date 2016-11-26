@@ -40,12 +40,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("test")
         tableView.deselectRow(at: indexPath, animated: true)
-        // performSegue(withIdentifier: "presentPanoView", sender: self)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc: SphereViewController = storyboard.instantiateViewController(withIdentifier: "SphereViewController") as! SphereViewController
-        self.present(vc, animated: true, completion: nil)
-        print("testend")
+        let sphereView: SphereViewController = storyboard.instantiateViewController(withIdentifier: "SphereViewController") as! SphereViewController
+        sphereView.panoModel = panoArray[indexPath.row]
+        self.present(sphereView, animated: true, completion: nil)
     }
 }
