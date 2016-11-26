@@ -30,12 +30,22 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return panoArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MainTableViewCell = tableView.dequeueReusableCell(withIdentifier: "PanoCell", for: indexPath) as! MainTableViewCell
         cell.panoImg.image = panoArray[indexPath.row].originImg
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("test")
+        tableView.deselectRow(at: indexPath, animated: true)
+        // performSegue(withIdentifier: "presentPanoView", sender: self)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc: SphereViewController = storyboard.instantiateViewController(withIdentifier: "SphereViewController") as! SphereViewController
+        self.present(vc, animated: true, completion: nil)
+        print("testend")
     }
 }

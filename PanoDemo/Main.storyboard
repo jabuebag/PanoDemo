@@ -31,7 +31,7 @@
         <!--Image Process Controller-->
         <scene sceneID="3ch-Rn-p55">
             <objects>
-                <viewController storyboardIdentifier="ImageProcessController" id="bXq-81-JxW" customClass="ImageProcessController" customModule="PanoDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ImageProcessController" storyboardIdentifier="ImageProcessController" id="bXq-81-JxW" customClass="ImageProcessController" customModule="PanoDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LkP-Bs-SoI"/>
                         <viewControllerLayoutGuide type="bottom" id="DLt-U9-juf"/>
@@ -214,7 +214,7 @@
                                     <navigationItem title="PanoDemo" id="x0B-P1-G86"/>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="saX-20-M5Z">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" canCancelContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="saX-20-M5Z">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -281,7 +281,7 @@
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3EN-eL-5b1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="775"/>
+            <point key="canvasLocation" x="156" y="1033"/>
         </scene>
         <!--Video Shooter Controller-->
         <scene sceneID="aVN-au-31W">
