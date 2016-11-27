@@ -147,7 +147,7 @@ class ImageUtil {
     func saveToFile(image: UIImage) {
         let documentsDirectoryURL = try! FileManager().url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         // create a name for your image
-        let fileURL = documentsDirectoryURL.appendingPathComponent("testsave1.jpg")
+        let fileURL = documentsDirectoryURL.appendingPathComponent("testsave2.jpg")
         print(fileURL.path)
         if !FileManager.default.fileExists(atPath: fileURL.path) {
             do {

@@ -25,18 +25,17 @@
 		017791851DE114AB00FAD266 /* PanoramaViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791831DE114AB00FAD266 /* PanoramaViewer.swift */; };
 		017791861DE114AB00FAD266 /* PanoramaIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791841DE114AB00FAD266 /* PanoramaIndicator.swift */; };
 		017791911DE1267E00FAD266 /* office.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017791901DE1267E00FAD266 /* office.jpg */; };
-		017791951DE126BC00FAD266 /* office21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017791941DE126BC00FAD266 /* office21.jpg */; };
 		017791971DE12B8C00FAD266 /* SphereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791961DE12B8C00FAD266 /* SphereViewController.swift */; };
 		017791D51DE1410700FAD266 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017791D41DE1410700FAD266 /* OpenGLES.framework */; };
 		017791D91DE1414200FAD266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017791D81DE1414200FAD266 /* Foundation.framework */; };
 		017791DB1DE1414F00FAD266 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017791DA1DE1414F00FAD266 /* CoreGraphics.framework */; };
 		017791DD1DE1415E00FAD266 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017791DC1DE1415E00FAD266 /* UIKit.framework */; };
 		017791EE1DE186D200FAD266 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017791D61DE1412E00FAD266 /* GLKit.framework */; };
+		01A9E3581DEA87DD00D6231B /* dining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01A9E3571DEA87DD00D6231B /* dining.jpg */; };
 		01C51B811DE233160072F22D /* PanoramaView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C51B801DE233160072F22D /* PanoramaView.framework */; };
 		01FCE5351DE8CF72005E232C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCE5341DE8CF72005E232C /* MainViewController.swift */; };
 		01FCE53B1DE8EA56005E232C /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCE53A1DE8EA56005E232C /* MainTableViewCell.swift */; };
 		01FCE53D1DE8F0EE005E232C /* PanoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCE53C1DE8F0EE005E232C /* PanoModel.swift */; };
-		01FCE5401DE8F670005E232C /* dining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FCE53F1DE8F670005E232C /* dining.jpg */; };
 		61EA289FED5052ECFAA07736 /* Pods_PanoDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A9534054409D7AC44FC3F0 /* Pods_PanoDemoUITests.framework */; };
 		741D0D323E3F43D786009183 /* Pods_PanoDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791183105981AE023F4577A8 /* Pods_PanoDemoTests.framework */; };
 		E924D7F0378113A7C8F77D1A /* Pods_PanoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF6B1934C85162D06915A7F /* Pods_PanoDemo.framework */; };
@@ -84,18 +83,17 @@
 		017791831DE114AB00FAD266 /* PanoramaViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaViewer.swift; sourceTree = "<group>"; };
 		017791841DE114AB00FAD266 /* PanoramaIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaIndicator.swift; sourceTree = "<group>"; };
 		017791901DE1267E00FAD266 /* office.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = office.jpg; sourceTree = "<group>"; };
-		017791941DE126BC00FAD266 /* office21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = office21.jpg; sourceTree = "<group>"; };
 		017791961DE12B8C00FAD266 /* SphereViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphereViewController.swift; sourceTree = "<group>"; };
 		017791D41DE1410700FAD266 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		017791D61DE1412E00FAD266 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		017791D81DE1414200FAD266 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		017791DA1DE1414F00FAD266 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		017791DC1DE1415E00FAD266 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01A9E3571DEA87DD00D6231B /* dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dining.jpg; sourceTree = "<group>"; };
 		01C51B801DE233160072F22D /* PanoramaView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PanoramaView.framework; path = "Pods/../build/Debug-iphoneos/PanoramaView/PanoramaView.framework"; sourceTree = "<group>"; };
 		01FCE5341DE8CF72005E232C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		01FCE53A1DE8EA56005E232C /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		01FCE53C1DE8F0EE005E232C /* PanoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoModel.swift; sourceTree = "<group>"; };
-		01FCE53F1DE8F670005E232C /* dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dining.jpg; sourceTree = "<group>"; };
 		29E70A87FAC1102447C4B32D /* Pods-PanoDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanoDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanoDemoTests/Pods-PanoDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E513445051476EB452696CD /* Pods-PanoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanoDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanoDemo/Pods-PanoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4134975AE6323E35D2EF6567 /* Pods-PanoDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanoDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PanoDemoTests/Pods-PanoDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -225,11 +223,10 @@
 		0177918F1DE11B1E00FAD266 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				01FCE53F1DE8F670005E232C /* dining.jpg */,
+				01A9E3571DEA87DD00D6231B /* dining.jpg */,
 				01309BA11DE6793C00E4B1BE /* haha.jpg */,
 				010ED1391DE3D419009D414B /* test13.jpg */,
 				010ED1311DE3CC8B009D414B /* test12.jpg */,
-				017791941DE126BC00FAD266 /* office21.jpg */,
 				017791901DE1267E00FAD266 /* office.jpg */,
 			);
 			name = Images;
@@ -392,14 +389,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01FCE5401DE8F670005E232C /* dining.jpg in Resources */,
 				01595A461DE5180A00CB82B5 /* Main.storyboard in Resources */,
 				01309BA21DE6793C00E4B1BE /* haha.jpg in Resources */,
+				01A9E3581DEA87DD00D6231B /* dining.jpg in Resources */,
 				0177915E1DE10A0500FAD266 /* LaunchScreen.storyboard in Resources */,
 				0177915B1DE10A0500FAD266 /* Assets.xcassets in Resources */,
 				017791911DE1267E00FAD266 /* office.jpg in Resources */,
 				010ED1321DE3CC8B009D414B /* test12.jpg in Resources */,
-				017791951DE126BC00FAD266 /* office21.jpg in Resources */,
 				010ED13A1DE3D419009D414B /* test13.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
