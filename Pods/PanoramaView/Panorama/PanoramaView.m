@@ -138,8 +138,10 @@ GLKQuaternion GLKQuaternionFromTwoVectors(GLKVector3 u, GLKVector3 v){
 -(void) setVRModeExt:(BOOL)VRModeHa{
     _VRModeHa = VRModeHa;
     if(_VRModeHa){
+        _fieldOfView = 45 + 45 * atanf(_aspectRatio); // hell ya
         _aspectRatio = self.frame.size.width/(self.frame.size.height*0.5);
         [self rebuildProjectionMatrix];
+        _offsetMatrix = GLKMatrix4Identity;
     } else{
         _aspectRatio = self.frame.size.width/self.frame.size.height;
         [self rebuildProjectionMatrix];
