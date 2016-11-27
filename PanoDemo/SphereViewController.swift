@@ -21,7 +21,9 @@ class SphereViewController: GLKViewController {
     var panoModel: PanoModel?
     
     override func viewDidLoad() {
-        panoramaView?.setImage("test12.jpg")
+//        let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+//        let filePath = documentsDirectoryURL.appendingPathComponent("testsave2.jpg").path
+        panoramaView?.setImage(panoModel?.panoName)
         panoramaView?.touchToPan = false
         panoramaView?.orientToDevice = true
         panoramaView?.pinchToZoom = false

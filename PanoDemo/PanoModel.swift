@@ -11,21 +11,14 @@ import UIKit
 class PanoModel {
     
     var name: String
-    var originImg: UIImage?
-    var processedImg: UIImage?
+    var panoName: String?
     
     init(name: String) {
         self.name = name
     }
     
-    init(name: String, originImg: UIImage) {
+    init(name: String, panoName: String) {
         self.name = name
-        self.originImg = originImg
-    }
-    
-    init(name: String, originImg: UIImage, processedImg: UIImage) {
-        self.name = name
-        self.originImg = originImg
-        self.processedImg = processedImg
+        self.panoName = panoName
     }
 }

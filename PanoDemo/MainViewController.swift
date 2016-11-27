@@ -14,8 +14,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var officePano = PanoModel(name: "office", originImg: UIImage(named: "office.jpg")!)
-        var diningPano = PanoModel(name: "dining", originImg: UIImage(named: "dining.jpg")!)
+        var officePano = PanoModel(name: "office.jpg", panoName: "test12.jpg")
+        var diningPano = PanoModel(name: "dining.jpg", panoName: "dining.jpg")
         panoArray.append(officePano)
         panoArray.append(diningPano)
     }
@@ -35,7 +35,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MainTableViewCell = tableView.dequeueReusableCell(withIdentifier: "PanoCell", for: indexPath) as! MainTableViewCell
-        cell.panoImg.image = panoArray[indexPath.row].originImg
+        cell.panoImg.image = UIImage(named: panoArray[indexPath.row].name)
         return cell
     }
     
