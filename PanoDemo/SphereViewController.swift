@@ -25,9 +25,9 @@ class SphereViewController: GLKViewController {
 //        let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
 //        let filePath = documentsDirectoryURL.appendingPathComponent("testsave2.jpg").path
         panoramaView?.setImage(panoModel?.panoName)
-        panoramaView?.touchToPan = false
+        panoramaView?.touchToPan = true
         panoramaView?.orientToDevice = true
-        panoramaView?.pinchToZoom = false
+        panoramaView?.pinchToZoom = true
         panoramaView?.showTouches = false
         panoramaView?.setVRModeExt(false)
         self.view = panoramaView
@@ -57,9 +57,13 @@ class SphereViewController: GLKViewController {
     
     func changeMode(sender: UIButton!) {
         if isVRMode {
+            panoramaView?.touchToPan = true
+            panoramaView?.pinchToZoom = true
             panoramaView?.setVRModeExt(false)
             isVRMode = false
         } else {
+            panoramaView?.touchToPan = false
+            panoramaView?.pinchToZoom = false
             panoramaView?.setVRModeExt(true)
             isVRMode = true
         }
