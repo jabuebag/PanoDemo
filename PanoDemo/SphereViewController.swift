@@ -17,6 +17,7 @@ class SphereViewController: GLKViewController {
     var btnVRReturn: UIButton?
     
     var isVRMode:Bool = false
+    var clearScreen = false
     
     var panoModel: PanoModel?
     
@@ -33,12 +34,18 @@ class SphereViewController: GLKViewController {
         
         // add change to VR mode button
         addVRModeBtn()
-        // add return back from VR mode button
+        // add return back button
         addVRReturnBtn()
+        // add screen touch action
+        addScreenTapEvent()
     }
     
     override func glkView(_ view: GLKView, drawIn rect: CGRect) {
         panoramaView?.draw()
+    }
+    
+    override var prefersStatusBarHidden : Bool {
+        return clearScreen
     }
     
     func addVRModeBtn() {
@@ -63,6 +70,25 @@ class SphereViewController: GLKViewController {
         btnVRReturn?.setTitle("return", for: .normal)
         btnVRReturn?.addTarget(self, action: #selector(dissmissView), for: .touchUpInside)
         self.view.addSubview(btnVRReturn!)
+    }
+    
+    func addScreenTapEvent() {
+        let tapRecognizer = UITapGestureRecognizer(target: self, action:  #selector (self.tapEvent (_:)))
+        self.view.addGestureRecognizer(tapRecognizer)
+    }
+    
+    func tapEvent(_ sender:UITapGestureRecognizer){
+        if !clearScreen {
+            clearScreen = true
+            setNeedsStatusBarAppearanceUpdate()
+            btnVRMode?.isHidden = true
+            btnVRReturn?.isHidden = true
+        } else {
+            clearScreen = false
+            setNeedsStatusBarAppearanceUpdate()
+            btnVRMode?.isHidden = false
+            btnVRReturn?.isHidden = false
+        }
     }
     
     func dissmissView(sender: UIButton!) {

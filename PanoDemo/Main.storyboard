@@ -210,6 +210,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="pbz-Yg-qJF"/>
                                 </constraints>
+                                <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <items>
                                     <navigationItem title="PanoDemo" id="x0B-P1-G86"/>
                                 </items>
@@ -222,7 +223,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="naL-sL-2I7" id="XxX-Un-xAQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UtD-cM-bN6">
