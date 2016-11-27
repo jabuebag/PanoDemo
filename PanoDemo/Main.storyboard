@@ -201,29 +201,40 @@
                         <viewControllerLayoutGuide type="top" id="nFB-5J-31T"/>
                         <viewControllerLayoutGuide type="bottom" id="naO-eQ-W29"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gwG-RT-k2v">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gwG-RT-k2v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BY2-6c-OcR">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZh-ob-5dr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PanoDemo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGP-Mh-TnF">
+                                        <rect key="frame" x="145" y="23" width="86" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="86" id="Fwb-ky-2ay"/>
+                                            <constraint firstAttribute="height" constant="36" id="WlS-WT-CwO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="pbz-Yg-qJF"/>
+                                    <constraint firstAttribute="bottom" secondItem="XGP-Mh-TnF" secondAttribute="bottom" constant="5" id="4Em-J8-WZR"/>
+                                    <constraint firstAttribute="height" constant="64" id="E6q-Ut-6Cw"/>
+                                    <constraint firstItem="XGP-Mh-TnF" firstAttribute="centerX" secondItem="yZh-ob-5dr" secondAttribute="centerX" id="xab-do-5l9"/>
                                 </constraints>
-                                <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <items>
-                                    <navigationItem title="PanoDemo" id="x0B-P1-G86"/>
-                                </items>
-                            </navigationBar>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" canCancelContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="saX-20-M5Z">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="68" width="375" height="599"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PanoCell" rowHeight="150" id="naL-sL-2I7" customClass="MainTableViewCell" customModule="PanoDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="naL-sL-2I7" id="XxX-Un-xAQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UtD-cM-bN6">
@@ -250,13 +261,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="saX-20-M5Z" firstAttribute="trailing" secondItem="BY2-6c-OcR" secondAttribute="trailing" id="Nn5-NB-spr"/>
-                            <constraint firstItem="saX-20-M5Z" firstAttribute="top" secondItem="BY2-6c-OcR" secondAttribute="bottom" id="POr-DY-bxI"/>
-                            <constraint firstAttribute="trailing" secondItem="BY2-6c-OcR" secondAttribute="trailing" id="WYn-vB-KrH"/>
-                            <constraint firstItem="saX-20-M5Z" firstAttribute="bottom" secondItem="naO-eQ-W29" secondAttribute="top" id="Ybc-16-v99"/>
-                            <constraint firstItem="BY2-6c-OcR" firstAttribute="leading" secondItem="gwG-RT-k2v" secondAttribute="leading" id="oCB-pd-VIz"/>
-                            <constraint firstItem="BY2-6c-OcR" firstAttribute="top" secondItem="nFB-5J-31T" secondAttribute="bottom" id="wBL-nc-Shm"/>
-                            <constraint firstItem="saX-20-M5Z" firstAttribute="leading" secondItem="BY2-6c-OcR" secondAttribute="leading" id="x2H-U8-0QG"/>
+                            <constraint firstItem="yZh-ob-5dr" firstAttribute="leading" secondItem="gwG-RT-k2v" secondAttribute="leading" id="4wY-EW-na7"/>
+                            <constraint firstItem="saX-20-M5Z" firstAttribute="top" secondItem="yZh-ob-5dr" secondAttribute="bottom" constant="4" id="Fy2-PT-Lte"/>
+                            <constraint firstAttribute="trailing" secondItem="yZh-ob-5dr" secondAttribute="trailing" id="Hco-VC-Myj"/>
+                            <constraint firstItem="yZh-ob-5dr" firstAttribute="top" secondItem="gwG-RT-k2v" secondAttribute="top" id="clV-gP-OA5"/>
+                            <constraint firstItem="naO-eQ-W29" firstAttribute="top" secondItem="saX-20-M5Z" secondAttribute="bottom" id="cwb-Qk-NNt"/>
+                            <constraint firstAttribute="trailing" secondItem="saX-20-M5Z" secondAttribute="trailing" id="lJn-3X-mWa"/>
+                            <constraint firstItem="saX-20-M5Z" firstAttribute="leading" secondItem="gwG-RT-k2v" secondAttribute="leading" id="yC9-1q-wOW"/>
                         </constraints>
                     </view>
                 </viewController>
