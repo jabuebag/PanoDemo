@@ -14,7 +14,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var officePano = PanoModel(name: "office.jpg", panoName: "test12.jpg")
+        var officePano = PanoModel(name: "office.jpg", panoName: "officePro.jpg")
         var diningPano = PanoModel(name: "dining.jpg", panoName: "dining.jpg")
         panoArray.append(officePano)
         panoArray.append(diningPano)
