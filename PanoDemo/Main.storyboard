@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ber-bl-faC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kpA-ed-R0F">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -295,6 +295,82 @@
             </objects>
             <point key="canvasLocation" x="156" y="1033"/>
         </scene>
+        <!--Flat Image View Controller-->
+        <scene sceneID="kDq-Lc-Plu">
+            <objects>
+                <viewController id="kpA-ed-R0F" customClass="FlatImageViewController" customModule="PanoDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bG3-qk-q44"/>
+                        <viewControllerLayoutGuide type="bottom" id="god-5x-DeS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oCc-vx-xS7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAi-d3-Ehs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ImageDemo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69V-NP-XBF">
+                                        <rect key="frame" x="138" y="27" width="99" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="69V-NP-XBF" secondAttribute="bottom" constant="8" id="51G-y0-FM0"/>
+                                    <constraint firstItem="69V-NP-XBF" firstAttribute="centerX" secondItem="YAi-d3-Ehs" secondAttribute="centerX" id="SlH-6M-qsh"/>
+                                    <constraint firstAttribute="width" secondItem="YAi-d3-Ehs" secondAttribute="height" multiplier="375:64" id="r51-Io-Q1L"/>
+                                </constraints>
+                            </view>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VKr-TI-Wtz">
+                                <rect key="frame" x="0.0" y="68" width="375" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VKr-TI-Wtz" secondAttribute="height" multiplier="375:128" id="bOZ-l4-8Cr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D3k-We-4dp">
+                                <rect key="frame" x="0.0" y="200" width="375" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="D3k-We-4dp" secondAttribute="height" multiplier="375:128" id="IhM-sx-YLM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6rw-Hk-d58">
+                                <rect key="frame" x="0.0" y="332" width="375" height="128"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="D3k-We-4dp" firstAttribute="top" secondItem="VKr-TI-Wtz" secondAttribute="bottom" constant="4" id="55A-Yr-R6c"/>
+                            <constraint firstItem="6rw-Hk-d58" firstAttribute="top" secondItem="D3k-We-4dp" secondAttribute="bottom" constant="4" id="AdR-Bc-7rb"/>
+                            <constraint firstItem="YAi-d3-Ehs" firstAttribute="leading" secondItem="oCc-vx-xS7" secondAttribute="leading" id="Kms-5A-hqn"/>
+                            <constraint firstItem="VKr-TI-Wtz" firstAttribute="trailing" secondItem="YAi-d3-Ehs" secondAttribute="trailing" id="MkT-p2-NG5"/>
+                            <constraint firstItem="YAi-d3-Ehs" firstAttribute="top" secondItem="oCc-vx-xS7" secondAttribute="top" id="XDP-GE-jo9"/>
+                            <constraint firstAttribute="trailing" secondItem="YAi-d3-Ehs" secondAttribute="trailing" id="YIq-my-rlS"/>
+                            <constraint firstAttribute="trailing" secondItem="D3k-We-4dp" secondAttribute="trailing" id="YNz-ee-mBv"/>
+                            <constraint firstAttribute="trailing" secondItem="6rw-Hk-d58" secondAttribute="trailing" id="YnJ-He-d0k"/>
+                            <constraint firstItem="D3k-We-4dp" firstAttribute="leading" secondItem="oCc-vx-xS7" secondAttribute="leading" id="bRN-mQ-Rj9"/>
+                            <constraint firstItem="VKr-TI-Wtz" firstAttribute="top" secondItem="YAi-d3-Ehs" secondAttribute="bottom" constant="4" id="cRz-Bc-V48"/>
+                            <constraint firstItem="VKr-TI-Wtz" firstAttribute="leading" secondItem="YAi-d3-Ehs" secondAttribute="leading" id="lES-sP-PGG"/>
+                            <constraint firstItem="6rw-Hk-d58" firstAttribute="width" secondItem="6rw-Hk-d58" secondAttribute="height" multiplier="375:128" id="uAF-Xb-aVR"/>
+                            <constraint firstItem="6rw-Hk-d58" firstAttribute="leading" secondItem="oCc-vx-xS7" secondAttribute="leading" id="un9-Mh-TUI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aspectFitImg" destination="D3k-We-4dp" id="HS1-I1-bca"/>
+                        <outlet property="originImg" destination="VKr-TI-Wtz" id="RZy-ap-4Vd"/>
+                        <outlet property="otherWayImg" destination="6rw-Hk-d58" id="6mS-bZ-cdd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UhA-3Z-nvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.80000000000001" y="2069.4152923538231"/>
+        </scene>
         <!--Picture Stitch Controller-->
         <scene sceneID="Bq9-fy-TRK">
             <objects>
@@ -311,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNR-io-D66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="1685"/>
+            <point key="canvasLocation" x="1398" y="1555"/>
         </scene>
         <!--Video Shooter Controller-->
         <scene sceneID="aVN-au-31W">
