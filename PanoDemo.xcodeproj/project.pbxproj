@@ -33,6 +33,7 @@
 		017791EE1DE186D200FAD266 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017791D61DE1412E00FAD266 /* GLKit.framework */; };
 		01A9E3581DEA87DD00D6231B /* dining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01A9E3571DEA87DD00D6231B /* dining.jpg */; };
 		01C51B811DE233160072F22D /* PanoramaView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C51B801DE233160072F22D /* PanoramaView.framework */; };
+		01C5C4081DED069900500E31 /* PictureStitchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5C4071DED069900500E31 /* PictureStitchController.swift */; };
 		01FCE5351DE8CF72005E232C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCE5341DE8CF72005E232C /* MainViewController.swift */; };
 		01FCE53B1DE8EA56005E232C /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCE53A1DE8EA56005E232C /* MainTableViewCell.swift */; };
 		01FCE53D1DE8F0EE005E232C /* PanoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCE53C1DE8F0EE005E232C /* PanoModel.swift */; };
@@ -91,6 +92,7 @@
 		017791DC1DE1415E00FAD266 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		01A9E3571DEA87DD00D6231B /* dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dining.jpg; sourceTree = "<group>"; };
 		01C51B801DE233160072F22D /* PanoramaView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PanoramaView.framework; path = "Pods/../build/Debug-iphoneos/PanoramaView/PanoramaView.framework"; sourceTree = "<group>"; };
+		01C5C4071DED069900500E31 /* PictureStitchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureStitchController.swift; sourceTree = "<group>"; };
 		01FCE5341DE8CF72005E232C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		01FCE53A1DE8EA56005E232C /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		01FCE53C1DE8F0EE005E232C /* PanoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoModel.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				01309B9D1DE665D300E4B1BE /* VideoShooterController.swift */,
 				01FCE5341DE8CF72005E232C /* MainViewController.swift */,
 				01FCE53A1DE8EA56005E232C /* MainTableViewCell.swift */,
+				01C5C4071DED069900500E31 /* PictureStitchController.swift */,
 			);
 			path = PanoDemo;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01FCE53D1DE8F0EE005E232C /* PanoModel.swift in Sources */,
+				01C5C4081DED069900500E31 /* PictureStitchController.swift in Sources */,
 				017791561DE10A0500FAD266 /* ViewController.swift in Sources */,
 				01FCE5351DE8CF72005E232C /* MainViewController.swift in Sources */,
 				017791971DE12B8C00FAD266 /* SphereViewController.swift in Sources */,
