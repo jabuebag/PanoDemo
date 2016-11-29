@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_PanoDemoUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_PanoDemoUITestsVersionString[];
+FOUNDATION_EXPORT double GSImageViewerControllerVersionNumber;
+FOUNDATION_EXPORT const unsigned char GSImageViewerControllerVersionString[];
 

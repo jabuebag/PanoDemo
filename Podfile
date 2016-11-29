@@ -7,6 +7,7 @@ target 'PanoDemo' do
 
   # Pods for PanoDemo
   pod 'PanoramaView'
+  pod "GSImageViewerController"
 
   target 'PanoDemoTests' do
     inherit! :search_paths
