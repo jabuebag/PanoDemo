@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ImageViewer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PanoramaView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,12 +47,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6D0240B2D3E026DEC4C5170241CB0BE7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A201F9FE531D8FC9B04C9430B57BC98B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ABDCF9EFED5CAD3C782AB8B15DEE2E64</key>
+		<key>B321F3A57D08F1D51B82D56CADFEFBDF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

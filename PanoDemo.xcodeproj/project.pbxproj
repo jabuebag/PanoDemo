@@ -35,6 +35,8 @@
 		01C51B811DE233160072F22D /* PanoramaView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C51B801DE233160072F22D /* PanoramaView.framework */; };
 		01C5C4081DED069900500E31 /* PictureStitchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5C4071DED069900500E31 /* PictureStitchController.swift */; };
 		01C5C40A1DEE059D00500E31 /* FlatImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5C4091DEE059D00500E31 /* FlatImageViewController.swift */; };
+		01C5C40C1DEE39D100500E31 /* FlatImageFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5C40B1DEE39D100500E31 /* FlatImageFooterView.swift */; };
+		01C5C40E1DEE3DEC00500E31 /* halfhalf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01C5C40D1DEE3DEC00500E31 /* halfhalf.jpg */; };
 		01FCE5351DE8CF72005E232C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCE5341DE8CF72005E232C /* MainViewController.swift */; };
 		01FCE53B1DE8EA56005E232C /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCE53A1DE8EA56005E232C /* MainTableViewCell.swift */; };
 		01FCE53D1DE8F0EE005E232C /* PanoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCE53C1DE8F0EE005E232C /* PanoModel.swift */; };
@@ -95,6 +97,8 @@
 		01C51B801DE233160072F22D /* PanoramaView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PanoramaView.framework; path = "Pods/../build/Debug-iphoneos/PanoramaView/PanoramaView.framework"; sourceTree = "<group>"; };
 		01C5C4071DED069900500E31 /* PictureStitchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureStitchController.swift; sourceTree = "<group>"; };
 		01C5C4091DEE059D00500E31 /* FlatImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatImageViewController.swift; sourceTree = "<group>"; };
+		01C5C40B1DEE39D100500E31 /* FlatImageFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatImageFooterView.swift; sourceTree = "<group>"; };
+		01C5C40D1DEE3DEC00500E31 /* halfhalf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = halfhalf.jpg; sourceTree = "<group>"; };
 		01FCE5341DE8CF72005E232C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		01FCE53A1DE8EA56005E232C /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		01FCE53C1DE8F0EE005E232C /* PanoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoModel.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 				01FCE53A1DE8EA56005E232C /* MainTableViewCell.swift */,
 				01C5C4071DED069900500E31 /* PictureStitchController.swift */,
 				01C5C4091DEE059D00500E31 /* FlatImageViewController.swift */,
+				01C5C40B1DEE39D100500E31 /* FlatImageFooterView.swift */,
 			);
 			path = PanoDemo;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 		0177918F1DE11B1E00FAD266 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				01C5C40D1DEE3DEC00500E31 /* halfhalf.jpg */,
 				0134A3CF1DEB894F009D8F52 /* officePro.jpg */,
 				01A9E3571DEA87DD00D6231B /* dining.jpg */,
 				01309BA11DE6793C00E4B1BE /* haha.jpg */,
@@ -403,6 +409,7 @@
 				0177915B1DE10A0500FAD266 /* Assets.xcassets in Resources */,
 				017791911DE1267E00FAD266 /* office.jpg in Resources */,
 				010ED13A1DE3D419009D414B /* test13.jpg in Resources */,
+				01C5C40E1DEE3DEC00500E31 /* halfhalf.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +580,7 @@
 				017791971DE12B8C00FAD266 /* SphereViewController.swift in Sources */,
 				017791541DE10A0500FAD266 /* AppDelegate.swift in Sources */,
 				01309B9C1DE6417A00E4B1BE /* ImageUtil.swift in Sources */,
+				01C5C40C1DEE39D100500E31 /* FlatImageFooterView.swift in Sources */,
 				017791821DE1132A00FAD266 /* PanoramaViewController.swift in Sources */,
 				01309BA01DE6675700E4B1BE /* JabueUtil.swift in Sources */,
 				01595A441DE5151600CB82B5 /* ImageProcessController.swift in Sources */,
