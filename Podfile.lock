@@ -1,15 +1,18 @@
 PODS:
   - GSImageViewerController (1.2.0)
+  - ImageViewer (4.0)
   - PanoramaView (1.0.1)
 
 DEPENDENCIES:
   - GSImageViewerController
+  - ImageViewer
   - PanoramaView
 
 SPEC CHECKSUMS:
   GSImageViewerController: cd90d8a692666981d432f7633bcaa66aa7592221
+  ImageViewer: 364abc0309c33dda86d08ca25b0243e5c67d8cd3
   PanoramaView: aed9304d87efecc9a67259e19a05591bb44a1e6e
 
-PODFILE CHECKSUM: ef47253d3d00c00f32ef35a5a1ac5ab09f4e400f
+PODFILE CHECKSUM: 1545092c8d5c9bf79d39966b89e4743ead2c6211
 
 COCOAPODS: 1.2.0.beta.1

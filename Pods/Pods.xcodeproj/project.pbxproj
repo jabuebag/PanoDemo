@@ -7,104 +7,191 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0086FBD1BAF1B277488DA9C31A206986 /* GalleryConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD73CE2F3FCEFCE2FAC1AFDF628043D7 /* GalleryConfiguration.swift */; };
+		032F75E613C88377A55CA7083F1DD58F /* LayoutEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526BDE8DB05E961F687D612B4AF3553 /* LayoutEnums.swift */; };
 		0A4C1E9239021ACB1F434512007A1360 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */; };
+		124CB0ABCF238B79A42747E61E1E2557 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754091D1A11FEECB83E5B7EADFA12B62 /* BlurView.swift */; };
+		15ACA6A8CDEAA47F5F72F2036182AC11 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C3DD0D59CED4A397D33283A99498A /* UIView.swift */; };
 		1FD1767314AEAE6678E3518B909AAC1E /* Pods-PanoDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F4DAEAABAFFB9C46177A2ACB1C42A0 /* Pods-PanoDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23B752C758CD40BDFA11CB10BF9B60C6 /* UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E8C2E5991E8CFE0DD086213806D7DA /* UISlider.swift */; };
 		247FA8D61870919147F1919AA0341A1C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AFD58AEE975DFC0D60121F977AB9BD /* CoreMotion.framework */; };
-		25004A6D95C1D88317B843C4958E9124 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */; };
+		2A6DDD3FF6B3DCE479CCE3E42A695033 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */; };
 		334661196D4812861D6BBF024F4AFE3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */; };
-		3C5AFB51D39F084CF4D31D8AD06AC9C5 /* GSImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632DC1828394190D0D498ECD90612F6 /* GSImageViewerController.swift */; };
-		446F62E7A0D5E26C63BB7AF2B70C4E08 /* Pods-PanoDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2830755715F462D31C4A67806E5E7F4 /* Pods-PanoDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4D23BFCA7F5CECD0423BC13937A785 /* GSImageViewerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5020DAB7FE7A4D9CFFCEED5AF87F0A7 /* GSImageViewerController-dummy.m */; };
+		345C02C9047B7C90E6C51212AB128BF7 /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C19C6411758859AF53F6B5D2808B18 /* AVPlayer.swift */; };
+		3C5AFB51D39F084CF4D31D8AD06AC9C5 /* GSImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040A091A213E6CA70E8A25B9B105D9F /* GSImageViewerController.swift */; };
+		4AA64E984EA3FCB0A4D60796DF0EE746 /* ImageViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9EEF31763F5BE0A890D05CA44B38E /* ImageViewer-dummy.m */; };
+		4F4D23BFCA7F5CECD0423BC13937A785 /* GSImageViewerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9969468E868C54FA0505786E23AD0A97 /* GSImageViewerController-dummy.m */; };
+		500F18B33116DEA4420E939F687B936B /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3FB72822198F6C14EFB359A55A5F1F /* ThumbnailCell.swift */; };
 		51A77EF097BF1127D38D6F7F01D85086 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F696BCE5CD44D8CC965F90CD869F1F9 /* OpenGLES.framework */; };
+		5F5A95540353980BCCA15256BC43F9E7 /* GallerySwipeToDismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB3249327EB4BA1ECF17BD88736172 /* GallerySwipeToDismissTransition.swift */; };
+		5FEAC269DA6D03E1340EC71660D690F9 /* CAShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129796A1E90FB7A7C4A65D165348784 /* CAShapeLayer.swift */; };
+		657ACDA469BDB0B809E7CB2EF1D8E051 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007832E87357747D4F3E188B4E5BB8FD /* CGSize.swift */; };
 		801A766280BC4736D3B28C8E8CE45F25 /* Pods-PanoDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 227B119D7734D05D60A0667D15A8F567 /* Pods-PanoDemoTests-dummy.m */; };
+		81B22D31DA262FFC55D43ACDFF284EDF /* GalleryPagingDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D16AC72509FAEC0B619BFE5CFB24C4 /* GalleryPagingDatasource.swift */; };
+		8291294B989EE943B68E4B44BE546065 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D9BFCD3762A68DD26154516168A0B /* GalleryItem.swift */; };
+		86CCE8A84DFE63DF4A35242050F6547C /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3029589CAA57C1B61D27DF5F843A1B /* GalleryViewController.swift */; };
+		88853951EC5E1DF6F64CF5FA37B5D280 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F9B3429C667CDB5503780E7E841136 /* VideoViewController.swift */; };
+		88DCC2920F1323BD3D4F3F09272CC81A /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA9BFC32CC9B4B809DF554F17C7805E /* CGRect.swift */; };
 		8978525F9D8DC223A619ADE690B4F834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */; };
-		90D51B60FC92EA1377645EDB05F6B362 /* GSImageViewerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF05C28EFF05E42DEB79430E5E7D17D2 /* GSImageViewerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9343BCEA994CE585A2CED01811284A4E /* Pods-PanoDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9783AAD009D63A69E507EA5A94F1E40E /* Pods-PanoDemo-dummy.m */; };
-		AD24DE37CF8D2FFBCCB028C44C8A3BE4 /* PanoramaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E4DA681E6313D51E9A7DF1E41049B0 /* PanoramaView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B98581AD256177492F526F1DB923F56E /* PanoramaView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE8EEF10ECF725062DB65BFB5DEC719 /* PanoramaView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F2A71D385434CC1F55FCBBC36DEE66D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F23595F984B924D19D3DA31386635 /* ImageViewController.swift */; };
+		90AECDE9B998A05C27F2BB0CF2809206 /* VideoScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E1304093A752F94AECB7EC5DBC64C5 /* VideoScrubber.swift */; };
+		90D51B60FC92EA1377645EDB05F6B362 /* GSImageViewerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6BEED0DB6AAD4B704052D75C0B17D8 /* GSImageViewerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB4B36154E771665C0B780BA44A78B8 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49C9275B84A7C930EBFAA3E1F42600 /* VideoView.swift */; };
+		9D0FFB439DCBC540E272ECF1B385BA9D /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F538B4F3C4FC3DB7850B2913C80165 /* CALayer.swift */; };
+		A29E2776BE40F24B8BF50FC1D7C0CD71 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D452893858BB777E5F67205A43B0C /* UIImageView.swift */; };
+		A3A3B93764C0C89A98CDA9B2AE69835A /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928AD83214602536F7A561BED221488 /* CGPoint.swift */; };
+		A6D30F0232BCB4CF2DE6F6CA3DF72664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */; };
+		AC8D18100DD88ABFEB3CD9258D1ADC23 /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876AE4924F3995B6726256A58BB3CF2 /* UIBezierPath.swift */; };
+		ACC69199EFB476D7FCF927F7FFB33138 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B4E06F9B301F1B5CA9A124EABBD8A7 /* Slider.swift */; };
+		AD24DE37CF8D2FFBCCB028C44C8A3BE4 /* PanoramaView.m in Sources */ = {isa = PBXBuildFile; fileRef = E897C3BF8AEFA4D3D2760488BEC76D5C /* PanoramaView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B3C608BDB545E340AE814181CC59763E /* ImageViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E45311DF7CE5AE0843E91F6558FD1C /* ImageViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B51206262AAD0F55ACB5B0B4FA3D4E2C /* ThumbnailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6447193E898623725E3358041D371866 /* ThumbnailsViewController.swift */; };
+		B6679C59EFD1CD90F171D43BF70884CB /* Pods-PanoDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2830755715F462D31C4A67806E5E7F4 /* Pods-PanoDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B98581AD256177492F526F1DB923F56E /* PanoramaView.h in Headers */ = {isa = PBXBuildFile; fileRef = FC579BC052C7B0B1CDD8BA3C04E7A2A5 /* PanoramaView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF4BDBFF33E809A9D4B8E2ECF6BB2093 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */; };
-		CAD1FCD6217CA94E16A11D7ED2239102 /* PanoramaView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C48D9154BB94734B5CB7F0E690EE9118 /* PanoramaView-dummy.m */; };
+		C40B1C59082F0851B6A17CB0BBDC4F7C /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4CBDC49CF1D4BD56027BC5879C60B /* Bool.swift */; };
+		C9368751FB1E4E89FA4F4844B5C41C9B /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B37AF7206301615042F7B890C9AEA16 /* ItemController.swift */; };
+		CAD1FCD6217CA94E16A11D7ED2239102 /* PanoramaView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE2ACC95F0895B06B194EE8DD5B762A /* PanoramaView-dummy.m */; };
+		CBEE099F8D86DFAB6B27DC742420A7BE /* GalleryItemsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23973F4256CD6ECE64AAB49EC84567E3 /* GalleryItemsDatasource.swift */; };
+		CD4A3FD6C9DF922E269E1321E0E94E19 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818510AC6B162D59819A1DDF4E442A51 /* UIButton.swift */; };
 		D1125660EBD5F56279C9702BD63EA7D7 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2BF6C5D7DC60A1EA1E8F79E7FE0F0E5 /* GLKit.framework */; };
 		D3C831A509275282D25EF90BFD61DFDB /* Pods-PanoDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 846309070D899139F81E381925DCADE1 /* Pods-PanoDemoUITests-dummy.m */; };
+		D44FA49215F77AA36C4E0158F5A012F6 /* ItemBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96161887748BEAC905883367F7727ADC /* ItemBaseController.swift */; };
 		D5774A5B66AF4B1BF2783D8D5DC22142 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D429F539F8DA8036989F364883E926 /* UIKit.framework */; };
+		D71EE9D3C99BD3E677F85A0F0D3A67E2 /* GalleryDisplacedViewsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AABFE62592977066AFD3D21B6282BE /* GalleryDisplacedViewsDatasource.swift */; };
+		DEDE976189AF453FF25DF3A6C59F3F98 /* ItemControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB3EA3A8E551FD0DBA47D3175B331D2 /* ItemControllerDelegate.swift */; };
+		DF2D4BBDE41DC40087778F99DF961933 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942519EFBDDC60B990D62C5D2B651F1D /* UtilityFunctions.swift */; };
+		DF3BBA579CE5D094073B401F4EF6F1D1 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641124E030E45E1CD513F6FB359AD765 /* UIApplication.swift */; };
+		DFDF3EE3B53433B7CF0D16D8A33A4661 /* ImageFadeInHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07314FDBFDF7717D9346F8877FB84DA /* ImageFadeInHandler.swift */; };
+		F2E524C57B6B3284F0EEE675C1138EEF /* Pods-PanoDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9783AAD009D63A69E507EA5A94F1E40E /* Pods-PanoDemo-dummy.m */; };
+		F4FD741619ACFA1FD812D7E3B4B6B205 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C584B8D338A74EAB7FE79F2F6661AD6 /* UIViewController.swift */; };
 		FB2DE5A232D6615566A443C59943DCC2 /* Pods-PanoDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F46C34B40E875D835C4615EC15ABC4 /* Pods-PanoDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC904F836D0EFDDADC1863E959BCA278 /* PanoramaView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B1450BD10667C05894F21FFA768446 /* PanoramaView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC904F836D0EFDDADC1863E959BCA278 /* PanoramaView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FBB17BF8DDA9E055129E9EF8A57B6A /* PanoramaView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		34D247174761A0C05C1DF52DDF527980 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 41E840C2984994732EAAB8652BE7177F;
-			remoteInfo = PanoramaView;
-		};
-		D938B0383D3A057FDD4AE1DAFBF96920 /* PBXContainerItemProxy */ = {
+		98FA50ED9DE780CDDA0D0A5DB7B4DC34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A201F9FE531D8FC9B04C9430B57BC98B;
 			remoteInfo = GSImageViewerController;
 		};
+		D514EAD6F91490F850D61A8E8F8745F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41E840C2984994732EAAB8652BE7177F;
+			remoteInfo = PanoramaView;
+		};
+		E6BC8C6821F540D9104B86D7F111E884 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B321F3A57D08F1D51B82D56CADFEFBDF;
+			remoteInfo = ImageViewer;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0057F2C70ED7853E33F6885A19659DE6 /* Pods-PanoDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		05EB566E70E7327224AF8EB115D8F1DC /* GSImageViewerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GSImageViewerController.modulemap; sourceTree = "<group>"; };
-		0BA8B93490200EFEB36A87F8B7DD73C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C6B1B042C33B689219311FA92D2BDEE /* Pods_PanoDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemoTests.framework; path = "Pods-PanoDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		007832E87357747D4F3E188B4E5BB8FD /* CGSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSize.swift; path = ImageViewer/Source/Extensions/CGSize.swift; sourceTree = "<group>"; };
+		008869F74520DDDEB3EE705C2EF92727 /* Pods_PanoDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemoUITests.framework; path = "Pods-PanoDemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		015F23595F984B924D19D3DA31386635 /* ImageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = ImageViewer/Source/ImageViewController.swift; sourceTree = "<group>"; };
+		029FEA9C916428C3FCB483C15948B4EB /* GSImageViewerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSImageViewerController-prefix.pch"; sourceTree = "<group>"; };
 		0DD558B151287210E40BDFBE5B886FF7 /* Pods-PanoDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0F696BCE5CD44D8CC965F90CD869F1F9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
 		1006D6B0CE1AB1117B3C50BB057A1C8D /* Pods-PanoDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PanoDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		11B6D3BB8B7423724547EDA493A09AB7 /* GSImageViewerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSImageViewerController-prefix.pch"; sourceTree = "<group>"; };
 		12AFD58AEE975DFC0D60121F977AB9BD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		12B7837DA5106119024D3D0AF1FDC2B9 /* Pods-PanoDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		15C0EFD91A0A36DF0CB1075B524496E6 /* Pods-PanoDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PanoDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1676A93FBC762E120F4AE3F2313B418D /* PanoramaView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PanoramaView.framework; path = PanoramaView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B37AF7206301615042F7B890C9AEA16 /* ItemController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemController.swift; path = ImageViewer/Source/ItemController.swift; sourceTree = "<group>"; };
 		1C4CC61879BE58177DEE5D5F3C615AFB /* Pods-PanoDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PanoDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1E9C3DD0D59CED4A397D33283A99498A /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = ImageViewer/Source/Extensions/UIView.swift; sourceTree = "<group>"; };
 		21426B30ABF547D455C213383C7E5F4D /* Pods-PanoDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemo-resources.sh"; sourceTree = "<group>"; };
 		227B119D7734D05D60A0667D15A8F567 /* Pods-PanoDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PanoDemoTests-dummy.m"; sourceTree = "<group>"; };
+		23973F4256CD6ECE64AAB49EC84567E3 /* GalleryItemsDatasource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GalleryItemsDatasource.swift; path = ImageViewer/Source/GalleryItemsDatasource.swift; sourceTree = "<group>"; };
+		2CFB3249327EB4BA1ECF17BD88736172 /* GallerySwipeToDismissTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GallerySwipeToDismissTransition.swift; path = ImageViewer/Source/GallerySwipeToDismissTransition.swift; sourceTree = "<group>"; };
+		2F282AE4171196453D352C3FA36998AC /* ImageViewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ImageViewer.modulemap; sourceTree = "<group>"; };
+		3040A091A213E6CA70E8A25B9B105D9F /* GSImageViewerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GSImageViewerController.swift; path = GSImageViewerController/GSImageViewerController.swift; sourceTree = "<group>"; };
+		31F9B3429C667CDB5503780E7E841136 /* VideoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoViewController.swift; path = ImageViewer/Source/VideoViewController.swift; sourceTree = "<group>"; };
 		32F4DAEAABAFFB9C46177A2ACB1C42A0 /* Pods-PanoDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PanoDemoTests-umbrella.h"; sourceTree = "<group>"; };
-		3632DC1828394190D0D498ECD90612F6 /* GSImageViewerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GSImageViewerController.swift; path = GSImageViewerController/GSImageViewerController.swift; sourceTree = "<group>"; };
+		39E1304093A752F94AECB7EC5DBC64C5 /* VideoScrubber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoScrubber.swift; path = ImageViewer/Source/VideoScrubber.swift; sourceTree = "<group>"; };
 		3C757739C4479954FF1B46F509D61A22 /* Pods-PanoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		402C16CA1C713064F0EF05F8277703E3 /* Pods-PanoDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PanoDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		428C546138249B60EC83DC5B7CE4A3A1 /* Pods-PanoDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PanoDemo.modulemap"; sourceTree = "<group>"; };
-		44E4DA681E6313D51E9A7DF1E41049B0 /* PanoramaView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PanoramaView.m; path = Panorama/PanoramaView.m; sourceTree = "<group>"; };
-		49CD3647AE6B545A723068FC224AD905 /* PanoramaView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PanoramaView.modulemap; sourceTree = "<group>"; };
+		43C87C42503A52648D3098EAD9576661 /* GSImageViewerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GSImageViewerController.modulemap; sourceTree = "<group>"; };
+		46C19C6411758859AF53F6B5D2808B18 /* AVPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVPlayer.swift; path = ImageViewer/Source/Extensions/AVPlayer.swift; sourceTree = "<group>"; };
+		498D9BFCD3762A68DD26154516168A0B /* GalleryItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GalleryItem.swift; path = ImageViewer/Source/GalleryItem.swift; sourceTree = "<group>"; };
 		4AF3AD8ED0F2B9E9C97B1771940880A9 /* Pods-PanoDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		56F9688980D44874FEC205F2A556CB0E /* GSImageViewerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GSImageViewerController.framework; path = GSImageViewerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C584B8D338A74EAB7FE79F2F6661AD6 /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = ImageViewer/Source/Extensions/UIViewController.swift; sourceTree = "<group>"; };
+		5B6BEED0DB6AAD4B704052D75C0B17D8 /* GSImageViewerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSImageViewerController-umbrella.h"; sourceTree = "<group>"; };
+		5CE2ACC95F0895B06B194EE8DD5B762A /* PanoramaView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PanoramaView-dummy.m"; sourceTree = "<group>"; };
+		5E7D452893858BB777E5F67205A43B0C /* UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageView.swift; path = ImageViewer/Source/Extensions/UIImageView.swift; sourceTree = "<group>"; };
+		641124E030E45E1CD513F6FB359AD765 /* UIApplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIApplication.swift; path = ImageViewer/Source/Extensions/UIApplication.swift; sourceTree = "<group>"; };
+		6447193E898623725E3358041D371866 /* ThumbnailsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThumbnailsViewController.swift; path = "ImageViewer/Source/Thumbnails Controller/ThumbnailsViewController.swift"; sourceTree = "<group>"; };
+		64E6FBB6B20D8DEAF6CA10EE36ABB518 /* GSImageViewerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GSImageViewerController.framework; path = GSImageViewerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65805F9C4168B86388ABD0BD1DDA8127 /* Pods_PanoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemo.framework; path = "Pods-PanoDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BB16F70AF9C2F0AFDFAE4B1E35EFA6 /* Pods-PanoDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		6F3FB72822198F6C14EFB359A55A5F1F /* ThumbnailCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThumbnailCell.swift; path = "ImageViewer/Source/Thumbnails Controller/ThumbnailCell.swift"; sourceTree = "<group>"; };
+		707F96B45DEBCBCD79D91534DE610605 /* PanoramaView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PanoramaView.xcconfig; sourceTree = "<group>"; };
 		72671DBEDA9D7DA27E96FF01A9E7AF45 /* Pods-PanoDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PanoDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		754091D1A11FEECB83E5B7EADFA12B62 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = ImageViewer/Source/BlurView.swift; sourceTree = "<group>"; };
 		76C7597E79D7BAC8534D2ACE2E97AB56 /* Pods-PanoDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PanoDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		818510AC6B162D59819A1DDF4E442A51 /* UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = ImageViewer/Source/Extensions/UIButton.swift; sourceTree = "<group>"; };
 		846309070D899139F81E381925DCADE1 /* Pods-PanoDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PanoDemoUITests-dummy.m"; sourceTree = "<group>"; };
 		84E35EFE22D6201696853116A7596F67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AD9EEF31763F5BE0A890D05CA44B38E /* ImageViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageViewer-dummy.m"; sourceTree = "<group>"; };
+		8DA9BFC32CC9B4B809DF554F17C7805E /* CGRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRect.swift; path = ImageViewer/Source/Extensions/CGRect.swift; sourceTree = "<group>"; };
 		8DC2BAD9D09A1742611E59D05287E7FD /* Pods-PanoDemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemoUITests-resources.sh"; sourceTree = "<group>"; };
+		90B4E06F9B301F1B5CA9A124EABBD8A7 /* Slider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Slider.swift; path = ImageViewer/Source/Slider.swift; sourceTree = "<group>"; };
 		9163598F2F2A33EEFA080E4898800F3C /* Pods-PanoDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemoTests-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		940CDF74491CE5A78AF4BB871FE160F5 /* Pods-PanoDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemo-frameworks.sh"; sourceTree = "<group>"; };
+		942519EFBDDC60B990D62C5D2B651F1D /* UtilityFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UtilityFunctions.swift; path = ImageViewer/Source/UtilityFunctions.swift; sourceTree = "<group>"; };
+		96161887748BEAC905883367F7727ADC /* ItemBaseController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemBaseController.swift; path = ImageViewer/Source/ItemBaseController.swift; sourceTree = "<group>"; };
 		97530EE83658EDE669C98B3318B00F19 /* Pods-PanoDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PanoDemoUITests.modulemap"; sourceTree = "<group>"; };
 		9783AAD009D63A69E507EA5A94F1E40E /* Pods-PanoDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PanoDemo-dummy.m"; sourceTree = "<group>"; };
-		9B6D8684FC4753A679CD24D3AD5A9769 /* Pods_PanoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemo.framework; path = "Pods-PanoDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9969468E868C54FA0505786E23AD0A97 /* GSImageViewerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSImageViewerController-dummy.m"; sourceTree = "<group>"; };
+		99AABFE62592977066AFD3D21B6282BE /* GalleryDisplacedViewsDatasource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GalleryDisplacedViewsDatasource.swift; path = ImageViewer/Source/GalleryDisplacedViewsDatasource.swift; sourceTree = "<group>"; };
 		9FD312DA42AB681CC5206FFBD13AF3B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A25EEA1DA423F4FD6966EF77EA0A2E65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A356BD2C1E77B573BBAB201ECFFA2D91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7005702308B645CFD711F8B3A522F84 /* PanoramaView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PanoramaView-prefix.pch"; sourceTree = "<group>"; };
+		AB3029589CAA57C1B61D27DF5F843A1B /* GalleryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GalleryViewController.swift; path = ImageViewer/Source/GalleryViewController.swift; sourceTree = "<group>"; };
 		AC0E039A731D984FCD9B14F4038CD4A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACD6BEF8ADA965E8722D8FA22CE8A289 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD9AB99B50F6212C0A6FC1FECC8924D5 /* Pods-PanoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PanoDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		B2B1450BD10667C05894F21FFA768446 /* PanoramaView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PanoramaView-umbrella.h"; sourceTree = "<group>"; };
+		B03A7EFCD46305C0A06D5A86C4253FA6 /* ImageViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ImageViewer.framework; path = ImageViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B190C00ABC0853C1A5FC5ED3AF786977 /* ImageViewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageViewer.xcconfig; sourceTree = "<group>"; };
 		B40BA6D62FD6AF7E0B679F02712265E5 /* Pods-PanoDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PanoDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
-		C22F52911AEDE5CABC3333A72D754197 /* GSImageViewerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSImageViewerController.xcconfig; sourceTree = "<group>"; };
+		B9FBB17BF8DDA9E055129E9EF8A57B6A /* PanoramaView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PanoramaView-umbrella.h"; sourceTree = "<group>"; };
 		C2830755715F462D31C4A67806E5E7F4 /* Pods-PanoDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PanoDemo-umbrella.h"; sourceTree = "<group>"; };
-		C353EEA23DA81409F115EE66A3B3549D /* PanoramaView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PanoramaView.xcconfig; sourceTree = "<group>"; };
-		C48D9154BB94734B5CB7F0E690EE9118 /* PanoramaView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PanoramaView-dummy.m"; sourceTree = "<group>"; };
+		C526BDE8DB05E961F687D612B4AF3553 /* LayoutEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutEnums.swift; path = ImageViewer/Source/LayoutEnums.swift; sourceTree = "<group>"; };
+		D49BD7E13EA65AFBBB759FCF6E10BC69 /* PanoramaView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PanoramaView.framework; path = PanoramaView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D16AC72509FAEC0B619BFE5CFB24C4 /* GalleryPagingDatasource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GalleryPagingDatasource.swift; path = ImageViewer/Source/GalleryPagingDatasource.swift; sourceTree = "<group>"; };
+		D5C4CBDC49CF1D4BD56027BC5879C60B /* Bool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bool.swift; path = ImageViewer/Source/Extensions/Bool.swift; sourceTree = "<group>"; };
 		D7D429F539F8DA8036989F364883E926 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		DBE8EEF10ECF725062DB65BFB5DEC719 /* PanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PanoramaView.h; path = Panorama/PanoramaView.h; sourceTree = "<group>"; };
+		D928AD83214602536F7A561BED221488 /* CGPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPoint.swift; path = ImageViewer/Source/Extensions/CGPoint.swift; sourceTree = "<group>"; };
+		D9E8C2E5991E8CFE0DD086213806D7DA /* UISlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISlider.swift; path = ImageViewer/Source/Extensions/UISlider.swift; sourceTree = "<group>"; };
+		DC2C328310302A0739801D0AC642BA59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD73CE2F3FCEFCE2FAC1AFDF628043D7 /* GalleryConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GalleryConfiguration.swift; path = ImageViewer/Source/GalleryConfiguration.swift; sourceTree = "<group>"; };
+		E07314FDBFDF7717D9346F8877FB84DA /* ImageFadeInHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFadeInHandler.swift; path = ImageViewer/Source/ImageFadeInHandler.swift; sourceTree = "<group>"; };
 		E2BF6C5D7DC60A1EA1E8F79E7FE0F0E5 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
-		E5020DAB7FE7A4D9CFFCEED5AF87F0A7 /* GSImageViewerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSImageViewerController-dummy.m"; sourceTree = "<group>"; };
-		EF05C28EFF05E42DEB79430E5E7D17D2 /* GSImageViewerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSImageViewerController-umbrella.h"; sourceTree = "<group>"; };
-		F0122693FBBCC949C54F96BC434B667D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4E45311DF7CE5AE0843E91F6558FD1C /* ImageViewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageViewer-umbrella.h"; sourceTree = "<group>"; };
+		E897C3BF8AEFA4D3D2760488BEC76D5C /* PanoramaView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PanoramaView.m; path = Panorama/PanoramaView.m; sourceTree = "<group>"; };
+		EC49C9275B84A7C930EBFAA3E1F42600 /* VideoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoView.swift; path = ImageViewer/Source/VideoView.swift; sourceTree = "<group>"; };
+		F129796A1E90FB7A7C4A65D165348784 /* CAShapeLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAShapeLayer.swift; path = ImageViewer/Source/Extensions/CAShapeLayer.swift; sourceTree = "<group>"; };
 		F4706D70573E1C95E12EA814346F668C /* Pods-PanoDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PanoDemoTests.modulemap"; sourceTree = "<group>"; };
-		F4CC2D9C939EF6AF3EF6C7DB1E527AA1 /* PanoramaView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PanoramaView-prefix.pch"; sourceTree = "<group>"; };
 		F6F46C34B40E875D835C4615EC15ABC4 /* Pods-PanoDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PanoDemoUITests-umbrella.h"; sourceTree = "<group>"; };
-		FEBF682A18CD30587C599D335DBB2832 /* Pods_PanoDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemoUITests.framework; path = "Pods-PanoDemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79562D907A8C62E358B13CBEB95803D /* ImageViewer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageViewer-prefix.pch"; sourceTree = "<group>"; };
+		F876AE4924F3995B6726256A58BB3CF2 /* UIBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBezierPath.swift; path = ImageViewer/Source/Extensions/UIBezierPath.swift; sourceTree = "<group>"; };
+		F8FA2E518BD58A3F3A5997D92F154F60 /* Pods_PanoDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PanoDemoTests.framework; path = "Pods-PanoDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F538B4F3C4FC3DB7850B2913C80165 /* CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CALayer.swift; path = ImageViewer/Source/Extensions/CALayer.swift; sourceTree = "<group>"; };
+		FAF032A2DAA0E62955B64CB38599972D /* PanoramaView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PanoramaView.modulemap; sourceTree = "<group>"; };
+		FC579BC052C7B0B1CDD8BA3C04E7A2A5 /* PanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PanoramaView.h; path = Panorama/PanoramaView.h; sourceTree = "<group>"; };
+		FD77922A9124991C9272F8E22966A3BF /* GSImageViewerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSImageViewerController.xcconfig; sourceTree = "<group>"; };
+		FDB3EA3A8E551FD0DBA47D3175B331D2 /* ItemControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemControllerDelegate.swift; path = ImageViewer/Source/ItemControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,14 +200,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4C1E9239021ACB1F434512007A1360 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		55F80BB9C3D4B9A59F1850B056CEBB5F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				25004A6D95C1D88317B843C4958E9124 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +231,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0E24EA2105F498949891E1BDAC1FA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D30F0232BCB4CF2DE6F6CA3DF72664 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C07842CDFB5C98D1104C07418C7F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A6DDD3FF6B3DCE479CCE3E42A695033 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11B41CAFD234F6F8DE5534A9B03B5F2F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43C87C42503A52648D3098EAD9576661 /* GSImageViewerController.modulemap */,
+				FD77922A9124991C9272F8E22966A3BF /* GSImageViewerController.xcconfig */,
+				9969468E868C54FA0505786E23AD0A97 /* GSImageViewerController-dummy.m */,
+				029FEA9C916428C3FCB483C15948B4EB /* GSImageViewerController-prefix.pch */,
+				5B6BEED0DB6AAD4B704052D75C0B17D8 /* GSImageViewerController-umbrella.h */,
+				A25EEA1DA423F4FD6966EF77EA0A2E65 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GSImageViewerController";
+			sourceTree = "<group>";
+		};
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,15 +272,66 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5911C3EB1339ED2D6046ADD900866C86 /* PanoramaView */ = {
+		357753A3E1BA9B598238C6A1F30CD8D6 /* GSImageViewerController */ = {
 			isa = PBXGroup;
 			children = (
-				DBE8EEF10ECF725062DB65BFB5DEC719 /* PanoramaView.h */,
-				44E4DA681E6313D51E9A7DF1E41049B0 /* PanoramaView.m */,
-				BD4F4438AA491E695C84CD64CE2FECE6 /* Support Files */,
+				3040A091A213E6CA70E8A25B9B105D9F /* GSImageViewerController.swift */,
+				11B41CAFD234F6F8DE5534A9B03B5F2F /* Support Files */,
+			);
+			name = GSImageViewerController;
+			path = GSImageViewerController;
+			sourceTree = "<group>";
+		};
+		523ABE3E71C287D5B932003308585671 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC2C328310302A0739801D0AC642BA59 /* Info.plist */,
+				FAF032A2DAA0E62955B64CB38599972D /* PanoramaView.modulemap */,
+				707F96B45DEBCBCD79D91534DE610605 /* PanoramaView.xcconfig */,
+				5CE2ACC95F0895B06B194EE8DD5B762A /* PanoramaView-dummy.m */,
+				A7005702308B645CFD711F8B3A522F84 /* PanoramaView-prefix.pch */,
+				B9FBB17BF8DDA9E055129E9EF8A57B6A /* PanoramaView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PanoramaView";
+			sourceTree = "<group>";
+		};
+		5776DA62132696A42C887BC4BD5CA6DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64E6FBB6B20D8DEAF6CA10EE36ABB518 /* GSImageViewerController.framework */,
+				B03A7EFCD46305C0A06D5A86C4253FA6 /* ImageViewer.framework */,
+				D49BD7E13EA65AFBBB759FCF6E10BC69 /* PanoramaView.framework */,
+				65805F9C4168B86388ABD0BD1DDA8127 /* Pods_PanoDemo.framework */,
+				F8FA2E518BD58A3F3A5997D92F154F60 /* Pods_PanoDemoTests.framework */,
+				008869F74520DDDEB3EE705C2EF92727 /* Pods_PanoDemoUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F64975EA18711F7E068176720BD564C /* PanoramaView */ = {
+			isa = PBXGroup;
+			children = (
+				FC579BC052C7B0B1CDD8BA3C04E7A2A5 /* PanoramaView.h */,
+				E897C3BF8AEFA4D3D2760488BEC76D5C /* PanoramaView.m */,
+				523ABE3E71C287D5B932003308585671 /* Support Files */,
 			);
 			name = PanoramaView;
 			path = PanoramaView;
+			sourceTree = "<group>";
+		};
+		6900366FB7BB638A79B05528E0BB828A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F282AE4171196453D352C3FA36998AC /* ImageViewer.modulemap */,
+				B190C00ABC0853C1A5FC5ED3AF786977 /* ImageViewer.xcconfig */,
+				8AD9EEF31763F5BE0A890D05CA44B38E /* ImageViewer-dummy.m */,
+				F79562D907A8C62E358B13CBEB95803D /* ImageViewer-prefix.pch */,
+				E4E45311DF7CE5AE0843E91F6558FD1C /* ImageViewer-umbrella.h */,
+				ACD6BEF8ADA965E8722D8FA22CE8A289 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ImageViewer";
 			sourceTree = "<group>";
 		};
 		6DB115CE93DB3ABFC622C96F4F255086 /* Targets Support Files */ = {
@@ -184,74 +344,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		6EEED801F2115FF99C4FCD46B96EDC47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				357753A3E1BA9B598238C6A1F30CD8D6 /* GSImageViewerController */,
+				F1DC2C750B36F90D6BE0AC4FC46FD1D6 /* ImageViewer */,
+				5F64975EA18711F7E068176720BD564C /* PanoramaView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				9E2C33372CC4835C6BB89C2FF2F92D34 /* Pods */,
-				C055A9E7C805D162BD2A08A25BA4BDF2 /* Products */,
+				6EEED801F2115FF99C4FCD46B96EDC47 /* Pods */,
+				5776DA62132696A42C887BC4BD5CA6DA /* Products */,
 				6DB115CE93DB3ABFC622C96F4F255086 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		9E2C33372CC4835C6BB89C2FF2F92D34 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C16A0462DFE9B1303D1CE1C7A2702BA9 /* GSImageViewerController */,
-				5911C3EB1339ED2D6046ADD900866C86 /* PanoramaView */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B7B0B4E88B0AED9E70CB7A51BFC51AA2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				05EB566E70E7327224AF8EB115D8F1DC /* GSImageViewerController.modulemap */,
-				C22F52911AEDE5CABC3333A72D754197 /* GSImageViewerController.xcconfig */,
-				E5020DAB7FE7A4D9CFFCEED5AF87F0A7 /* GSImageViewerController-dummy.m */,
-				11B6D3BB8B7423724547EDA493A09AB7 /* GSImageViewerController-prefix.pch */,
-				EF05C28EFF05E42DEB79430E5E7D17D2 /* GSImageViewerController-umbrella.h */,
-				0BA8B93490200EFEB36A87F8B7DD73C3 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GSImageViewerController";
-			sourceTree = "<group>";
-		};
-		BD4F4438AA491E695C84CD64CE2FECE6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F0122693FBBCC949C54F96BC434B667D /* Info.plist */,
-				49CD3647AE6B545A723068FC224AD905 /* PanoramaView.modulemap */,
-				C353EEA23DA81409F115EE66A3B3549D /* PanoramaView.xcconfig */,
-				C48D9154BB94734B5CB7F0E690EE9118 /* PanoramaView-dummy.m */,
-				F4CC2D9C939EF6AF3EF6C7DB1E527AA1 /* PanoramaView-prefix.pch */,
-				B2B1450BD10667C05894F21FFA768446 /* PanoramaView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PanoramaView";
-			sourceTree = "<group>";
-		};
-		C055A9E7C805D162BD2A08A25BA4BDF2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				56F9688980D44874FEC205F2A556CB0E /* GSImageViewerController.framework */,
-				1676A93FBC762E120F4AE3F2313B418D /* PanoramaView.framework */,
-				9B6D8684FC4753A679CD24D3AD5A9769 /* Pods_PanoDemo.framework */,
-				0C6B1B042C33B689219311FA92D2BDEE /* Pods_PanoDemoTests.framework */,
-				FEBF682A18CD30587C599D335DBB2832 /* Pods_PanoDemoUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C16A0462DFE9B1303D1CE1C7A2702BA9 /* GSImageViewerController */ = {
-			isa = PBXGroup;
-			children = (
-				3632DC1828394190D0D498ECD90612F6 /* GSImageViewerController.swift */,
-				B7B0B4E88B0AED9E70CB7A51BFC51AA2 /* Support Files */,
-			);
-			name = GSImageViewerController;
-			path = GSImageViewerController;
 			sourceTree = "<group>";
 		};
 		C2957DAEB38AE28027868297063BE9F6 /* Pods-PanoDemo */ = {
@@ -302,6 +413,50 @@
 			path = "Target Support Files/Pods-PanoDemoTests";
 			sourceTree = "<group>";
 		};
+		F1DC2C750B36F90D6BE0AC4FC46FD1D6 /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				46C19C6411758859AF53F6B5D2808B18 /* AVPlayer.swift */,
+				754091D1A11FEECB83E5B7EADFA12B62 /* BlurView.swift */,
+				D5C4CBDC49CF1D4BD56027BC5879C60B /* Bool.swift */,
+				F9F538B4F3C4FC3DB7850B2913C80165 /* CALayer.swift */,
+				F129796A1E90FB7A7C4A65D165348784 /* CAShapeLayer.swift */,
+				D928AD83214602536F7A561BED221488 /* CGPoint.swift */,
+				8DA9BFC32CC9B4B809DF554F17C7805E /* CGRect.swift */,
+				007832E87357747D4F3E188B4E5BB8FD /* CGSize.swift */,
+				DD73CE2F3FCEFCE2FAC1AFDF628043D7 /* GalleryConfiguration.swift */,
+				99AABFE62592977066AFD3D21B6282BE /* GalleryDisplacedViewsDatasource.swift */,
+				498D9BFCD3762A68DD26154516168A0B /* GalleryItem.swift */,
+				23973F4256CD6ECE64AAB49EC84567E3 /* GalleryItemsDatasource.swift */,
+				D4D16AC72509FAEC0B619BFE5CFB24C4 /* GalleryPagingDatasource.swift */,
+				2CFB3249327EB4BA1ECF17BD88736172 /* GallerySwipeToDismissTransition.swift */,
+				AB3029589CAA57C1B61D27DF5F843A1B /* GalleryViewController.swift */,
+				E07314FDBFDF7717D9346F8877FB84DA /* ImageFadeInHandler.swift */,
+				015F23595F984B924D19D3DA31386635 /* ImageViewController.swift */,
+				96161887748BEAC905883367F7727ADC /* ItemBaseController.swift */,
+				1B37AF7206301615042F7B890C9AEA16 /* ItemController.swift */,
+				FDB3EA3A8E551FD0DBA47D3175B331D2 /* ItemControllerDelegate.swift */,
+				C526BDE8DB05E961F687D612B4AF3553 /* LayoutEnums.swift */,
+				90B4E06F9B301F1B5CA9A124EABBD8A7 /* Slider.swift */,
+				6F3FB72822198F6C14EFB359A55A5F1F /* ThumbnailCell.swift */,
+				6447193E898623725E3358041D371866 /* ThumbnailsViewController.swift */,
+				641124E030E45E1CD513F6FB359AD765 /* UIApplication.swift */,
+				F876AE4924F3995B6726256A58BB3CF2 /* UIBezierPath.swift */,
+				818510AC6B162D59819A1DDF4E442A51 /* UIButton.swift */,
+				5E7D452893858BB777E5F67205A43B0C /* UIImageView.swift */,
+				D9E8C2E5991E8CFE0DD086213806D7DA /* UISlider.swift */,
+				1E9C3DD0D59CED4A397D33283A99498A /* UIView.swift */,
+				4C584B8D338A74EAB7FE79F2F6661AD6 /* UIViewController.swift */,
+				942519EFBDDC60B990D62C5D2B651F1D /* UtilityFunctions.swift */,
+				39E1304093A752F94AECB7EC5DBC64C5 /* VideoScrubber.swift */,
+				EC49C9275B84A7C930EBFAA3E1F42600 /* VideoView.swift */,
+				31F9B3429C667CDB5503780E7E841136 /* VideoViewController.swift */,
+				6900366FB7BB638A79B05528E0BB828A /* Support Files */,
+			);
+			name = ImageViewer;
+			path = ImageViewer;
+			sourceTree = "<group>";
+		};
 		F322BB02D2EE435CF7C55B7D7D32F2F8 /* Pods-PanoDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,11 +503,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D757EC23673901EC2472BEEF127704A4 /* Headers */ = {
+		A7D807464BFDEC26C0DA65A66D4E430F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				446F62E7A0D5E26C63BB7AF2B70C4E08 /* Pods-PanoDemo-umbrella.h in Headers */,
+				B6679C59EFD1CD90F171D43BF70884CB /* Pods-PanoDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB0BE1EFC58026617F015EE12EEC4FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C608BDB545E340AE814181CC59763E /* ImageViewer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +544,7 @@
 			);
 			name = "Pods-PanoDemoUITests";
 			productName = "Pods-PanoDemoUITests";
-			productReference = FEBF682A18CD30587C599D335DBB2832 /* Pods_PanoDemoUITests.framework */;
+			productReference = 008869F74520DDDEB3EE705C2EF92727 /* Pods_PanoDemoUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		41E840C2984994732EAAB8652BE7177F /* PanoramaView */ = {
@@ -398,7 +561,27 @@
 			);
 			name = PanoramaView;
 			productName = PanoramaView;
-			productReference = 1676A93FBC762E120F4AE3F2313B418D /* PanoramaView.framework */;
+			productReference = D49BD7E13EA65AFBBB759FCF6E10BC69 /* PanoramaView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6D0240B2D3E026DEC4C5170241CB0BE7 /* Pods-PanoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DFD606FD7CDD8EBBBF7C96D1BDCD128 /* Build configuration list for PBXNativeTarget "Pods-PanoDemo" */;
+			buildPhases = (
+				F0593E59951CD4318826D8CE37CEFA6D /* Sources */,
+				F6C07842CDFB5C98D1104C07418C7F41 /* Frameworks */,
+				A7D807464BFDEC26C0DA65A66D4E430F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				545D89BD57E470971E4236AAF6383F58 /* PBXTargetDependency */,
+				6B62950260BDCBED6E8EC172D89E52E5 /* PBXTargetDependency */,
+				BB1C6289790D3A5AE170A4DD084F892A /* PBXTargetDependency */,
+			);
+			name = "Pods-PanoDemo";
+			productName = "Pods-PanoDemo";
+			productReference = 65805F9C4168B86388ABD0BD1DDA8127 /* Pods_PanoDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A201F9FE531D8FC9B04C9430B57BC98B /* GSImageViewerController */ = {
@@ -415,26 +598,24 @@
 			);
 			name = GSImageViewerController;
 			productName = GSImageViewerController;
-			productReference = 56F9688980D44874FEC205F2A556CB0E /* GSImageViewerController.framework */;
+			productReference = 64E6FBB6B20D8DEAF6CA10EE36ABB518 /* GSImageViewerController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ABDCF9EFED5CAD3C782AB8B15DEE2E64 /* Pods-PanoDemo */ = {
+		B321F3A57D08F1D51B82D56CADFEFBDF /* ImageViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EAFE6C1F6E76D2C59A99D537E7073C7A /* Build configuration list for PBXNativeTarget "Pods-PanoDemo" */;
+			buildConfigurationList = FCB6A1CF3D01460CC0B645612682F4C4 /* Build configuration list for PBXNativeTarget "ImageViewer" */;
 			buildPhases = (
-				9C43CC2141B9E53D9845320544B40648 /* Sources */,
-				55F80BB9C3D4B9A59F1850B056CEBB5F /* Frameworks */,
-				D757EC23673901EC2472BEEF127704A4 /* Headers */,
+				1938B39CA38B382AEB4A8D08B58840B8 /* Sources */,
+				D0E24EA2105F498949891E1BDAC1FA6F /* Frameworks */,
+				AEB0BE1EFC58026617F015EE12EEC4FB /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B682279F70B45709E2CEAD876F998251 /* PBXTargetDependency */,
-				C9FC761693A5FF4E18C65F20032A5213 /* PBXTargetDependency */,
 			);
-			name = "Pods-PanoDemo";
-			productName = "Pods-PanoDemo";
-			productReference = 9B6D8684FC4753A679CD24D3AD5A9769 /* Pods_PanoDemo.framework */;
+			name = ImageViewer;
+			productName = ImageViewer;
+			productReference = B03A7EFCD46305C0A06D5A86C4253FA6 /* ImageViewer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BCD2A766E79E9664E3D5F2E14B7D48CC /* Pods-PanoDemoTests */ = {
@@ -451,7 +632,7 @@
 			);
 			name = "Pods-PanoDemoTests";
 			productName = "Pods-PanoDemoTests";
-			productReference = 0C6B1B042C33B689219311FA92D2BDEE /* Pods_PanoDemoTests.framework */;
+			productReference = F8FA2E518BD58A3F3A5997D92F154F60 /* Pods_PanoDemoTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -471,13 +652,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C055A9E7C805D162BD2A08A25BA4BDF2 /* Products */;
+			productRefGroup = 5776DA62132696A42C887BC4BD5CA6DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A201F9FE531D8FC9B04C9430B57BC98B /* GSImageViewerController */,
+				B321F3A57D08F1D51B82D56CADFEFBDF /* ImageViewer */,
 				41E840C2984994732EAAB8652BE7177F /* PanoramaView */,
-				ABDCF9EFED5CAD3C782AB8B15DEE2E64 /* Pods-PanoDemo */,
+				6D0240B2D3E026DEC4C5170241CB0BE7 /* Pods-PanoDemo */,
 				BCD2A766E79E9664E3D5F2E14B7D48CC /* Pods-PanoDemoTests */,
 				3D65D26C5EB6638251BE516F9444E198 /* Pods-PanoDemoUITests */,
 			);
@@ -490,6 +672,49 @@
 			buildActionMask = 2147483647;
 			files = (
 				801A766280BC4736D3B28C8E8CE45F25 /* Pods-PanoDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1938B39CA38B382AEB4A8D08B58840B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345C02C9047B7C90E6C51212AB128BF7 /* AVPlayer.swift in Sources */,
+				124CB0ABCF238B79A42747E61E1E2557 /* BlurView.swift in Sources */,
+				C40B1C59082F0851B6A17CB0BBDC4F7C /* Bool.swift in Sources */,
+				9D0FFB439DCBC540E272ECF1B385BA9D /* CALayer.swift in Sources */,
+				5FEAC269DA6D03E1340EC71660D690F9 /* CAShapeLayer.swift in Sources */,
+				A3A3B93764C0C89A98CDA9B2AE69835A /* CGPoint.swift in Sources */,
+				88DCC2920F1323BD3D4F3F09272CC81A /* CGRect.swift in Sources */,
+				657ACDA469BDB0B809E7CB2EF1D8E051 /* CGSize.swift in Sources */,
+				0086FBD1BAF1B277488DA9C31A206986 /* GalleryConfiguration.swift in Sources */,
+				D71EE9D3C99BD3E677F85A0F0D3A67E2 /* GalleryDisplacedViewsDatasource.swift in Sources */,
+				8291294B989EE943B68E4B44BE546065 /* GalleryItem.swift in Sources */,
+				CBEE099F8D86DFAB6B27DC742420A7BE /* GalleryItemsDatasource.swift in Sources */,
+				81B22D31DA262FFC55D43ACDFF284EDF /* GalleryPagingDatasource.swift in Sources */,
+				5F5A95540353980BCCA15256BC43F9E7 /* GallerySwipeToDismissTransition.swift in Sources */,
+				86CCE8A84DFE63DF4A35242050F6547C /* GalleryViewController.swift in Sources */,
+				DFDF3EE3B53433B7CF0D16D8A33A4661 /* ImageFadeInHandler.swift in Sources */,
+				8F2A71D385434CC1F55FCBBC36DEE66D /* ImageViewController.swift in Sources */,
+				4AA64E984EA3FCB0A4D60796DF0EE746 /* ImageViewer-dummy.m in Sources */,
+				D44FA49215F77AA36C4E0158F5A012F6 /* ItemBaseController.swift in Sources */,
+				C9368751FB1E4E89FA4F4844B5C41C9B /* ItemController.swift in Sources */,
+				DEDE976189AF453FF25DF3A6C59F3F98 /* ItemControllerDelegate.swift in Sources */,
+				032F75E613C88377A55CA7083F1DD58F /* LayoutEnums.swift in Sources */,
+				ACC69199EFB476D7FCF927F7FFB33138 /* Slider.swift in Sources */,
+				500F18B33116DEA4420E939F687B936B /* ThumbnailCell.swift in Sources */,
+				B51206262AAD0F55ACB5B0B4FA3D4E2C /* ThumbnailsViewController.swift in Sources */,
+				DF3BBA579CE5D094073B401F4EF6F1D1 /* UIApplication.swift in Sources */,
+				AC8D18100DD88ABFEB3CD9258D1ADC23 /* UIBezierPath.swift in Sources */,
+				CD4A3FD6C9DF922E269E1321E0E94E19 /* UIButton.swift in Sources */,
+				A29E2776BE40F24B8BF50FC1D7C0CD71 /* UIImageView.swift in Sources */,
+				23B752C758CD40BDFA11CB10BF9B60C6 /* UISlider.swift in Sources */,
+				15ACA6A8CDEAA47F5F72F2036182AC11 /* UIView.swift in Sources */,
+				F4FD741619ACFA1FD812D7E3B4B6B205 /* UIViewController.swift in Sources */,
+				DF2D4BBDE41DC40087778F99DF961933 /* UtilityFunctions.swift in Sources */,
+				90AECDE9B998A05C27F2BB0CF2809206 /* VideoScrubber.swift in Sources */,
+				9CB4B36154E771665C0B780BA44A78B8 /* VideoView.swift in Sources */,
+				88853951EC5E1DF6F64CF5FA37B5D280 /* VideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,14 +735,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C43CC2141B9E53D9845320544B40648 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9343BCEA994CE585A2CED01811284A4E /* Pods-PanoDemo-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B6D83A49EC0CC95015107B270B046304 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,20 +744,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F0593E59951CD4318826D8CE37CEFA6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E524C57B6B3284F0EEE675C1138EEF /* Pods-PanoDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B682279F70B45709E2CEAD876F998251 /* PBXTargetDependency */ = {
+		545D89BD57E470971E4236AAF6383F58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GSImageViewerController;
 			target = A201F9FE531D8FC9B04C9430B57BC98B /* GSImageViewerController */;
-			targetProxy = D938B0383D3A057FDD4AE1DAFBF96920 /* PBXContainerItemProxy */;
+			targetProxy = 98FA50ED9DE780CDDA0D0A5DB7B4DC34 /* PBXContainerItemProxy */;
 		};
-		C9FC761693A5FF4E18C65F20032A5213 /* PBXTargetDependency */ = {
+		6B62950260BDCBED6E8EC172D89E52E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImageViewer;
+			target = B321F3A57D08F1D51B82D56CADFEFBDF /* ImageViewer */;
+			targetProxy = E6BC8C6821F540D9104B86D7F111E884 /* PBXContainerItemProxy */;
+		};
+		BB1C6289790D3A5AE170A4DD084F892A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PanoramaView;
 			target = 41E840C2984994732EAAB8652BE7177F /* PanoramaView */;
-			targetProxy = 34D247174761A0C05C1DF52DDF527980 /* PBXContainerItemProxy */;
+			targetProxy = D514EAD6F91490F850D61A8E8F8745F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -624,9 +855,44 @@
 			};
 			name = Release;
 		};
+		1F28DF56E96E8E00AFA7A86DF16472FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C757739C4479954FF1B46F509D61A22 /* Pods-PanoDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PanoDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PanoDemo/Pods-PanoDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PanoDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2C7F9FD03AC1D2246B007928C712E6F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C353EEA23DA81409F115EE66A3B3549D /* PanoramaView.xcconfig */;
+			baseConfigurationReference = 707F96B45DEBCBCD79D91534DE610605 /* PanoramaView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -731,7 +997,7 @@
 			};
 			name = Release;
 		};
-		748CFD16ED188B34949C1B90D679AB1C /* Debug */ = {
+		501B4A8221904E9B2D4944B24CA2A602 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AD9AB99B50F6212C0A6FC1FECC8924D5 /* Pods-PanoDemo.debug.xcconfig */;
 			buildSettings = {
@@ -769,7 +1035,7 @@
 		};
 		8DD9506747B41EA3212B0162BDF41554 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C22F52911AEDE5CABC3333A72D754197 /* GSImageViewerController.xcconfig */;
+			baseConfigurationReference = FD77922A9124991C9272F8E22966A3BF /* GSImageViewerController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -800,41 +1066,6 @@
 			};
 			name = Debug;
 		};
-		9AF81DF12E2BB37DA2A80AFFC943B50A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C757739C4479954FF1B46F509D61A22 /* Pods-PanoDemo.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PanoDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PanoDemo/Pods-PanoDemo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PanoDemo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		D6BA2FE9E62E789DC82B7E82D7AC0329 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0DD558B151287210E40BDFBE5B886FF7 /* Pods-PanoDemoTests.debug.xcconfig */;
@@ -864,6 +1095,39 @@
 				PRODUCT_NAME = Pods_PanoDemoTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D8B7C54CDA840B7707CBCD34C35A4F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B190C00ABC0853C1A5FC5ED3AF786977 /* ImageViewer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ImageViewer/ImageViewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageViewer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImageViewer/ImageViewer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ImageViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -907,7 +1171,7 @@
 		};
 		EE4E857A369201E47C3993A0A6996772 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C22F52911AEDE5CABC3333A72D754197 /* GSImageViewerController.xcconfig */;
+			baseConfigurationReference = FD77922A9124991C9272F8E22966A3BF /* GSImageViewerController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -939,7 +1203,7 @@
 		};
 		F0B9E46DAC703E2C76AB4388C2E28B3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C353EEA23DA81409F115EE66A3B3549D /* PanoramaView.xcconfig */;
+			baseConfigurationReference = 707F96B45DEBCBCD79D91534DE610605 /* PanoramaView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -960,6 +1224,38 @@
 				MODULEMAP_FILE = "Target Support Files/PanoramaView/PanoramaView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = PanoramaView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F43C1ADB91BFD29A4DE24008F671D75E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B190C00ABC0853C1A5FC5ED3AF786977 /* ImageViewer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ImageViewer/ImageViewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageViewer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImageViewer/ImageViewer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ImageViewer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -999,6 +1295,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5DFD606FD7CDD8EBBBF7C96D1BDCD128 /* Build configuration list for PBXNativeTarget "Pods-PanoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501B4A8221904E9B2D4944B24CA2A602 /* Debug */,
+				1F28DF56E96E8E00AFA7A86DF16472FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DFC5817F51B0029BF3180F225DB9E01E /* Build configuration list for PBXNativeTarget "GSImageViewerController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1017,11 +1322,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAFE6C1F6E76D2C59A99D537E7073C7A /* Build configuration list for PBXNativeTarget "Pods-PanoDemo" */ = {
+		FCB6A1CF3D01460CC0B645612682F4C4 /* Build configuration list for PBXNativeTarget "ImageViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				748CFD16ED188B34949C1B90D679AB1C /* Debug */,
-				9AF81DF12E2BB37DA2A80AFFC943B50A /* Release */,
+				D8B7C54CDA840B7707CBCD34C35A4F0D /* Debug */,
+				F43C1ADB91BFD29A4DE24008F671D75E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
