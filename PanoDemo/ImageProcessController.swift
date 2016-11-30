@@ -62,6 +62,6 @@ class ImageProcessController: UIViewController {
     
     @IBAction func loadAction(_ sender: Any) {
         // imageUtil.saveToFile(image: UIImage(named: "dining.jpg")!)
-        localLoadImg.image = imageUtil.readFromFile(fileName: "testsave2.jpg")
+        localLoadImg.image = imageUtil.readFromFile(fileName: "2.jpg")
     }
 }
