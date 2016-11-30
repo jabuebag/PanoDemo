@@ -21,8 +21,15 @@ class MainViewController: UIViewController, GalleryItemsDatasource, GalleryDispl
     override func viewDidLoad() {
         super.viewDidLoad()
         definesPresentationContext = true
+        let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let twoNormal = documentsDirectoryURL.appendingPathComponent("1.jpg").path
+        let twoFade = documentsDirectoryURL.appendingPathComponent("2.jpg").path
+        var twoNormalPano = PanoModel(name: "halfhalf.jpg", panoName: twoNormal)
+        var twoFadePano = PanoModel(name: "halfhalffade.jpg", panoName: twoFade)
         var officePano = PanoModel(name: "office.jpg", panoName: "officePro.jpg")
         var diningPano = PanoModel(name: "dining.jpg", panoName: "dining.jpg")
+        panoArray.append(twoNormalPano)
+        panoArray.append(twoFadePano)
         panoArray.append(officePano)
         panoArray.append(diningPano)
         

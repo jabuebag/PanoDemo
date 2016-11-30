@@ -23,7 +23,7 @@ class ImageUtil {
         // define the start and end grayscale values (with the alpha, even though
         // our bitmap context doesn't support alpha the gradient requires it)
         if (!upsideDown) {
-            colors = [1.0, 1.0, 0.3, 0.0]
+            colors = [0.6, 1.0, 0.3, 0.0]
         }
         
         // create the CGGradient and then release the gray color space
@@ -182,7 +182,7 @@ class ImageUtil {
     func saveToFile(image: UIImage) {
         let documentsDirectoryURL = try! FileManager().url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         // create a name for your image
-        let fileURL = documentsDirectoryURL.appendingPathComponent("testsave2.jpg")
+        let fileURL = documentsDirectoryURL.appendingPathComponent("2.jpg")
         print(fileURL.path)
         if !FileManager.default.fileExists(atPath: fileURL.path) {
             do {
