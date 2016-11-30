@@ -25,15 +25,15 @@ class SphereViewController: GLKViewController {
 //        let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
 //        let filePath = documentsDirectoryURL.appendingPathComponent("testsave2.jpg").path
         panoramaView?.setImage(panoModel?.panoName)
-        panoramaView?.touchToPan = true
+        panoramaView?.touchToPan = false
         panoramaView?.orientToDevice = true
-        panoramaView?.pinchToZoom = true
+        panoramaView?.pinchToZoom = false
         panoramaView?.showTouches = false
-        panoramaView?.setVRModeExt(false)
+        panoramaView?.setVRModeExt(true)
         self.view = panoramaView
         
         // add change to VR mode button
-        addVRModeBtn()
+        // addVRModeBtn()
         // add return back button
         addVRReturnBtn()
         // add screen touch action
