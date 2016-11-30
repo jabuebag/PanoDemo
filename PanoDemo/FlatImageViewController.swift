@@ -16,6 +16,7 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
     @IBOutlet weak var originImg: UIImageView!
     @IBOutlet weak var aspectFitImg: UIImageView!
     @IBOutlet weak var otherWayImg: UIImageView!
+    @IBOutlet weak var fadeEffectImg: UIImageView!
     
     let imageUtil = ImageUtil()
     var imageViews: [UIImageView] = []
@@ -32,8 +33,11 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
         var otherTapGesture = UITapGestureRecognizer(target: self, action: "otherImgTap")
         otherWayImg.image = UIImage(named: "halfhalf.jpg")
         otherWayImg.addGestureRecognizer(otherTapGesture)
+        var fadeTapGesture = UITapGestureRecognizer(target: self, action: "fadeImgTap")
+        fadeEffectImg.image = UIImage(named: "fadetest.jpg")
+        fadeEffectImg.addGestureRecognizer(fadeTapGesture)
         
-        imageViews += [originImg, aspectFitImg, otherWayImg]
+        imageViews += [originImg, aspectFitImg, otherWayImg, fadeEffectImg]
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,9 +57,10 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
 //        let transitionInfo = GSTransitionInfo(fromView: originImg)
 //        let imageViewer = GSImageViewerController(imageInfo: imageInfo, transitionInfo: transitionInfo)
 //        present(imageViewer, animated: true, completion: nil)
+        guard let displacedViewIndex = imageViews.index(of: aspectFitImg) else { return }
         let frame = CGRect(x: 0, y: 0, width: 200, height: 24)
         // let footerView = CounterView(frame: frame)
-        let galleryViewController = GalleryViewController(startIndex: 0, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
+        let galleryViewController = GalleryViewController(startIndex: displacedViewIndex, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
         // galleryViewController.footerView = footerView
         galleryViewController.launchedCompletion = { print("LAUNCHED") }
         galleryViewController.closedCompletion = { print("CLOSED") }
@@ -64,15 +69,29 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
     }
     
     func otherImgTap() {
+        guard let displacedViewIndex = imageViews.index(of: otherWayImg) else { return }
         let frame = CGRect(x: 0, y: 0, width: 200, height: 24)
         // let footerView = CounterView(frame: frame)
-        let galleryViewController = GalleryViewController(startIndex: 0, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
+        let galleryViewController = GalleryViewController(startIndex: displacedViewIndex, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
         // galleryViewController.footerView = footerView
         galleryViewController.launchedCompletion = { print("LAUNCHED") }
         galleryViewController.closedCompletion = { print("CLOSED") }
         galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
         self.presentImageGallery(galleryViewController)
     }
+    
+    func fadeImgTap() {
+        guard let displacedViewIndex = imageViews.index(of: fadeEffectImg) else { return }
+        let frame = CGRect(x: 0, y: 0, width: 200, height: 24)
+        // let footerView = CounterView(frame: frame)
+        let galleryViewController = GalleryViewController(startIndex: displacedViewIndex, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
+        // galleryViewController.footerView = footerView
+        galleryViewController.launchedCompletion = { print("LAUNCHED") }
+        galleryViewController.closedCompletion = { print("CLOSED") }
+        galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
+        self.presentImageGallery(galleryViewController)
+    }
+    
     
     func itemCount() -> Int {
         
@@ -81,12 +100,12 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
     
     func provideDisplacementItem(atIndex index: Int) -> DisplaceableView? {
         
-        //print(index)
-        return otherWayImg
+        print(index)
+        return imageViews[index]
     }
     
     func provideGalleryItem(_ index: Int) -> GalleryItem {
-        let image = otherWayImg.image ?? UIImage(named: "0")!
+        let image = imageViews[index].image ?? UIImage(named: "0")!
             
         return GalleryItem.image { $0(image) }
     }
