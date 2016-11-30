@@ -174,4 +174,27 @@ class ImageUtil {
             return returnImg!
         }
     }
+    
+    func maskImage(image: UIImage, withMask maskImage: UIImage) -> UIImage {
+        
+        let maskRef = maskImage.cgImage
+        
+        let mask = CGImage(
+            maskWidth: maskRef!.width,
+            height: maskRef!.height,
+            bitsPerComponent: maskRef!.bitsPerComponent,
+            bitsPerPixel: maskRef!.bitsPerPixel,
+            bytesPerRow: maskRef!.bytesPerRow,
+            provider: maskRef!.dataProvider!,
+            decode: nil,
+            shouldInterpolate: false)
+        
+        let masked = image.cgImage!.masking(mask!)
+        let maskedImage = UIImage(cgImage: masked!)
+        
+        // No need to release. Core Foundation objects are automatically memory managed.
+        
+        return maskedImage
+        
+    }
 }
