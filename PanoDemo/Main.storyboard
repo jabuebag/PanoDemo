@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kpA-ed-R0F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ber-bl-faC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -391,12 +391,53 @@
                     <view key="view" contentMode="scaleToFill" id="wzk-f8-jKL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iaJ-ho-0Ul">
+                                <rect key="frame" x="16" y="20" width="343" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iaJ-ho-0Ul" secondAttribute="height" multiplier="343:233" id="eyU-LY-PA6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fDI-mW-m8U">
+                                <rect key="frame" x="16" y="261" width="343" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fDI-mW-m8U" secondAttribute="height" multiplier="343:233" id="8Au-dd-Mxs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-pJ-bSf">
+                                <rect key="frame" x="149" y="542" width="76" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3ik-jT-uEx"/>
+                                    <constraint firstAttribute="width" constant="76" id="LnN-fG-utf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="fadeAction:" destination="Ber-bl-faC" eventType="touchUpInside" id="EAG-ZA-s5y"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iaJ-ho-0Ul" firstAttribute="leading" secondItem="wzk-f8-jKL" secondAttribute="leadingMargin" id="7hE-sj-a6H"/>
+                            <constraint firstItem="fDI-mW-m8U" firstAttribute="leading" secondItem="wzk-f8-jKL" secondAttribute="leadingMargin" id="87g-ct-BMq"/>
+                            <constraint firstItem="fDI-mW-m8U" firstAttribute="top" secondItem="iaJ-ho-0Ul" secondAttribute="bottom" constant="8" id="IPa-Ac-96c"/>
+                            <constraint firstItem="iaJ-ho-0Ul" firstAttribute="top" secondItem="IQR-xq-RNU" secondAttribute="bottom" id="Qzh-ZV-0Z4"/>
+                            <constraint firstItem="iaJ-ho-0Ul" firstAttribute="trailing" secondItem="wzk-f8-jKL" secondAttribute="trailingMargin" id="ch8-zL-sjD"/>
+                            <constraint firstItem="fDI-mW-m8U" firstAttribute="trailing" secondItem="wzk-f8-jKL" secondAttribute="trailingMargin" id="hMy-PU-jbM"/>
+                            <constraint firstItem="t5a-pJ-bSf" firstAttribute="top" secondItem="fDI-mW-m8U" secondAttribute="bottom" constant="48" id="idj-e6-qh1"/>
+                            <constraint firstItem="t5a-pJ-bSf" firstAttribute="centerX" secondItem="fDI-mW-m8U" secondAttribute="centerX" id="j67-7G-cUO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fadeBtn" destination="t5a-pJ-bSf" id="8VI-gA-ggw"/>
+                        <outlet property="fadeImg" destination="fDI-mW-m8U" id="nBq-sa-1tX"/>
+                        <outlet property="originImg" destination="iaJ-ho-0Ul" id="kXd-Pb-Ikf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNR-io-D66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1398" y="1555"/>
+            <point key="canvasLocation" x="1397.5999999999999" y="1554.872563718141"/>
         </scene>
         <!--Video Shooter Controller-->
         <scene sceneID="aVN-au-31W">
