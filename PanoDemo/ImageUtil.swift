@@ -227,8 +227,6 @@ class ImageUtil {
         let masked = image.cgImage!.masking(mask!)
         let maskedImage = UIImage(cgImage: masked!)
         
-        // No need to release. Core Foundation objects are automatically memory managed.
-        
         return maskedImage
         
     }

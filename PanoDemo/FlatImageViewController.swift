@@ -53,18 +53,14 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
     }
     
     func fitImgTap() {
-//        let imageInfo   = GSImageInfo(image:aspectFitImg.image!, imageMode: .aspectFit)
-//        let transitionInfo = GSTransitionInfo(fromView: originImg)
-//        let imageViewer = GSImageViewerController(imageInfo: imageInfo, transitionInfo: transitionInfo)
-//        present(imageViewer, animated: true, completion: nil)
         guard let displacedViewIndex = imageViews.index(of: aspectFitImg) else { return }
         let frame = CGRect(x: 0, y: 0, width: 200, height: 24)
         // let footerView = CounterView(frame: frame)
         let galleryViewController = GalleryViewController(startIndex: displacedViewIndex, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
         // galleryViewController.footerView = footerView
-        galleryViewController.launchedCompletion = { print("LAUNCHED") }
-        galleryViewController.closedCompletion = { print("CLOSED") }
-        galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
+//        galleryViewController.launchedCompletion = { print("LAUNCHED") }
+//        galleryViewController.closedCompletion = { print("CLOSED") }
+//        galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
         self.presentImageGallery(galleryViewController)
     }
     
@@ -74,9 +70,9 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
         // let footerView = CounterView(frame: frame)
         let galleryViewController = GalleryViewController(startIndex: displacedViewIndex, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
         // galleryViewController.footerView = footerView
-        galleryViewController.launchedCompletion = { print("LAUNCHED") }
-        galleryViewController.closedCompletion = { print("CLOSED") }
-        galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
+//        galleryViewController.launchedCompletion = { print("LAUNCHED") }
+//        galleryViewController.closedCompletion = { print("CLOSED") }
+//        galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
         self.presentImageGallery(galleryViewController)
     }
     
@@ -86,9 +82,9 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
         // let footerView = CounterView(frame: frame)
         let galleryViewController = GalleryViewController(startIndex: displacedViewIndex, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
         // galleryViewController.footerView = footerView
-        galleryViewController.launchedCompletion = { print("LAUNCHED") }
-        galleryViewController.closedCompletion = { print("CLOSED") }
-        galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
+//        galleryViewController.launchedCompletion = { print("LAUNCHED") }
+//        galleryViewController.closedCompletion = { print("CLOSED") }
+//        galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
         self.presentImageGallery(galleryViewController)
     }
     
@@ -100,7 +96,6 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
     
     func provideDisplacementItem(atIndex index: Int) -> DisplaceableView? {
         
-        print(index)
         return imageViews[index]
     }
     
