@@ -92,6 +92,41 @@ class ImageUtil {
         return theImage
     }
     
+    func createFadeImage(_ pixelsWide: Int, _ pixelsHigh: Int, _ upsideDown: Bool) -> CGImage? {
+        var colors: [CGFloat] = [1.0, 0.0, 1.0, 1.0]
+        var theCGImage: CGImage? = nil
+        
+        // gradient is always black-white and the mask must be in the gray colorspace
+        let colorSpace = CGColorSpaceCreateDeviceGray()
+        
+        // create the bitmap context
+        let gradientBitmapContext = CGContext(data: nil, width: pixelsWide, height: pixelsHigh,
+                                              bitsPerComponent: 8, bytesPerRow: 0, space: colorSpace, bitmapInfo: CGImageAlphaInfo.none.rawValue)
+        
+        // define the start and end grayscale values (with the alpha, even though
+        // our bitmap context doesn't support alpha the gradient requires it)
+        if (!upsideDown) {
+            colors = [1.0, 1.0, 0.3, 0.0]
+        }
+        
+        // create the CGGradient and then release the gray color space
+        let grayScaleGradient = CGGradient(colorSpace: colorSpace, colorComponents: colors, locations: [0.9,1.0], count: 2)
+        
+        // create the start and end points for the gradient vector (straight down)
+        let gradientStartPoint = CGPoint.zero
+        let gradientEndPoint = CGPoint(x: CGFloat(pixelsWide), y: 0)
+        
+        // draw the gradient into the gray bitmap context
+        gradientBitmapContext?.drawLinearGradient(grayScaleGradient!, start: gradientStartPoint,
+                                                  end: gradientEndPoint,  options: CGGradientDrawingOptions.drawsAfterEndLocation)
+        
+        // convert the context into a CGImageRef and release the context
+        theCGImage = gradientBitmapContext?.makeImage()
+        
+        // return the imageref containing the gradient
+        return theCGImage
+    }
+    
     func resizeImageWithFixedRatio(image: UIImage, newWidth: CGFloat) -> UIImage {
         let scale = newWidth / image.size.width
         let newHeight = image.size.height * scale
