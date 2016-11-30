@@ -11,6 +11,7 @@ import UIKit
 class MainTableViewCell: UITableViewCell {
     
     @IBOutlet weak var panoImg: UIImageView!
+    var panoModel: PanoModel?
     
     override func awakeFromNib() {
         super.awakeFromNib()

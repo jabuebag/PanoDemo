@@ -20,6 +20,7 @@ class MainViewController: UIViewController, GalleryItemsDatasource, GalleryDispl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        definesPresentationContext = true
         var officePano = PanoModel(name: "office.jpg", panoName: "officePro.jpg")
         var diningPano = PanoModel(name: "dining.jpg", panoName: "dining.jpg")
         panoArray.append(officePano)
@@ -44,6 +45,7 @@ class MainViewController: UIViewController, GalleryItemsDatasource, GalleryDispl
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MainTableViewCell = tableView.dequeueReusableCell(withIdentifier: "PanoCell", for: indexPath) as! MainTableViewCell
         cell.panoImg.image = UIImage(named: panoArray[indexPath.row].name)
+        cell.panoModel = panoArray[indexPath.row]
         return cell
     }
     
@@ -52,14 +54,11 @@ class MainViewController: UIViewController, GalleryItemsDatasource, GalleryDispl
         let touchedCell = tableView.cellForRow(at: indexPath) as? MainTableViewCell
         tapedImageView = touchedCell?.panoImg
         let frame = CGRect(x: 0, y: 0, width: 200, height: 24)
-        let footerView = CounterView(frame: frame)
+        let footerView = CounterView(frame: frame, panoModel: (touchedCell?.panoModel)!)
         let galleryViewController = GalleryViewController(startIndex: 0, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
         galleryViewController.footerView = footerView
+        footerView.controller = galleryViewController
         self.presentImageGallery(galleryViewController)
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let sphereView: SphereViewController = storyboard.instantiateViewController(withIdentifier: "SphereViewController") as! SphereViewController
-//        sphereView.panoModel = panoArray[indexPath.row]
-//        self.present(sphereView, animated: true, completion: nil)
     }
     
     func itemCount() -> Int {

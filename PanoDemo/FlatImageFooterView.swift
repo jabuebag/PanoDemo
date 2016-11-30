@@ -10,36 +10,55 @@ import UIKit
 
 class CounterView: UIView {
     
-    let countLabel = UILabel()
+    let vrBtn = UIButton()
+    var panoModel: PanoModel?
+    var controller: UIViewController?
     
     override init(frame: CGRect) {
         
         super.init(frame: frame)
         
-        configureLabel()
-        updateLabel()
+        configureBtn()
+        updateBtn()
+        
+        vrBtn.addTarget(self, action: #selector(vrAction), for: .touchUpInside)
+    }
+    
+    init(frame: CGRect, panoModel: PanoModel) {
+        super.init(frame: frame)
+        
+        self.panoModel = panoModel
+        
+        configureBtn()
+        updateBtn()
+        
+        vrBtn.addTarget(self, action: #selector(vrAction), for: .touchUpInside)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configureLabel() {
+    func configureBtn() {
         
-        countLabel.textAlignment = .center
-        self.addSubview(countLabel)
+        self.addSubview(vrBtn)
     }
     
-    func updateLabel() {
+    func updateBtn() {
         
-        let countString = "test"
-        
-        countLabel.attributedText = NSAttributedString(string: countString, attributes: [NSFontAttributeName: UIFont.boldSystemFont(ofSize: 17), NSForegroundColorAttributeName: UIColor.white])
+        vrBtn.setTitle("vr", for: .normal)
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        countLabel.frame = self.bounds
+        vrBtn.frame = self.bounds
+    }
+    
+    func vrAction(sender: UIButton!) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let sphereView: SphereViewController = storyboard.instantiateViewController(withIdentifier: "SphereViewController") as! SphereViewController
+        sphereView.panoModel = self.panoModel
+        controller?.present(sphereView, animated: true, completion: nil)
     }
 }
