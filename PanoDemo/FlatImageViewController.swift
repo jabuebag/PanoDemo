@@ -17,6 +17,9 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
     @IBOutlet weak var aspectFitImg: UIImageView!
     @IBOutlet weak var otherWayImg: UIImageView!
     
+    let imageUtil = ImageUtil()
+    var imageViews: [UIImageView] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,11 +27,13 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
         var originTapGesture = UITapGestureRecognizer(target: self, action: "originImgTap")
         originImg.addGestureRecognizer(originTapGesture)
         var aspectFitTapGesture = UITapGestureRecognizer(target: self, action: "fitImgTap")
-        aspectFitImg.image = UIImage(named: "office.jpg")
+        aspectFitImg.image = imageUtil.maskImage(image: UIImage(named: "half1.jpg")!, withMask: UIImage(named: "half2.jpg")!)
         aspectFitImg.addGestureRecognizer(aspectFitTapGesture)
         var otherTapGesture = UITapGestureRecognizer(target: self, action: "otherImgTap")
         otherWayImg.image = UIImage(named: "halfhalf.jpg")
         otherWayImg.addGestureRecognizer(otherTapGesture)
+        
+        imageViews += [originImg, aspectFitImg, otherWayImg]
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,10 +49,18 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
     }
     
     func fitImgTap() {
-        let imageInfo   = GSImageInfo(image:originImg.image!, imageMode: .aspectFit)
-        let transitionInfo = GSTransitionInfo(fromView: originImg)
-        let imageViewer = GSImageViewerController(imageInfo: imageInfo, transitionInfo: transitionInfo)
-        present(imageViewer, animated: true, completion: nil)
+//        let imageInfo   = GSImageInfo(image:aspectFitImg.image!, imageMode: .aspectFit)
+//        let transitionInfo = GSTransitionInfo(fromView: originImg)
+//        let imageViewer = GSImageViewerController(imageInfo: imageInfo, transitionInfo: transitionInfo)
+//        present(imageViewer, animated: true, completion: nil)
+        let frame = CGRect(x: 0, y: 0, width: 200, height: 24)
+        // let footerView = CounterView(frame: frame)
+        let galleryViewController = GalleryViewController(startIndex: 0, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
+        // galleryViewController.footerView = footerView
+        galleryViewController.launchedCompletion = { print("LAUNCHED") }
+        galleryViewController.closedCompletion = { print("CLOSED") }
+        galleryViewController.swipedToDismissCompletion = { print("SWIPE-DISMISSED") }
+        self.presentImageGallery(galleryViewController)
     }
     
     func otherImgTap() {
@@ -68,21 +81,14 @@ class FlatImageViewController: UIViewController, GalleryItemsDatasource, Gallery
     
     func provideDisplacementItem(atIndex index: Int) -> DisplaceableView? {
         
+        //print(index)
         return otherWayImg
     }
     
     func provideGalleryItem(_ index: Int) -> GalleryItem {
-        
-//        if index == 2 {
-//            
-//            return GalleryItem.video(fetchPreviewImageBlock: { $0(UIImage(named: "2")!)} , videoURL: URL(string: "http://video.dailymail.co.uk/video/mol/test/2016/09/21/5739239377694275356/1024x576_MP4_5739239377694275356.mp4")!)
-//        }
-//        else {
-//            
         let image = otherWayImg.image ?? UIImage(named: "0")!
             
         return GalleryItem.image { $0(image) }
-//        }
     }
     
     func galleryConfiguration() -> GalleryConfiguration {
