@@ -342,14 +342,21 @@
                                 <rect key="frame" x="0.0" y="332" width="375" height="128"/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RWy-M5-nCc">
+                                <rect key="frame" x="0.0" y="464" width="375" height="128"/>
+                                <gestureRecognizers/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="D3k-We-4dp" firstAttribute="top" secondItem="VKr-TI-Wtz" secondAttribute="bottom" constant="4" id="55A-Yr-R6c"/>
                             <constraint firstItem="6rw-Hk-d58" firstAttribute="top" secondItem="D3k-We-4dp" secondAttribute="bottom" constant="4" id="AdR-Bc-7rb"/>
+                            <constraint firstItem="RWy-M5-nCc" firstAttribute="width" secondItem="RWy-M5-nCc" secondAttribute="height" multiplier="375:128" id="J9q-64-rof"/>
                             <constraint firstItem="YAi-d3-Ehs" firstAttribute="leading" secondItem="oCc-vx-xS7" secondAttribute="leading" id="Kms-5A-hqn"/>
+                            <constraint firstAttribute="trailing" secondItem="RWy-M5-nCc" secondAttribute="trailing" id="Lkc-W9-Ulc"/>
                             <constraint firstItem="VKr-TI-Wtz" firstAttribute="trailing" secondItem="YAi-d3-Ehs" secondAttribute="trailing" id="MkT-p2-NG5"/>
+                            <constraint firstItem="RWy-M5-nCc" firstAttribute="leading" secondItem="oCc-vx-xS7" secondAttribute="leading" id="RlE-YV-KPA"/>
                             <constraint firstItem="YAi-d3-Ehs" firstAttribute="top" secondItem="oCc-vx-xS7" secondAttribute="top" id="XDP-GE-jo9"/>
                             <constraint firstAttribute="trailing" secondItem="YAi-d3-Ehs" secondAttribute="trailing" id="YIq-my-rlS"/>
                             <constraint firstAttribute="trailing" secondItem="D3k-We-4dp" secondAttribute="trailing" id="YNz-ee-mBv"/>
@@ -357,12 +364,14 @@
                             <constraint firstItem="D3k-We-4dp" firstAttribute="leading" secondItem="oCc-vx-xS7" secondAttribute="leading" id="bRN-mQ-Rj9"/>
                             <constraint firstItem="VKr-TI-Wtz" firstAttribute="top" secondItem="YAi-d3-Ehs" secondAttribute="bottom" constant="4" id="cRz-Bc-V48"/>
                             <constraint firstItem="VKr-TI-Wtz" firstAttribute="leading" secondItem="YAi-d3-Ehs" secondAttribute="leading" id="lES-sP-PGG"/>
+                            <constraint firstItem="RWy-M5-nCc" firstAttribute="top" secondItem="6rw-Hk-d58" secondAttribute="bottom" constant="4" id="u9n-2u-3ey"/>
                             <constraint firstItem="6rw-Hk-d58" firstAttribute="width" secondItem="6rw-Hk-d58" secondAttribute="height" multiplier="375:128" id="uAF-Xb-aVR"/>
                             <constraint firstItem="6rw-Hk-d58" firstAttribute="leading" secondItem="oCc-vx-xS7" secondAttribute="leading" id="un9-Mh-TUI"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="aspectFitImg" destination="D3k-We-4dp" id="HS1-I1-bca"/>
+                        <outlet property="fadeEffectImg" destination="RWy-M5-nCc" id="Cuu-oU-Sij"/>
                         <outlet property="originImg" destination="VKr-TI-Wtz" id="RZy-ap-4Vd"/>
                         <outlet property="otherWayImg" destination="6rw-Hk-d58" id="6mS-bZ-cdd"/>
                     </connections>
