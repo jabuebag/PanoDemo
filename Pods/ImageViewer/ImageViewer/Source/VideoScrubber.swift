@@ -94,7 +94,7 @@ open class VideoScrubber: UIControl {
             self.periodicObserver = nil
         }
 
-        print("VideoScrubber deinit 💣")
+//        print("VideoScrubber deinit 💣")
     }
 
     func didEndPlaying() {
