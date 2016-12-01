@@ -234,10 +234,10 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="naL-sL-2I7" id="XxX-Un-xAQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UtD-cM-bN6">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UtD-cM-bN6">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                                                 </imageView>
                                             </subviews>
@@ -270,6 +270,9 @@
                             <constraint firstItem="saX-20-M5Z" firstAttribute="leading" secondItem="gwG-RT-k2v" secondAttribute="leading" id="yC9-1q-wOW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainTableView" destination="saX-20-M5Z" id="ppO-Te-suT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYY-4S-raW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

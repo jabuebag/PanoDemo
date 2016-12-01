@@ -12,6 +12,8 @@ import ImageViewer
 // extension UIImageView: DisplaceableView {}
 
 class MainViewController: UIViewController, GalleryItemsDatasource, GalleryDisplacedViewsDatasource, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet weak var mainTableView: UITableView!
     
     var panoArray: [PanoModel] = []
     var panoImageViewArray: [UIImageView] = []
@@ -53,15 +55,31 @@ class MainViewController: UIViewController, GalleryItemsDatasource, GalleryDispl
         let cell: MainTableViewCell = tableView.dequeueReusableCell(withIdentifier: "PanoCell", for: indexPath) as! MainTableViewCell
         cell.panoImg.image = UIImage(named: panoArray[indexPath.row].name)
         cell.panoModel = panoArray[indexPath.row]
+        cell.panoImg.tag = indexPath.row
+        var imageViewTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapOnImage(sender:)))
+        cell.panoImg.addGestureRecognizer(imageViewTapRecognizer)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let touchedCell = tableView.cellForRow(at: indexPath) as? MainTableViewCell
-        tapedImageView = touchedCell?.panoImg
+//        let touchedCell = tableView.cellForRow(at: indexPath) as? MainTableViewCell
+//        tapedImageView = touchedCell?.panoImg
+//        let frame = CGRect(x: 0, y: 0, width: 200, height: 24)
+//        let footerView = CounterView(frame: frame, panoModel: (touchedCell?.panoModel)!)
+//        let galleryViewController = GalleryViewController(startIndex: 0, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
+//        galleryViewController.footerView = footerView
+//        footerView.controller = galleryViewController
+//        self.presentImageGallery(galleryViewController)
+    }
+    
+    func tapOnImage(sender:UITapGestureRecognizer){
+        tapedImageView = sender.view as! UIImageView
+        var position: CGPoint =  sender.location(in: self.mainTableView)
+        var indexPath: IndexPath = self.mainTableView.indexPathForRow(at: position)!
+        var touchedCell = self.tableView(mainTableView, cellForRowAt: indexPath) as! MainTableViewCell
         let frame = CGRect(x: 0, y: 0, width: 200, height: 24)
-        let footerView = CounterView(frame: frame, panoModel: (touchedCell?.panoModel)!)
+        let footerView = CounterView(frame: frame, panoModel: (touchedCell.panoModel)!)
         let galleryViewController = GalleryViewController(startIndex: 0, itemsDatasource: self, displacedViewsDatasource: self, configuration: galleryConfiguration())
         galleryViewController.footerView = footerView
         footerView.controller = galleryViewController
