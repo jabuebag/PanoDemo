@@ -21,28 +21,25 @@ class AddTextToImageController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(testImg.frame.origin.x)
         
         let image = UIImage(named: "addTextImage.jpg")!
         testImg.image = image
         
-        label = UILabel(frame: CGRect(x: testImg.frame.origin.x, y: testImg.frame.origin.y, width: testImg.bounds.size.width/2, height: testImg.bounds.size.height/2))
+        label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
         label.font = label.font.withSize(30)
         label.backgroundColor = UIColor.clear
         label.textAlignment = .center
         label.textColor = UIColor.red
-        label.text = "Here is the TEXT!"
-        self.view.addSubview(label)
-        label.transform = label.transform.rotated(by: CGFloat.pi * 45 / 180)
-        label.transform = label.transform.scaledBy(x: 1.2, y: 1.2)
-        label.transform = label.transform.translatedBy(x: 20, y: 20)
+        label.text = "Here"
+        label.layer.borderColor = UIColor.blue.cgColor
+        label.layer.borderWidth = 3.0
+        self.testImg.addSubview(label)
         
         // recognizer for the dragging move
         var gesture = UIPanGestureRecognizer(target: self, action: #selector(dragAction(gesture:)))
-        // get a lot of event all the drag gesture's path
         label.addGestureRecognizer(gesture)
+        testImg.isUserInteractionEnabled = true
         label.isUserInteractionEnabled = true
-        // testImg.image = generateImageWithText(imageView: imageView, label: label)
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,12 +55,7 @@ class AddTextToImageController: UIViewController {
     {
         UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, false, 0);
         var context = UIGraphicsGetCurrentContext()
-        context!.saveGState()
         imageView.layer.render(in: context!)
-        // context!.translateBy(x: label.frame.origin.x, y: label.frame.origin.y - imageView.frame.origin.y)
-        context!.concatenate(label.transform)
-        label.layer.render(in: context!)
-        context!.restoreGState()
         let imageWithText = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext();
         
@@ -71,14 +63,16 @@ class AddTextToImageController: UIViewController {
     }
     
     func dragAction(gesture: UIPanGestureRecognizer) {
+//        if (gesture.state == UIGestureRecognizerState.ended) {
+//            var label = gesture.view!
+//            label.transform = label.transform.scaledBy(x: 0.8, y: 0.8)
+//            // label.transform = label.transform.rotated(by: CGFloat.pi * 45 / 180)
+//            // label.transform = label.transform.translatedBy(x: 20, y: 20)
+//        }
         if (gesture.state == UIGestureRecognizerState.changed ||
             gesture.state == UIGestureRecognizerState.ended) {
             var label = gesture.view!
             let translation = gesture.translation(in: self.testImg)
-//            var newFrame = label.frame
-//            newFrame.origin.x += translation.x
-//            newFrame.origin.y += translation.y
-//            label.frame = newFrame
             label.transform = label.transform.translatedBy(x: translation.x, y: translation.y)
             gesture.setTranslation(CGPoint(x: 0,y :0), in: self.testImg)
         }
