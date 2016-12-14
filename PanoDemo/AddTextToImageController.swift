@@ -33,6 +33,10 @@ class AddTextToImageController: UIViewController {
         label.textColor = UIColor.red
         label.text = "Here is the TEXT!"
         self.view.addSubview(label)
+        label.transform = label.transform.rotated(by: CGFloat.pi * 45 / 180)
+        label.transform = label.transform.scaledBy(x: 1.2, y: 1.2)
+        label.transform = label.transform.translatedBy(x: 20, y: 20)
+        
         // recognizer for the dragging move
         var gesture = UIPanGestureRecognizer(target: self, action: #selector(dragAction(gesture:)))
         // get a lot of event all the drag gesture's path
@@ -52,13 +56,12 @@ class AddTextToImageController: UIViewController {
     
     func generateImageWithText(imageView: UIImageView, label: UILabel) -> UIImage
     {
-        print(imageView.frame)
-        print(label.frame)
         UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, false, 0);
         var context = UIGraphicsGetCurrentContext()
         context!.saveGState()
         imageView.layer.render(in: context!)
-        context!.translateBy(x: label.frame.origin.x, y: label.frame.origin.y - imageView.frame.origin.y)
+        // context!.translateBy(x: label.frame.origin.x, y: label.frame.origin.y - imageView.frame.origin.y)
+        context!.concatenate(label.transform)
         label.layer.render(in: context!)
         context!.restoreGState()
         let imageWithText = UIGraphicsGetImageFromCurrentImageContext()
@@ -72,10 +75,11 @@ class AddTextToImageController: UIViewController {
             gesture.state == UIGestureRecognizerState.ended) {
             var label = gesture.view!
             let translation = gesture.translation(in: self.testImg)
-            var newFrame = label.frame
-            newFrame.origin.x += translation.x
-            newFrame.origin.y += translation.y
-            label.frame = newFrame
+//            var newFrame = label.frame
+//            newFrame.origin.x += translation.x
+//            newFrame.origin.y += translation.y
+//            label.frame = newFrame
+            label.transform = label.transform.translatedBy(x: translation.x, y: translation.y)
             gesture.setTranslation(CGPoint(x: 0,y :0), in: self.testImg)
         }
     }
