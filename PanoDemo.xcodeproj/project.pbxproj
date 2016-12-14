@@ -40,6 +40,8 @@
 		01C5C4111DEE471A00500E31 /* half1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01C5C40F1DEE471A00500E31 /* half1.jpg */; };
 		01C5C4121DEE471A00500E31 /* half2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01C5C4101DEE471A00500E31 /* half2.jpg */; };
 		01C5C4141DEE542100500E31 /* fadetest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01C5C4131DEE542100500E31 /* fadetest.jpg */; };
+		01CDE5581E009D43009E520A /* AddTextToImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CDE5571E009D43009E520A /* AddTextToImageController.swift */; };
+		01CDE55A1E00A188009E520A /* addTextImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01CDE5591E00A188009E520A /* addTextImage.jpg */; };
 		01FC01961DEF8FD400AD16D1 /* halfhalffade.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FC01951DEF8FD400AD16D1 /* halfhalffade.jpg */; };
 		01FCE5351DE8CF72005E232C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCE5341DE8CF72005E232C /* MainViewController.swift */; };
 		01FCE53B1DE8EA56005E232C /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCE53A1DE8EA56005E232C /* MainTableViewCell.swift */; };
@@ -106,6 +108,8 @@
 		01C5C40F1DEE471A00500E31 /* half1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = half1.jpg; sourceTree = "<group>"; };
 		01C5C4101DEE471A00500E31 /* half2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = half2.jpg; sourceTree = "<group>"; };
 		01C5C4131DEE542100500E31 /* fadetest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fadetest.jpg; sourceTree = "<group>"; };
+		01CDE5571E009D43009E520A /* AddTextToImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTextToImageController.swift; sourceTree = "<group>"; };
+		01CDE5591E00A188009E520A /* addTextImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = addTextImage.jpg; sourceTree = "<group>"; };
 		01FC01951DEF8FD400AD16D1 /* halfhalffade.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = halfhalffade.jpg; sourceTree = "<group>"; };
 		01FCE5341DE8CF72005E232C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		01FCE53A1DE8EA56005E232C /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 				01C5C4071DED069900500E31 /* PictureStitchController.swift */,
 				01C5C4091DEE059D00500E31 /* FlatImageViewController.swift */,
 				01C5C40B1DEE39D100500E31 /* FlatImageFooterView.swift */,
+				01CDE5571E009D43009E520A /* AddTextToImageController.swift */,
 			);
 			path = PanoDemo;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 		0177918F1DE11B1E00FAD266 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				01CDE5591E00A188009E520A /* addTextImage.jpg */,
 				01FC01951DEF8FD400AD16D1 /* halfhalffade.jpg */,
 				01C5C4131DEE542100500E31 /* fadetest.jpg */,
 				01C5C40F1DEE471A00500E31 /* half1.jpg */,
@@ -417,6 +423,7 @@
 				01595A461DE5180A00CB82B5 /* Main.storyboard in Resources */,
 				0134A3D01DEB894F009D8F52 /* officePro.jpg in Resources */,
 				01C5C4111DEE471A00500E31 /* half1.jpg in Resources */,
+				01CDE55A1E00A188009E520A /* addTextImage.jpg in Resources */,
 				01309BA21DE6793C00E4B1BE /* haha.jpg in Resources */,
 				01A9E3581DEA87DD00D6231B /* dining.jpg in Resources */,
 				0177915E1DE10A0500FAD266 /* LaunchScreen.storyboard in Resources */,
@@ -602,6 +609,7 @@
 				01595A441DE5151600CB82B5 /* ImageProcessController.swift in Sources */,
 				017791861DE114AB00FAD266 /* PanoramaIndicator.swift in Sources */,
 				017791851DE114AB00FAD266 /* PanoramaViewer.swift in Sources */,
+				01CDE5581E009D43009E520A /* AddTextToImageController.swift in Sources */,
 				01FCE53B1DE8EA56005E232C /* MainTableViewCell.swift in Sources */,
 				01309B9E1DE665D300E4B1BE /* VideoShooterController.swift in Sources */,
 			);
@@ -755,7 +763,7 @@
 				INFOPLIST_FILE = PanoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jabue.PanoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jabue.eyexpoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -777,7 +785,7 @@
 				INFOPLIST_FILE = PanoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jabue.PanoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jabue.eyexpoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
