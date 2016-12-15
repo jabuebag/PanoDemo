@@ -25,9 +25,9 @@ class MainViewController: UIViewController, GalleryItemsDatasource, GalleryDispl
         definesPresentationContext = true
         let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let twoNormal = documentsDirectoryURL.appendingPathComponent("1.jpg").path
-        let twoFade = documentsDirectoryURL.appendingPathComponent("2.jpg").path
+        let twoFade = documentsDirectoryURL.appendingPathComponent("3.jpg").path
         var twoNormalPano = PanoModel(name: "halfhalf.jpg", panoName: twoNormal)
-        var twoFadePano = PanoModel(name: "halfhalffade.jpg", panoName: twoFade)
+        var twoFadePano = PanoModel(name: "test1.jpg", panoName: twoFade)
         var officePano = PanoModel(name: "office.jpg", panoName: "officePro.jpg")
         var diningPano = PanoModel(name: "dining.jpg", panoName: "dining.jpg")
         panoArray.append(twoNormalPano)

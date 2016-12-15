@@ -28,7 +28,8 @@ class AddTextToImageController: UIViewController {
         testImg.image = image
         
         // add label
-        addLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+        print(testImg.frame.midX)
+        addLabel = UILabel(frame: CGRect(x: testImg.frame.size.width/2 - 100, y: testImg.frame.size.height/2 - 50, width: 100, height: 50))
         addLabel.font = addLabel.font.withSize(30)
         addLabel.backgroundColor = UIColor.clear
         addLabel.textAlignment = .center
