@@ -47,7 +47,7 @@
                                     <constraint firstAttribute="width" secondItem="w46-lC-p4J" secondAttribute="height" multiplier="375:62.5" id="plV-3X-fF4"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halfhalffade.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6la-Sl-sDV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6la-Sl-sDV">
                                 <rect key="frame" x="0.0" y="82.5" width="375" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6la-Sl-sDV" secondAttribute="height" multiplier="375:62" id="rBj-Tr-2d4"/>
@@ -534,6 +534,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="halfhalffade.jpg" width="2048" height="341"/>
+        <image name="test1.jpg" width="6525" height="1680"/>
     </resources>
 </document>

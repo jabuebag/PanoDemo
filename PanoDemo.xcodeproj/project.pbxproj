@@ -13,6 +13,7 @@
 		01309BA01DE6675700E4B1BE /* JabueUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01309B9F1DE6675700E4B1BE /* JabueUtil.swift */; };
 		01309BA21DE6793C00E4B1BE /* haha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01309BA11DE6793C00E4B1BE /* haha.jpg */; };
 		0134A3D01DEB894F009D8F52 /* officePro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0134A3CF1DEB894F009D8F52 /* officePro.jpg */; };
+		014671921E0315D60016AAC9 /* test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 014671911E0315D60016AAC9 /* test1.jpg */; };
 		01595A441DE5151600CB82B5 /* ImageProcessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01595A431DE5151600CB82B5 /* ImageProcessController.swift */; };
 		01595A461DE5180A00CB82B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01595A451DE5180A00CB82B5 /* Main.storyboard */; };
 		017791541DE10A0500FAD266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017791531DE10A0500FAD266 /* AppDelegate.swift */; };
@@ -75,6 +76,7 @@
 		01309B9F1DE6675700E4B1BE /* JabueUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JabueUtil.swift; sourceTree = "<group>"; };
 		01309BA11DE6793C00E4B1BE /* haha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = haha.jpg; sourceTree = "<group>"; };
 		0134A3CF1DEB894F009D8F52 /* officePro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = officePro.jpg; sourceTree = "<group>"; };
+		014671911E0315D60016AAC9 /* test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test1.jpg; sourceTree = "<group>"; };
 		01595A431DE5151600CB82B5 /* ImageProcessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessController.swift; sourceTree = "<group>"; };
 		01595A451DE5180A00CB82B5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		017791501DE10A0500FAD266 /* PanoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +249,7 @@
 		0177918F1DE11B1E00FAD266 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				014671911E0315D60016AAC9 /* test1.jpg */,
 				01CDE5591E00A188009E520A /* addTextImage.jpg */,
 				01FC01951DEF8FD400AD16D1 /* halfhalffade.jpg */,
 				01C5C4131DEE542100500E31 /* fadetest.jpg */,
@@ -427,6 +430,7 @@
 				01309BA21DE6793C00E4B1BE /* haha.jpg in Resources */,
 				01A9E3581DEA87DD00D6231B /* dining.jpg in Resources */,
 				0177915E1DE10A0500FAD266 /* LaunchScreen.storyboard in Resources */,
+				014671921E0315D60016AAC9 /* test1.jpg in Resources */,
 				0177915B1DE10A0500FAD266 /* Assets.xcassets in Resources */,
 				017791911DE1267E00FAD266 /* office.jpg in Resources */,
 				010ED13A1DE3D419009D414B /* test13.jpg in Resources */,
