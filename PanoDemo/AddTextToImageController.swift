@@ -28,7 +28,6 @@ class AddTextToImageController: UIViewController {
         testImg.image = image
         
         // add label
-        print(testImg.frame.midX)
         addLabel = UILabel(frame: CGRect(x: testImg.frame.size.width/2 - 100, y: testImg.frame.size.height/2 - 50, width: 100, height: 50))
         addLabel.font = addLabel.font.withSize(30)
         addLabel.backgroundColor = UIColor.clear
@@ -83,7 +82,6 @@ class AddTextToImageController: UIViewController {
         UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, false, 0);
         var context = UIGraphicsGetCurrentContext()
         imageView.layer.render(in: context!)
-        
         let imageWithText = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext();
         
@@ -91,89 +89,43 @@ class AddTextToImageController: UIViewController {
     }
     
     func labelDragAction(gesture: UIPanGestureRecognizer) {
-        // label.transform = label.transform.rotated(by: CGFloat.pi * 45 / 180)
         if (gesture.state == UIGestureRecognizerState.changed ||
             gesture.state == UIGestureRecognizerState.ended) {
             var label = gesture.view!
-            let translation = gesture.translation(in: self.testImg)
-            label.transform = label.transform.translatedBy(x: translation.x, y: translation.y)
-            gesture.setTranslation(CGPoint(x: 0,y :0), in: self.testImg)
+            let translation = gesture.translation(in: self.view)
+            let dragLocation = gesture.location(in: self.view)
+            if (dragLocation.x < testImg.frame.maxX && dragLocation.y < testImg.frame.maxY) {
+                let translate = CGAffineTransform(translationX: translation.x, y: translation.y)
+                label.transform = label.transform.concatenating(translate)
+                gesture.setTranslation(CGPoint(x: 0,y :0), in: self.view)
+            }
         }
     }
     
     func buttonScaleAction(gesture: UIPanGestureRecognizer) {
         if (gesture.state == UIGestureRecognizerState.changed ||
             gesture.state == UIGestureRecognizerState.ended) {
-            var xScaleRate: CGFloat!
-            var yScaleRate: CGFloat!
-            let transition = gesture.translation(in: self.testImg)
-            xScaleRate = (addLabel.frame.size.width + transition.x)/addLabel.frame.size.width
-            yScaleRate = (addLabel.frame.size.height + transition.y)/addLabel.frame.size.height
-            addLabel.transform = addLabel.transform.scaledBy(x: xScaleRate, y: yScaleRate)
-            gesture.setTranslation(CGPoint(x: 0,y :0), in: self.testImg)
+            var scaleRate: CGFloat!
+            let transition = gesture.translation(in: self.view)
+            scaleRate = (addLabel.frame.size.width + transition.x)/addLabel.frame.size.width
+            addLabel.transform = addLabel.transform.scaledBy(x: scaleRate, y: scaleRate)
+            gesture.setTranslation(CGPoint(x: 0,y :0), in: self.view)
         }
     }
     
     func buttonRotateAction(gesture: UIPanGestureRecognizer) {
         if (gesture.state == UIGestureRecognizerState.began) {
-            let firstLocation = gesture.location(in: self.testImg)
+            let firstLocation = gesture.location(in: self.view)
             initAngleRadian = CGFloat(atan2f(Float(CGFloat(firstLocation.y - addLabel.frame.midY)), Float(firstLocation.x - addLabel.frame.midX)));
         }
         if (gesture.state == UIGestureRecognizerState.changed ||
             gesture.state == UIGestureRecognizerState.ended) {
-            let changeLocation = gesture.location(in: self.testImg)
+            let changeLocation = gesture.location(in: self.view)
             var angle = atan2f(Float(CGFloat(changeLocation.y - addLabel.frame.midY)), Float(changeLocation.x - addLabel.frame.midX));
+            // addLabel.transform = addLabel.transform.scaledBy(x: xScaleRate, y: yScaleRate)
             addLabel.transform = addLabel.transform.rotated(by: (CGFloat(angle) - CGFloat(initAngleRadian)))
+            gesture.setTranslation(CGPoint(x: 0,y :0), in: self.view)
             initAngleRadian = CGFloat(angle)
         }
-    }
-
-    
-    func wasDragged(gesture: UIPanGestureRecognizer) {
-        // translation vector origin -> destination
-        
-        let translation = gesture.translation(in: self.testImg) // get the translation
-        var label = gesture.view! // the view inside the gesture
-        
-        xFromCenter += translation.x
-        
-        var scaledValue = min(100 / abs(xFromCenter), 1)
-        
-        // move the label with the translation
-        label.center = CGPoint(x: label.center.x + translation.x, y: label.center.y + translation.y)
-        
-        // reset the translation that now, is already applied to the label
-        gesture.setTranslation(CGPoint(x: 0,y :0), in: self.testImg)
-        
-        
-        // the rotation variable clockwise and pass the angle in radians 1 = 60º
-        var rotation:CGAffineTransform = CGAffineTransform(rotationAngle: xFromCenter / 200)
-        
-        // the scale variable to enlarge objects
-        var stretch:CGAffineTransform = rotation.scaledBy(x: scaledValue, y: scaledValue)
-        
-        label.transform = stretch
-        
-        
-        if label.center.x < 100 {
-            
-            print("Not chosen !!")
-            
-        } else if label.center.x > self.view.bounds.width - 100 {
-            
-            print("Chosen !!")
-        }
-        
-        if gesture.state == UIGestureRecognizerState.ended {
-            
-            // restore the inital value before drag the item
-            label.center = CGPoint(x: self.testImg.bounds.width / 2, y: self.testImg.bounds.height / 2)
-            scaledValue = min(abs(xFromCenter)/100, 1)
-            rotation = CGAffineTransform(rotationAngle: 0)
-            stretch = rotation.scaledBy(x: scaledValue, y: scaledValue)
-            
-            label.transform = stretch
-        }
-        
     }
 }
