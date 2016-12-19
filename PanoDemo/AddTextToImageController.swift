@@ -24,19 +24,25 @@ class AddTextToImageController: UIViewController {
         super.viewDidLoad()
         
         // init UIImage
+        testImg.frame = CGRect(x: 0, y: 20, width: self.view.frame.width, height: self.view.frame.width * 2/3)
         let image = UIImage(named: "addTextImage.jpg")!
         testImg.image = image
         
+        // init processBtn
+        processBtn.center = self.view.center
+        
+        // init generatedImg
+        generatedImg.frame = CGRect(x: 0, y: self.view.center.y + 60, width: testImg.frame.width, height: testImg.frame.height)
+        
         // add label
-        addLabel = UILabel(frame: CGRect(x: testImg.frame.size.width/2 - 100, y: testImg.frame.size.height/2 - 50, width: 100, height: 50))
+        addLabel = UILabel(frame: CGRect(x: testImg.center.x - 50, y: testImg.center.y - 25, width: 100, height: 50))
         addLabel.font = addLabel.font.withSize(30)
         addLabel.backgroundColor = UIColor.clear
         addLabel.textAlignment = .center
         addLabel.textColor = UIColor.red
         addLabel.text = "Here"
-        addLabel.layer.borderColor = UIColor.black.cgColor
+        addLabel.layer.borderColor = UIColor.white.cgColor
         addLabel.layer.borderWidth = 1.0
-        addLabel.layer.cornerRadius = 8
         self.testImg.addSubview(addLabel)
         
         // add scale button
@@ -109,6 +115,8 @@ class AddTextToImageController: UIViewController {
             let transition = gesture.translation(in: self.view)
             scaleRate = (addLabel.frame.size.width + transition.x)/addLabel.frame.size.width
             addLabel.transform = addLabel.transform.scaledBy(x: scaleRate, y: scaleRate)
+            print(scaleRate)
+            addLabel.layer.borderWidth = addLabel.layer.borderWidth/scaleRate
             gesture.setTranslation(CGPoint(x: 0,y :0), in: self.view)
         }
     }
