@@ -235,7 +235,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="naL-sL-2I7" id="XxX-Un-xAQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UtD-cM-bN6">
@@ -413,13 +413,53 @@
                                 <rect key="frame" x="0.0" y="305" width="375" height="227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXd-5E-iOD">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OrL-Tz-20D">
+                                        <rect key="frame" x="8" y="13" width="303" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMf-Gp-acI">
+                                        <rect key="frame" x="319" y="13" width="46" height="30"/>
+                                        <state key="normal" title="done"/>
+                                        <connections>
+                                            <action selector="textEditDoneAction:" destination="hgc-0i-erF" eventType="touchUpInside" id="Azu-LF-VXT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="OrL-Tz-20D" firstAttribute="leading" secondItem="RXd-5E-iOD" secondAttribute="leading" constant="8" id="0GX-Fo-T4V"/>
+                                    <constraint firstAttribute="width" secondItem="RXd-5E-iOD" secondAttribute="height" multiplier="75:11" id="FpI-Cl-6Iw"/>
+                                    <constraint firstItem="uMf-Gp-acI" firstAttribute="leading" secondItem="OrL-Tz-20D" secondAttribute="trailing" constant="8" id="NkY-ZM-qMB"/>
+                                    <constraint firstAttribute="bottom" secondItem="uMf-Gp-acI" secondAttribute="bottom" constant="12" id="Q62-8O-qKN"/>
+                                    <constraint firstItem="OrL-Tz-20D" firstAttribute="top" secondItem="RXd-5E-iOD" secondAttribute="top" constant="13" id="X14-FY-hxq"/>
+                                    <constraint firstAttribute="height" constant="55" id="Xr3-1U-cbB"/>
+                                    <constraint firstAttribute="trailing" secondItem="uMf-Gp-acI" secondAttribute="trailing" constant="10" id="bX4-ue-Es4"/>
+                                    <constraint firstItem="uMf-Gp-acI" firstAttribute="leading" secondItem="OrL-Tz-20D" secondAttribute="trailing" constant="8" id="oKR-Pq-Blw"/>
+                                    <constraint firstAttribute="bottom" secondItem="OrL-Tz-20D" secondAttribute="bottom" constant="12" id="pXS-de-UBC"/>
+                                    <constraint firstItem="uMf-Gp-acI" firstAttribute="top" secondItem="RXd-5E-iOD" secondAttribute="top" constant="13" id="wIp-al-mrK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pPn-N2-Zic" firstAttribute="top" secondItem="RXd-5E-iOD" secondAttribute="bottom" id="CjP-qd-1gF"/>
+                            <constraint firstAttribute="trailing" secondItem="RXd-5E-iOD" secondAttribute="trailing" id="e4I-2W-EB6"/>
+                            <constraint firstItem="RXd-5E-iOD" firstAttribute="leading" secondItem="Knl-yQ-AzW" secondAttribute="leading" id="gYU-9g-cWB"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="generatedImg" destination="6tq-2r-sa3" id="Pnu-Ry-iiN"/>
                         <outlet property="processBtn" destination="L7Y-a7-2WV" id="6cs-Iy-yxL"/>
                         <outlet property="testImg" destination="LT1-ij-Yvt" id="zdX-Uo-1E9"/>
+                        <outlet property="textEditArea" destination="OrL-Tz-20D" id="YHs-dC-bnQ"/>
+                        <outlet property="textEditAreaConstraint" destination="CjP-qd-1gF" id="8y7-6y-MBO"/>
+                        <outlet property="textEditDone" destination="uMf-Gp-acI" id="EaG-Lg-pJa"/>
+                        <outlet property="textEditView" destination="RXd-5E-iOD" id="Dqt-2k-oU4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xE4-d5-rZA" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -14,6 +14,11 @@ class AddTextToImageController: UIViewController {
     @IBOutlet weak var generatedImg: UIImageView!
     @IBOutlet weak var processBtn: UIButton!
     
+    @IBOutlet weak var textEditView: UIView!
+    @IBOutlet weak var textEditArea: UITextField!
+    @IBOutlet weak var textEditDone: UIButton!
+    @IBOutlet weak var textEditAreaConstraint: NSLayoutConstraint!
+    
     var addLabel: UILabel!
     var rotateScaleView: UIView!
     var scaleButton: UIButton!
@@ -37,8 +42,9 @@ class AddTextToImageController: UIViewController {
         // init generatedImg
         generatedImg.frame = CGRect(x: 0, y: self.view.center.y + 60, width: testImg.frame.width, height: testImg.frame.height)
         
+        // rotateScaleView under the addlabel
         rotateScaleView = UIView(frame: CGRect(x: 0, y: 0, width: 170, height: 70))
-        rotateScaleView.backgroundColor = UIColor.brown
+        rotateScaleView.backgroundColor = UIColor.clear
         rotateScaleView.center.x = testImg.center.x
         rotateScaleView.center.y = testImg.center.y - testImg.frame.minY
         self.testImg.addSubview(rotateScaleView)
@@ -70,11 +76,26 @@ class AddTextToImageController: UIViewController {
         rotateButton.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
         rotateScaleView.addSubview(rotateButton)
         
+        // text edit area
+        textEditArea.clearButtonMode = .always
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        textEditArea.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
+        textEditView.isHidden = true
+        
+        // tap on imageView to hide buttons and borders
+        let tapOnImage = UITapGestureRecognizer(target: self, action: #selector(imageViewTapAction(gesture:)))
+        testImg.addGestureRecognizer(tapOnImage)
+        testImg.isUserInteractionEnabled = true
+        
+        // tap on rotateScaleView gesture to show buttons and borders
+        let tapOnView = UITapGestureRecognizer(target: self, action: #selector(underLabelViewTapAction(gesture:)))
+        rotateScaleView.addGestureRecognizer(tapOnView)
+        rotateScaleView.isUserInteractionEnabled = true
+        
         // recognizer for the label dragging move
         let dragGesture = UIPanGestureRecognizer(target: self, action: #selector(labelDragAction(gesture:)))
         rotateScaleView.addGestureRecognizer(dragGesture)
-        testImg.isUserInteractionEnabled = true
-        rotateScaleView.isUserInteractionEnabled = true
         addLabel.isUserInteractionEnabled = true
         
         // scale button gesture
@@ -92,11 +113,13 @@ class AddTextToImageController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+ 
+    // process btn action
     @IBAction func processBtnAction(_ sender: Any) {
         generatedImg.image = generateImageWithText(imageView: testImg, label: addLabel)
     }
     
+    // function to generate image
     func generateImageWithText(imageView: UIImageView, label: UILabel) -> UIImage
     {
         UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, false, 0);
@@ -106,6 +129,23 @@ class AddTextToImageController: UIViewController {
         UIGraphicsEndImageContext();
         
         return imageWithText!
+    }
+    
+    func imageViewTapAction(gesture: UITapGestureRecognizer) {
+        self.scaleButton.isHidden = true
+        self.rotateButton.isHidden = true
+        self.addLabel.layer.borderWidth = 0
+    }
+    
+    func underLabelViewTapAction(gesture: UITapGestureRecognizer) {
+        if (self.scaleButton.isHidden) {
+            self.scaleButton.isHidden = false
+            self.rotateButton.isHidden = false
+            self.addLabel.layer.borderWidth = 1.5
+        } else {
+            textEditView.isHidden = false
+            textEditArea.becomeFirstResponder()
+        }
     }
     
     func labelDragAction(gesture: UIPanGestureRecognizer) {
@@ -162,10 +202,28 @@ class AddTextToImageController: UIViewController {
             gesture.state == UIGestureRecognizerState.ended) {
             let changeLocation = gesture.location(in: self.view)
             var angle = atan2f(Float(CGFloat(changeLocation.y - rotateScaleView.frame.midY)), Float(changeLocation.x - rotateScaleView.frame.midX));
-            // addLabel.transform = addLabel.transform.scaledBy(x: xScaleRate, y: yScaleRate)
             rotateScaleView.transform = rotateScaleView.transform.rotated(by: (CGFloat(angle) - CGFloat(initAngleRadian)))
             gesture.setTranslation(CGPoint(x: 0,y :0), in: self.view)
             initAngleRadian = CGFloat(angle)
         }
+    }
+    
+    func textFieldDidChange(textField: UITextField) {
+        addLabel.text = textField.text
+    }
+    
+    func keyboardWillShow(sender: NSNotification) {
+        if let keyboardSize = (sender.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            textEditAreaConstraint.constant = keyboardSize.height
+        }
+    }
+    
+    func keyboardWillHide(sender: NSNotification) {
+        textEditAreaConstraint.constant = 0
+    }
+    
+    @IBAction func textEditDoneAction(_ sender: Any) {
+        textEditArea.resignFirstResponder()
+        textEditView.isHidden = true
     }
 }
