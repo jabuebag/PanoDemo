@@ -15,6 +15,9 @@ class AddTextToImageController: UIViewController {
     @IBOutlet weak var processBtn: UIButton!
     
     var addLabel: UILabel!
+    var rotateScaleView: UIView!
+    var scaleButton: UIButton!
+    var rotateButton: UIButton!
     
     // for track the gesture distance
     var xFromCenter: CGFloat = 0
@@ -34,8 +37,14 @@ class AddTextToImageController: UIViewController {
         // init generatedImg
         generatedImg.frame = CGRect(x: 0, y: self.view.center.y + 60, width: testImg.frame.width, height: testImg.frame.height)
         
+        rotateScaleView = UIView(frame: CGRect(x: 0, y: 0, width: 170, height: 70))
+        rotateScaleView.backgroundColor = UIColor.brown
+        rotateScaleView.center.x = testImg.center.x
+        rotateScaleView.center.y = testImg.center.y - testImg.frame.minY
+        self.testImg.addSubview(rotateScaleView)
+        
         // add label
-        addLabel = UILabel(frame: CGRect(x: testImg.center.x - 50, y: testImg.center.y - 25, width: 150, height: 50))
+        addLabel = UILabel(frame: CGRect(x: 10, y: 10, width: 150, height: 50))
         addLabel.font = addLabel.font.withSize(30)
         addLabel.numberOfLines = 0
         addLabel.backgroundColor = UIColor.clear
@@ -47,25 +56,25 @@ class AddTextToImageController: UIViewController {
         addLabel.layer.borderWidth = 1.5
         addLabel.adjustsFontSizeToFitWidth = true
         // addLabel.minimumScaleFactor = 0.5
-        addLabel.center = testImg.center
-        self.testImg.addSubview(addLabel)
+        self.rotateScaleView.addSubview(addLabel)
         
         // add scale button
-        let scaleButton = UIButton(frame: CGRect(x: addLabel.bounds.size.width - 11, y: addLabel.bounds.size.height - 11, width: 10, height: 10))
+        scaleButton = UIButton(frame: CGRect(x: rotateScaleView.bounds.size.width - 20, y: rotateScaleView.bounds.size.height - 20, width: 20, height: 20))
         scaleButton.layer.cornerRadius = 0.5 * scaleButton.bounds.size.width
-        scaleButton.backgroundColor = UIColor.black
-        addLabel.addSubview(scaleButton)
+        scaleButton.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        rotateScaleView.addSubview(scaleButton)
         
         // add rotate button
-        let rotateButton = UIButton(frame: CGRect(x: addLabel.bounds.size.width - 12, y: 0, width: 10, height: 10))
+        rotateButton = UIButton(frame: CGRect(x: rotateScaleView.bounds.size.width - 20, y: 0, width: 20, height: 20))
         rotateButton.layer.cornerRadius = 0.5 * scaleButton.bounds.size.width
-        rotateButton.backgroundColor = UIColor.gray
-        addLabel.addSubview(rotateButton)
+        rotateButton.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
+        rotateScaleView.addSubview(rotateButton)
         
         // recognizer for the label dragging move
-        let labelGesture = UIPanGestureRecognizer(target: self, action: #selector(labelDragAction(gesture:)))
-        addLabel.addGestureRecognizer(labelGesture)
+        let dragGesture = UIPanGestureRecognizer(target: self, action: #selector(labelDragAction(gesture:)))
+        rotateScaleView.addGestureRecognizer(dragGesture)
         testImg.isUserInteractionEnabled = true
+        rotateScaleView.isUserInteractionEnabled = true
         addLabel.isUserInteractionEnabled = true
         
         // scale button gesture
@@ -102,12 +111,12 @@ class AddTextToImageController: UIViewController {
     func labelDragAction(gesture: UIPanGestureRecognizer) {
         if (gesture.state == UIGestureRecognizerState.changed ||
             gesture.state == UIGestureRecognizerState.ended) {
-            var label = gesture.view!
+            var view = gesture.view!
             let translation = gesture.translation(in: self.view)
             let dragLocation = gesture.location(in: self.view)
             if (dragLocation.x < testImg.frame.maxX && dragLocation.y < testImg.frame.maxY) {
                 let translate = CGAffineTransform(translationX: translation.x, y: translation.y)
-                label.transform = label.transform.concatenating(translate)
+                view.transform = view.transform.concatenating(translate)
                 gesture.setTranslation(CGPoint(x: 0,y :0), in: self.view)
             }
         }
@@ -118,9 +127,28 @@ class AddTextToImageController: UIViewController {
             gesture.state == UIGestureRecognizerState.ended) {
             var scaleRate: CGFloat!
             let transition = gesture.translation(in: self.view)
-            scaleRate = (addLabel.frame.size.width + transition.x)/addLabel.frame.size.width
-            addLabel.transform = addLabel.transform.scaledBy(x: scaleRate, y: scaleRate)
-            addLabel.layer.borderWidth = addLabel.layer.borderWidth/scaleRate
+            scaleRate = (rotateScaleView.frame.size.width + transition.x)/rotateScaleView.frame.size.width
+            if (scaleRate > 1) {
+                rotateScaleView.transform = rotateScaleView.transform.scaledBy(x: scaleRate, y: scaleRate)
+                addLabel.layer.borderWidth = addLabel.layer.borderWidth/scaleRate
+                scaleButton.bounds.size.width = scaleButton.bounds.size.width/scaleRate
+                scaleButton.bounds.size.height = scaleButton.bounds.size.height/scaleRate
+                scaleButton.layer.cornerRadius = 0.5 * scaleButton.bounds.size.width
+                rotateButton.bounds.size.width = rotateButton.bounds.size.width/scaleRate
+                rotateButton.bounds.size.height = rotateButton.bounds.size.height/scaleRate
+                rotateButton.layer.cornerRadius = 0.5 * rotateButton.bounds.size.width
+            } else {
+                if (rotateScaleView.frame.size.width > 90) {
+                    rotateScaleView.transform = rotateScaleView.transform.scaledBy(x: scaleRate, y: scaleRate)
+                    addLabel.layer.borderWidth = addLabel.layer.borderWidth/scaleRate
+                    scaleButton.bounds.size.width = scaleButton.bounds.size.width/scaleRate
+                    scaleButton.bounds.size.height = scaleButton.bounds.size.height/scaleRate
+                    scaleButton.layer.cornerRadius = 0.5 * scaleButton.bounds.size.width
+                    rotateButton.bounds.size.width = rotateButton.bounds.size.width/scaleRate
+                    rotateButton.bounds.size.height = rotateButton.bounds.size.height/scaleRate
+                    rotateButton.layer.cornerRadius = 0.5 * rotateButton.bounds.size.width
+                }
+            }
             gesture.setTranslation(CGPoint(x: 0,y :0), in: self.view)
         }
     }
@@ -128,14 +156,14 @@ class AddTextToImageController: UIViewController {
     func buttonRotateAction(gesture: UIPanGestureRecognizer) {
         if (gesture.state == UIGestureRecognizerState.began) {
             let firstLocation = gesture.location(in: self.view)
-            initAngleRadian = CGFloat(atan2f(Float(CGFloat(firstLocation.y - addLabel.frame.midY)), Float(firstLocation.x - addLabel.frame.midX)));
+            initAngleRadian = CGFloat(atan2f(Float(CGFloat(firstLocation.y - rotateScaleView.frame.midY)), Float(firstLocation.x - rotateScaleView.frame.midX)));
         }
         if (gesture.state == UIGestureRecognizerState.changed ||
             gesture.state == UIGestureRecognizerState.ended) {
             let changeLocation = gesture.location(in: self.view)
-            var angle = atan2f(Float(CGFloat(changeLocation.y - addLabel.frame.midY)), Float(changeLocation.x - addLabel.frame.midX));
+            var angle = atan2f(Float(CGFloat(changeLocation.y - rotateScaleView.frame.midY)), Float(changeLocation.x - rotateScaleView.frame.midX));
             // addLabel.transform = addLabel.transform.scaledBy(x: xScaleRate, y: yScaleRate)
-            addLabel.transform = addLabel.transform.rotated(by: (CGFloat(angle) - CGFloat(initAngleRadian)))
+            rotateScaleView.transform = rotateScaleView.transform.rotated(by: (CGFloat(angle) - CGFloat(initAngleRadian)))
             gesture.setTranslation(CGPoint(x: 0,y :0), in: self.view)
             initAngleRadian = CGFloat(angle)
         }
