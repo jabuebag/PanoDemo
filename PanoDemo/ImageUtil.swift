@@ -179,10 +179,10 @@ class ImageUtil {
         return stitchedImages
     }
     
-    func saveToFile(image: UIImage) {
+    func saveToFile(image: UIImage, name: String) {
         let documentsDirectoryURL = try! FileManager().url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         // create a name for your image
-        let fileURL = documentsDirectoryURL.appendingPathComponent("3.jpg")
+        let fileURL = documentsDirectoryURL.appendingPathComponent(name)
         print(fileURL.path)
         if !FileManager.default.fileExists(atPath: fileURL.path) {
             do {

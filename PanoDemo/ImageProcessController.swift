@@ -57,11 +57,11 @@ class ImageProcessController: UIViewController {
         stitichPhotos.append(originImg.image!)
         stitichPhotos.append(bottomReflectionImg.image!)
         stitchedImg.image = imageUtil.stitchImages(images: stitichPhotos, isVertical: true)
-        imageUtil.saveToFile(image: imageUtil.resizeImageWithRatio(image: stitchedImg.image!, newWidth: 2048, newHeight: 1024))
+        imageUtil.saveToFile(image: imageUtil.resizeImageWithRatio(image: stitchedImg.image!, newWidth: 2048, newHeight: 1024), name: "aaron.jpg")
     }
     
     @IBAction func loadAction(_ sender: Any) {
         // imageUtil.saveToFile(image: UIImage(named: "dining.jpg")!)
-        localLoadImg.image = imageUtil.readFromFile(fileName: "3.jpg")
+        localLoadImg.image = imageUtil.readFromFile(fileName: "aaron.jpg")
     }
 }

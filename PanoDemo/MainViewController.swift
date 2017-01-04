@@ -24,14 +24,18 @@ class MainViewController: UIViewController, GalleryItemsDatasource, GalleryDispl
         super.viewDidLoad()
         definesPresentationContext = true
         let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let twoNormal = documentsDirectoryURL.appendingPathComponent("1.jpg").path
-        let twoFade = documentsDirectoryURL.appendingPathComponent("3.jpg").path
-        var twoNormalPano = PanoModel(name: "halfhalf.jpg", panoName: twoNormal)
-        var twoFadePano = PanoModel(name: "test1.jpg", panoName: twoFade)
+//        let twoNormal = documentsDirectoryURL.appendingPathComponent("1.jpg").path
+//        let twoFade = documentsDirectoryURL.appendingPathComponent("3.jpg").path
+//        var twoNormalPano = PanoModel(name: "halfhalf.jpg", panoName: twoNormal)
+//        var twoFadePano = PanoModel(name: "test1.jpg", panoName: twoFade)
+        let stiker = documentsDirectoryURL.appendingPathComponent("sticker.jpg").path
+        var stickerPano = PanoModel(name: "sticker.jpg", panoName: stiker)
+        let aaron = documentsDirectoryURL.appendingPathComponent("aaron.jpg").path
+        var aaronPano = PanoModel(name: "aaron.jpg", panoName: aaron)
         var officePano = PanoModel(name: "office.jpg", panoName: "officePro.jpg")
         var diningPano = PanoModel(name: "dining.jpg", panoName: "dining.jpg")
-        panoArray.append(twoNormalPano)
-        panoArray.append(twoFadePano)
+        panoArray.append(aaronPano)
+        panoArray.append(stickerPano)
         panoArray.append(officePano)
         panoArray.append(diningPano)
         
